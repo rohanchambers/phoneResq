@@ -34,6 +34,53 @@
 <body <?php body_class(); ?>>
 <?php tha_body_top(); ?>
 
+
+<header id="header">
+    <div class="container">    
+        <div id="logo"><a href="#header">Phone Resq</a></div>
+        <nav id="nav-main" class="nav-global">
+            <ul>
+                <li id="dropdown"><a href="#services">Services<i class="fa fa-caret-down fa-lg"></i></a>
+                    <ul id="subnav">
+                        <li><a href="iphone-repair.php">iPhone repair</a><span></span></li>
+                        <li><a href="ipad-repair.php">iPad repair</a><span></span></li>
+                        <li><a href="ipod-repair.php">iPod repair</a><span></span></li>
+                        <li><a href="android-repair.php">Android repair</a><span></span></li>
+                        <li><a href="laptop-repair.php">Laptop &amp; Desktop repair</a><span></span></li>
+                        <li><a href="unlock-repair.php">Cell Phone Unlocks</a><span></span></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li id="nav-sell"><a href="#sell">Sell your device</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+        <nav id="social-links" class="nav-global">
+            <ul>
+                <li><a href="#" title="Facebook share"><i class="fa fa-facebook fa-lg btn-animate"></i></a></li>
+                <li><a href="#" title="Twitter share"><i class="fa fa-twitter fa-lg btn-animate"></i></a></li>
+                <li><a href="#" title="Instagram share"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
+                <li><a href="#" title="RSS share"><i class="fa fa-rss fa-lg btn-animate"></i></a></li>
+            </ul>
+        </nav>
+        <nav id="nav-cta" class="nav-global">
+            <ul>
+                <li><a href="#contact" class="btn-nav btn-animate"><i class="fa fa-wrench fa-lg"></i>Request repair</a></li>
+                <li><a href="tel:9043100059" class="btn-nav btn-animate"><i class="fa fa-phone fa-lg"></i>(904) 310-0059</a></li>
+            </ul>
+        </nav>
+        <div id="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+</header><!-- End of Header -->
+
+
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'some-like-it-neat' ); ?></a>
 

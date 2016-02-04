@@ -9,7 +9,7 @@
 | >   PROJECT VARIABLES
 ******************************************************************************/
 var project    = 'phoneResq';
-var url        = 'http://localhost.phonresq';
+var url        = 'http://localhost.phoneresq';
 var build      = './build/';
 var vendors    = './library/vendors/';
 var source     = './assets/';
