@@ -54,7 +54,7 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 #header.nav-min #nav-main a:hover::after{width:100%}.nav-global{position:relative;float:left;margin-top:15px}
 .nav-global ul{margin:0;padding:0}.nav-global li{float:left;list-style-type:none;padding:0}
 .nav-global a{font-family:'Open Sans',Arial,sans-serif;font-size:.9375rem;text-decoration:none;color:#FFF;text-transform:uppercase}
-.nav-global a:hover{color:#e20510}#carousel{position:absolute;top:0;z-index:0;width:100%;height:530px}
+.nav-global a:hover{color:#e20510}#carousel{position:absolute;top:0;left:0;z-index:0;width:100%;height:530px}
 #carousel .slide{margin:0 auto}#carousel .slide .slide-content{width:960px;margin:0 auto}
 #carousel .slide article{float:right;margin-right:90px;margin-top:140px;width:550px;text-align:right;font-family:'Open Sans',sans-serif}
 #carousel .slide article h1{margin:0;color:#FFF;text-transform:uppercase;font-size:2rem;font-weight:600}
@@ -131,13 +131,14 @@ article.intro P{width:60%;margin:0 auto 10px auto;color:#404040}#services{overfl
 #contact #get-in-touch h1 span{width:190px;margin-left:29px;text-align:center}#contact #get-in-touch p{color:#FFF;margin-left:0}
 #clients{min-height:110px;background-color:#e20510}#clients #client-list{float:left;display:block;margin-right:1.20482%;width:100%;text-align:justify;font-size:.1px;list-style-type:none;margin:0;padding:0;margin-top:33px}
 #clients #client-list:last-child{margin-right:0}#clients #client-list:after{content:'';width:100%;display:inline-block;height:auto}
-#clients .client{display:inline-block;min-height:41px}footer{min-height:330px;background-color:#282727}
-footer p{font-size:.75rem;line-height:1.3;color:#FFF}footer a{color:#FFF}footer a:hover{color:#e20510}
-footer .two-col{height:330px;padding:35px 0}footer #company-details a{text-decoration:underline}
-footer #company-details a:hover{text-decoration:none;color:#e20510}footer #company-details #social-links,footer #company-details #footer-social-links{margin:23px 0 0 0}
-footer #company-details #social-links li,footer #company-details #footer-social-links li{margin-right:15px}
-footer #footer-links{text-align:right}footer #footer-links #back-top{display:inline-block;width:62px;height:74px;background:url(../images/footer/backTop.png) 0 0}
-footer #footer-links #back-top:hover{background-position:-62px 0}footer #footer-links #copyright{margin-top:25px;font-size:.6875rem}
+#clients .client{display:inline-block;min-height:41px}footer#footer{min-height:330px;background-color:#282727}
+footer#footer p{font-size:.75rem;line-height:1.3;color:#FFF}footer#footer a{color:#FFF}
+footer#footer a:hover{color:#e20510}footer#footer .two-col{height:330px;padding:35px 0}
+footer#footer #company-details a{text-decoration:underline}footer#footer #company-details a:hover{text-decoration:none;color:#e20510}
+footer#footer #company-details #social-links,footer#footer #company-details #footer-social-links{margin:23px 0 0 0}
+footer#footer #company-details #social-links li,footer#footer #company-details #footer-social-links li{margin-right:15px}
+footer#footer #footer-links{text-align:right}footer#footer #footer-links #back-top{display:inline-block;width:62px;height:74px;background:url(../images/footer/backTop.png) 0 0}
+footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#footer #footer-links #copyright{margin-top:25px;font-size:.6875rem}
 #page-repair #header a{color:#404040}#page-repair #header #nav-main{position:relative}
 #page-repair #header #nav-main li ul#subnav{background-color:#FFF}#page-repair #header #nav-main li ul#subnav li{border-bottom:1px solid #404040}
 #page-repair #header #nav-main li a::after{background-color:#404040}#page-repair #header #social-links a:hover{color:#e20510 !important}
@@ -158,7 +159,43 @@ footer #footer-links #back-top:hover{background-position:-62px 0}footer #footer-
 #parallax-3{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-4{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-5{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-6{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-7{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-8{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+@media screen and (min-width:1200px){#sell .sell-row-img{background-position:center bottom}
+}@media screen and (max-width:1030px){.container{margin:0 4%}#carousel .slide .slide-content{width:100%}
+}@media(max-width:1028px){#social-links{display:none}}@media(max-width:873px){#nav-cta{display:none}
+}@media screen and (max-width:867px){.about-row-img,.sell-row-img{width:50%;min-height:652px;position:absolute;right:0}
+}@media screen and (max-width:768px){.container{margin:0 2%}.about-row-img,.sell-row-img{width:50%;min-height:620px;position:absolute;right:0}
+#services{margin-top:510px}#shop,#sell .section-divider,.parallax,#nav-sell{display:none}
+#sell .sell-row-img{min-height:325px}#header{position:fixed;width:100%;top:0;padding:0;border-top:6px solid #e20510}
+#header #nav-hamburger{display:block}#header #nav-main{margin:0;width:100%}#header #nav-main ul{display:none}
+#header #nav-main ul.mobile-dropdown{display:block}#header #nav-main li{float:none;width:100%;margin:0;background-color:#e20510;border-bottom:1px solid #FFF}
+#header #nav-main li a{display:block;text-transform:uppercase;width:100%;height:100%;padding:17px 15px;font-size:1rem}
+#header #nav-main li a::after{width:100%;transition:none}#header #nav-main li a:hover{background-color:#FFF;color:#e20510}
+#header #nav-main li ul#subnav{display:none;position:relative;top:auto;left:auto;width:100%}
+#header #nav-main li ul#subnav li span{display:none;transition:none}#header #nav-main li ul#subnav li a{padding:15px 40px;border-bottom:0}
+#header #nav-main li#dropdown a{border-bottom:1px solid #FFF}#header #nav-main li#dropdown>#subnav{display:block}
+#header #nav-main li#dropdown:hover>#subnav{display:block;-webkit-animation:none;animation:none}
+#header #logo{display:none}#header #nav-cta{display:none}#header #social-links{position:fixed;right:80px;display:block;margin-top:15px}
+#header #nav-hamburger{position:absolute;right:-5px;z-index:1000;width:30px;height:45px;margin:15px 20px;-webkit-transform:rotate(0);transform:rotate(0);transition:.5s ease-in-out;cursor:pointer}
+#header #nav-hamburger span{display:block;position:absolute;height:4px;width:100%;background:#e20510;border-radius:5px;opacity:1;left:0;-webkit-transform:rotate(0);transform:rotate(0);transition:.25s ease-in-out}
+#header #nav-hamburger span:nth-child(1){top:0}#header #nav-hamburger span:nth-child(2),#header #nav-hamburger span:nth-child(3){top:9px}
+#header #nav-hamburger span:nth-child(4){top:18px}#header #nav-hamburger.open span:nth-child(1){top:18px;width:0;left:50%}
+#header #nav-hamburger.open span:nth-child(2){-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+#header #nav-hamburger.open span:nth-child(3){-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+#header #nav-hamburger.open span:nth-child(4){top:18px;width:0;left:50%}#header.nav-min{height:60px;padding:0}
+#header.nav-min #nav-main{margin-top:4px}#header.nav-min #nav-main a{color:#FFF}#header.nav-min #logo{display:block;height:46px;margin-top:5px;background-size:70%}
+#header.nav-min #nav-hamburger span{background-color:#404040}#header.nav-min #nav-hamburger.open span{background-color:#e20510}
+#header.nav-min #nav-main li#dropdown:hover>#subnav{display:block !important}#header.nav-min #nav-main a::after{display:none}
+#repair{margin-top:65px}}@media screen and (max-width:667px){.container{margin:0 4%;width:92%}
+.intro,.repair,.about-rows,#contact .two-col,#repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
+.intro:last-child,.repair:last-child,.about-rows:last-child,#contact .two-col:last-child,#repair .two-col:last-child{margin-right:0}
+#carousel .slide .slide-content{width:80%;margin:0 auto}#carousel .slide article{width:100%;float:none;margin:0;padding-top:80px;text-align:center}
+#services{padding-bottom:10px}#about .container article{margin-right:10%}.ipad-repair #repair .img-holder img{margin-left:-120px}
+#repair article{width:100%}#repair .img-holder img{left:50%;right:50%;margin-left:-85px}
+#repair .two-col p,#repair .two-col h2{text-align:center}#repair .two-col h2::before{left:50%;right:50%;margin-left:-24%}
+article.intro p{width:100%}.repair,#services .row.row-products{margin-bottom:30px}
+#contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}#contact #get-in-touch .intro span{margin:0 auto}
+#contact #get-in-touch .intro p{width:100%}#about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
+}/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
 audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}

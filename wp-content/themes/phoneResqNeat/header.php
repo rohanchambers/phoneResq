@@ -38,7 +38,7 @@
 <div id="page" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'some-like-it-neat' ); ?></a>
         <?php tha_header_before(); ?>
-        <header id="header">
+        <header id="header" class="site-header wrap" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
         <?php tha_header_top(); ?>
             <div class="container">    
                 <div id="logo"><a href="#header">Phone Resq</a></div>
