@@ -20,7 +20,7 @@
 		    <div class="container">
 		        <div class="row">
 		            <div id="company-details" class="two-col">
-		                <a href="/home.php"><img src="img/footer/logo.png" alt="Phone Resq." /></a>
+		                <a href="/home.php"><img src="<?php bloginfo('template_directory'); ?>/assets/images/footer/logo.png" alt="Phone Resq." /></a>
 		                <p>(904) 310-0059</p>
 		                <p><a href="mailto:info@phoneresq.com">info@phoneresq.com</a></p>
 		                <p>1001 Atlantic Avenue Suite<br>
@@ -53,6 +53,6 @@
 <?php tha_body_bottom(); ?>
 
 <?php wp_footer(); ?>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAnlujjc073E2Ku0_K_HyCtbRDC-HjFgk&callback=initMap" async defer></script>
 </body>
 </html>

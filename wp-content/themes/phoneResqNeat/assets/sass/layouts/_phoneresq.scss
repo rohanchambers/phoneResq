@@ -1,17 +1,9 @@
-/* Phone Resq styles */
-
+/* Phone Resq styles from static template */
 body {
     font-family: Verdana, Arial, sans-serif;
     font-size: rem(14);
     height: 100%;
-
 }
-
-// VARIABLES
-$color-red: #e20510;
-$color-white: #FFF;
-$color-text: #404040;
-$color-grey: #475573;
 
 // TYPOGRAPHY
 h1, h2 {
@@ -832,28 +824,28 @@ article.intro {
 #about-row-two,
 #sell-row { float: right;}
 
-.about-row-images,
-.sell-row-images {
+.about-row-img,
+.sell-row-img {
     width: 50%;
     min-height: 510px;
     position: absolute;
     right: 0;
 }
 
-    #about-row-one-images {
+    #about-row-one-img {
         right: 0;
         background: $color-grey url(../images/about/bg-section-one-2.jpg) no-repeat center right;
         background-size: cover;                  
     }
 
-    #about-row-two-images,
-    #sell-row-images {
+    #about-row-two-img,
+    #sell-row-img {
         left: 0;
         background: $color-grey url(../images/about/bg-section-two-2.jpg) no-repeat center center; 
         background-size: cover;
     }
 
-    #about-row-three-images {
+    #about-row-three-img {
         right: 0;       
         background: $color-grey url(../images/about/bg-section-three-2.jpg) no-repeat center center;
         background-size: cover;          
@@ -904,7 +896,7 @@ article.intro {
         background: url(../images/global/sectionDividerFullTransMulti2.png) center top no-repeat;
     }
 
-    .sell-row-images {
+    .sell-row-img {
         min-height: 280px;
         background: $color-grey url(../images/about/bg-sell.jpg) no-repeat center -20px;
         background-size: cover;
@@ -1097,6 +1089,7 @@ article.intro {
             margin-top: 15px;
             width: auto;
             font-size: rem(25);
+            color: #FFF;
             text-transform: uppercase;
             background-color: transparent;
             border: 3px solid $color-white;

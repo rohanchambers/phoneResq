@@ -9,7 +9,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($base-body-color, 20%);
+    background-color: darken($color-red, 20%);
     border-radius: 3px;
     box-shadow: 0 0 2px 2px $shadow;
     clip: auto;
