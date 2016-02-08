@@ -1,4 +1,21 @@
-html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}
+dfn{font-style:italic}hr{box-sizing:content-box;height:0}mark{background:#ff0;color:#e20510}
+code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}sub{bottom:-0.25em}img{border:0;height:auto;max-height:100%;max-width:100%}
+svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto}
+table{border-collapse:collapse;border-spacing:0}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .slow{-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .slower{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .slowest{-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
@@ -269,25 +286,7 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}.animated{-we
 100%{opacity:1;-webkit-transform:translateX(0)}}@keyframes fadeInLeftShort{0%{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}
 100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}.fadeInLeftShort{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}
 .fadeInLeftShort.go{-webkit-animation-name:fadeInLeftShort;animation-name:fadeInLeftShort}
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
-audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}
-[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}
-h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}
-dfn{font-style:italic}hr{box-sizing:content-box;height:0}mark{background:#ff0;color:#000}
-code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}
-q{quotes:"\201C" "\201D" "\2018" "\2019"}
-small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sup{top:-0.5em}sub{bottom:-0.25em}img{border:0;height:auto;max-height:100%;max-width:100%}
-svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
-legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
-button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
-button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
-input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}
-input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto}
-table{border-collapse:collapse;border-spacing:0}body{font-family:Verdana,Arial,sans-serif;font-size:.875rem;height:100%}
-h1,h2{font-family:'Open Sans',Arial,sans-serif;font-weight:400;color:#e20510;margin:20px 0 10px}
+body{font-family:Verdana,Arial,sans-serif;font-size:.875rem;height:100%}h1,h2{font-family:'Open Sans',Arial,sans-serif;font-weight:400;color:#e20510;margin:20px 0 10px}
 p{font-size:.9375rem;color:#404040;line-height:1.5}a{text-decoration:underline;color:#FFF}
 a:hover{text-decoration:none;color:#e20510}hr{display:block;height:1px;border:0;border-top:1px solid #ddd;margin:30px 0 40px 0;padding:0}
 section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #shop-products a{display:block;width:auto;height:30px;padding:7px 10px;border-radius:5px;background-color:#e20510;box-shadow:2px 2px #999;font-size:11px;text-align:center;text-decoration:none;color:#FFF;box-shadow:0 1px 3px 0 #999}
@@ -382,7 +381,7 @@ article.intro P{width:60%;margin:0 auto 10px auto;color:#404040}#services{overfl
 #shop .intro p{color:#FFF}#shop #shop-products{margin:50px auto;width:100%;min-height:250px}
 #shop #shop-products article{float:left;margin-right:1%;position:relative;width:17%;min-height:250px}
 #shop #shop-products a{position:absolute;bottom:0;left:50%;right:50%;margin-left:-60px;width:120px}
-#shop #shop-products images{display:block;margin:0 auto}#shop #shop-products #accessories images{margin-top:85px}
+#shop #shop-products img{display:block;margin:0 auto}#shop #shop-products #accessories img{margin-top:85px}
 #contact{background-color:#475573;min-height:500px;padding-bottom:40px}#contact hr{margin:20px 0 15px 0}
 #contact .intro h1{color:#FFF}#contact .intro h1 span{width:160px;border-top:2px solid #FFF}
 #contact .intro p{color:#FFF}#contact #contact-form{position:relative;margin:20px auto 0 auto;width:60%}
@@ -410,22 +409,27 @@ footer#footer #company-details #social-links,footer#footer #company-details #foo
 footer#footer #company-details #social-links li,footer#footer #company-details #footer-social-links li{margin-right:15px}
 footer#footer #footer-links{text-align:right}footer#footer #footer-links #back-top{display:inline-block;width:62px;height:74px;background:url(../images/footer/backTop.png) 0 0}
 footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#footer #footer-links #copyright{margin-top:25px;font-size:.6875rem}
-#page-repair #header a{color:#404040}#page-repair #header #nav-main{position:relative}
-#page-repair #header #nav-main li ul#subnav{background-color:#FFF}#page-repair #header #nav-main li ul#subnav li{border-bottom:1px solid #404040}
-#page-repair #header #nav-main li a::after{background-color:#404040}#page-repair #header #social-links a:hover{color:#e20510 !important}
-#page-repair #header.nav-min #nav-main #social-links a:hover{color:#e20510}#page-repair #header.nav-min #nav-main li ul#subnav{padding-top:0}
-#page-repair #header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}
-#repair.nav-min{margin-top:175px}#repair article{width:65%}#repair article.intro{margin-bottom:30px}
-#repair article.intro h1 span{margin:0 0 0 15px}#repair h1,#repair p{text-align:left}
-#repair p{width:100%}#repair a{color:#404040}#repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}
-#repair .row{overflow:hidden;padding:0 0 50px 0}#repair .row-intro{padding-bottom:0}
-#repair .container{position:relative}#repair .images-holder{position:relative;min-height:360px}
-#repair .images-holder images{position:absolute;bottom:0;max-width:250px;max-height:360px}
-#repair .btn-global,#repair #header #nav-cta .btn-nav,#header #nav-cta #repair .btn-nav,#repair #shop #shop-products a,#shop #shop-products #repair a{text-transform:uppercase;margin-right:10px;box-shadow:0 1px 3px 0 #999}
-#repair .btn-global i,#repair #header #nav-cta .btn-nav i,#header #nav-cta #repair .btn-nav i,#repair #shop #shop-products a i,#shop #shop-products #repair a i{margin-right:7px}
-#repair .two-col h2{position:relative;font-size:1.6875rem;margin-top:30px;padding-top:5px;color:#404040}
-#repair .two-col h2::before{content:'';position:absolute;top:-5px;left:0;width:50%;height:2px;background-color:#e20510;transition:all .2s linear}
-#repair .two-col a:hover::before{width:100%}.parallax{position:absolute;top:50%;width:365px;height:626px;background:url(../images/page-repair/bg-parallax.png) no-repeat;opacity:.4}
+.page-template-services #carousel{display:none}.page-template-services #header #nav-main{position:relative}
+.page-template-services #header #nav-main li ul#subnav{background-color:#FFF}.page-template-services #header #nav-main li ul#subnav li{border-bottom:1px solid #404040}
+.page-template-services #header #nav-main li a::after{background-color:#404040}.page-template-services #header #nav-main a{color:#404040}
+.page-template-services #header #social-links a{color:#404040}.page-template-services #header #social-links a:hover{color:#e20510 !important}
+.page-template-services #header.nav-min #nav-main #social-links a:hover{color:#e20510}
+.page-template-services #header.nav-min #nav-main li ul#subnav{padding-top:0}.page-template-services #header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}
+.page-template-services .content-area #repair.nav-min{margin-top:175px}.page-template-services .content-area #repair article{width:65%}
+.page-template-services .content-area #repair article.intro{margin-bottom:30px}.page-template-services .content-area #repair article.intro h1 span{margin:0 0 0 15px}
+.page-template-services .content-area #repair h1,.page-template-services .content-area #repair p{text-align:left}
+.page-template-services .content-area #repair p{width:100%}.page-template-services .content-area #repair a{color:#404040}
+.page-template-services .content-area #repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}
+.page-template-services .content-area #repair .row{overflow:hidden;padding:0 0 50px 0}
+.page-template-services .content-area #repair .row-intro{padding-bottom:0}.page-template-services .content-area #repair .container{position:relative}
+.page-template-services .content-area #repair .img-holder{position:relative;min-height:360px}
+.page-template-services .content-area #repair .img-holder img{position:absolute;bottom:0;max-width:250px;max-height:360px}
+.page-template-services .content-area #repair .btn-global,.page-template-services .content-area #repair #header #nav-cta .btn-nav,#header #nav-cta .page-template-services .content-area #repair .btn-nav,.page-template-services .content-area #repair #shop #shop-products a,#shop #shop-products .page-template-services .content-area #repair a{text-transform:uppercase;margin-right:10px;box-shadow:0 1px 3px 0 #999}
+.page-template-services .content-area #repair .btn-global i,.page-template-services .content-area #repair #header #nav-cta .btn-nav i,#header #nav-cta .page-template-services .content-area #repair .btn-nav i,.page-template-services .content-area #repair #shop #shop-products a i,#shop #shop-products .page-template-services .content-area #repair a i{margin-right:7px}
+.page-template-services .content-area #repair .two-col h2{position:relative;font-size:1.6875rem;margin-top:30px;padding-top:5px;color:#404040}
+.page-template-services .content-area #repair .two-col h2::before{content:'';position:absolute;top:-5px;left:0;width:50%;height:2px;background-color:#e20510;transition:all .2s linear}
+.page-template-services .content-area #repair .two-col a:hover::before{width:100%}
+.parallax{position:absolute;top:50%;width:365px;height:626px;background:url(../images/page-repair/bg-parallax.png) no-repeat;opacity:.4}
 #parallax-1{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-2{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-3{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-4{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-5{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-6{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
@@ -467,4 +471,4 @@ article.intro p{width:100%}.repair,#services .row.row-products{margin-bottom:30p
 #contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}#contact #get-in-touch .intro span{margin:0 auto}
 #contact #get-in-touch .intro p{width:100%}#about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
 }.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
-.screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#7e0309;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:red;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+.screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#7e0309;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#e20510;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}

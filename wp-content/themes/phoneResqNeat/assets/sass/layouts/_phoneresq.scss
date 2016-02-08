@@ -963,12 +963,12 @@ article.intro {
                 @extend .btn-global;      
             }
 
-            images {
+            img {
                 display: block;
                 margin: 0 auto;
             }
 
-            #accessories images {
+            #accessories img {
                 margin-top: 85px;
             }
     }
@@ -1254,12 +1254,14 @@ footer#footer {
 
 
 
-// Repair page
-#page-repair #header {
-    
-    a {
-        color: $color-text;
-    }
+
+
+// REPAIR PAGE
+.page-template-services #carousel {
+    display: none;
+}
+
+.page-template-services #header {
 
     #nav-main {
         position: relative;
@@ -1273,23 +1275,31 @@ footer#footer {
                     border-bottom: 1px solid $color-text;
                 }
             }
-
+            
             // On hover of subnav items. Animate from 0 - 100% red 
             a::after {
                 background-color: $color-text;
             }        
         }
+
+        a {
+            color: $color-text;
+        }
     }
 
     #social-links {
+        a {
+            color: $color-text;
+        }
+                
         a:hover {
             color: $color-red!important;
         }
-    }    
+    }  
 
 }
 
-#page-repair #header.nav-min {
+.page-template-services #header.nav-min {
     #nav-main {
         #social-links {
             a:hover {
@@ -1310,11 +1320,11 @@ footer#footer {
 }
 
 // Add margin when nav become minimised and positioned fixed. 
-#repair.nav-min {
+.page-template-services .content-area #repair.nav-min {
     margin-top: 175px;
 }
 
-#repair {
+.page-template-services .content-area #repair {
     article {
         width: 65%;
     }
@@ -1360,11 +1370,11 @@ footer#footer {
         position: relative;
     }
 
-    .images-holder {
+    .img-holder {
         position: relative;
         min-height: 360px;
 
-        images {
+        img {
             position: absolute;
             bottom: 0;
             max-width: 250px;

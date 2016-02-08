@@ -23,32 +23,13 @@ and Blueprint http://www.blueprintcss.org/
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 - Bourbon, Bitters, Neat
-2.0 - Normalize
-3.0 - Elements
-4.0 - Forms
-5.0 - Components/ Add-ons
-6.0 - Layout and Structure
-    6.1 - Header
-    6.2 - Navigation
-    6.3 - Content
-    6.4 - Page Templates
-    6.5 - Sidebar
-    6.6 - Footer
-    6.7 - Accessibility
-
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
 1.0 Bourbon, Bitters, Neat
 --------------------------------------------------------------*/
 @import '../../assets/bower_components/bourbon/app/assets/stylesheets/bourbon';
 //@import 'base/base'; // Bitters
 @import 'grid-settings';
 @import '../../assets/bower_components/neat/app/assets/stylesheets/neat';
-@import 'components/animations';
+
 /*--------------------------------------------------------------
 2.0 Variables
 --------------------------------------------------------------*/
@@ -60,55 +41,15 @@ and Blueprint http://www.blueprintcss.org/
 @import 'layouts/normalize';
 
 /*--------------------------------------------------------------
-4.0 Typography
---------------------------------------------------------------*/
-//@import 'components/typography';
-
-/*--------------------------------------------------------------
 5.0 Components/Add-ons
 --------------------------------------------------------------*/
+@import 'components/animations';
 @import '../../assets/bower_components/bourbon/app/assets/stylesheets/addons/clearfix';
-//@import 'components/buttons';
-//@import 'components/infinite-scroll';
 
 /*--------------------------------------------------------------
 6.0 Layout and Structure
 --------------------------------------------------------------*/
 @import 'layouts/phoneresq';
-//@import 'layouts/structure';
-
-    /*--------------------------------------------------------------
-    6.1 Layout and Structure
-    --------------------------------------------------------------*/
-    //@import 'layouts/header';
-
-    /*--------------------------------------------------------------
-    6.2 Navigation
-    --------------------------------------------------------------*/
-    //@import 'components/flexnav';
-    //@import 'layouts/navigation';
-
-    /*--------------------------------------------------------------
-    6.3 Content
-    --------------------------------------------------------------*/
-    //@import 'layouts/content';
-
-    /*--------------------------------------------------------------
-    6.4 Page Templates
-    --------------------------------------------------------------*/
-    //@import 'layouts/template-2col-l-sidebar';
-    //@import 'layouts/template-2col-r-sidebar';
-    //@import 'layouts/template-full-width';
-
-    /*--------------------------------------------------------------
-    6.5 Sidebar
-    --------------------------------------------------------------*/
-    //@import 'layouts/sidebar';
-
-    /*--------------------------------------------------------------
-    6.6 Footer
-    --------------------------------------------------------------*/
-    //@import 'layouts/footer';
 
     /*--------------------------------------------------------------
     6.7 Accessibility
