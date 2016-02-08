@@ -17,31 +17,18 @@ get_header(); ?>
     <div class="container">
 
         <div class="row row-intro">
-            <header>
-                    <?php while ( have_posts() ) : the_post(); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
 
-                    <?php get_template_part( 'page-templates/template-parts/content', 'page' ); ?>
+            <?php get_template_part( 'page-templates/template-parts/content', 'page' ); ?>
 
-                    <?php
-                        // If comments are open or we have at least one comment, load up the comment template
-                        if ( comments_open() || '0' != get_comments_number() ) :
-                            comments_template();
-                        endif;
-                    ?>
+            <?php
+                // If comments are open or we have at least one comment, load up the comment template
+                if ( comments_open() || '0' != get_comments_number() ) :
+                    comments_template();
+                endif;
+            ?>
 
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <h1><?php the_title(); ?></h1>
-                        <?php the_content(); ?>
-                    <?php endwhile; else: endif; ?>
-
-                    <?php query_posts('category_name='.get_the_title().'&post_status=publish,future');?>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                    <p><?php the_content(); ?>
-                    <?php endwhile; else: endif; ?>
-
-                    <?php endwhile; // end of the loop. ?>                               
-            </header>
+            <?php endwhile; // end of the loop. ?>                               
         </div>
 
         <div class="row">            
@@ -78,8 +65,6 @@ get_header(); ?>
             <div class="two-col"></div>
         </div>
             
-
-
 
 
 

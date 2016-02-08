@@ -308,7 +308,7 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 #header #nav-main li ul#subnav li{position:relative;display:block;float:none;margin:0}
 #header #nav-main li ul#subnav li a{display:block;width:100%;height:100%;padding:5px 6px;border-bottom:1px solid #FFF}
 #header #nav-main li ul#subnav li a::after{content:'';background:0}
-#header #nav-main li ul#subnav li span{position:absolute;bottom:0;display:block;width:0;height:2px;background-color:#e20510;transition:width .5s ease}
+#header #nav-main li ul#subnav li span{position:absolute;bottom:-1px;display:block;width:0;height:2px;background-color:#e20510;transition:width .5s ease}
 #header #nav-main li ul#subnav li:hover span{width:100%}#header #nav-main li#dropdown:hover>#subnav{display:block;-webkit-animation:fadeIn .5s ease-in;animation:fadeIn .5s ease-in}
 #header #nav-main i{margin-left:5px}#header #nav-main a{color:#FFF}#header #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#FFF;transition:all .2s linear}
 #header #nav-main a:hover::after{width:100%}#header #social-links,#header #footer-social-links{margin-left:40px}

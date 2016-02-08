@@ -6,11 +6,11 @@
  */
 ?>
 <?php tha_entry_before(); ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemType="http://schema.org/WebPage">
+<article id="post-<?php the_ID(); ?>" class='intro <?php post_class(); ?>' itemscope itemType="http://schema.org/WebPage">
 	<?php tha_entry_top(); ?>
 	<header class="entry-header">
 
-		<h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1>
+		<h1 class="entry-title" itemprop="name"><?php the_title(); ?><span></span></h1>
 
 	</header><!-- .entry-header -->
 
