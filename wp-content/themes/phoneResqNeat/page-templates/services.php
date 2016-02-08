@@ -64,8 +64,14 @@ get_header(); ?>
             </div>
             <div class="two-col"></div>
         </div>
-            
 
+        <?php
+            query_posts('cat=iphone');
+            while (have_posts()) : the_post();
+            
+            the_content();
+            endwhile;
+        ?>
 
 
 
@@ -160,6 +166,117 @@ get_header(); ?>
 </div>    
 </section><!-- End of Repair section-->
 
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <article class="intro">
+                    <header>
+                        <h1>Contact us<span></span></h1>
+                    </header>
+                    <?php
+                        //if "email" variable is filled out, send email
+                          if (isset($_REQUEST['email']))  {
+                          
+                          //Email information
+                          $admin_email = "rohanchambers888@gmail.com";
+                          $email = $_REQUEST['email'];
+                          $subject = "Phone Resq. message: " . $_REQUEST['subject'];
+                          $comment = $_REQUEST['comment'].$phone;
+                          $phone = $_REQUEST['phone'];
+                          $comment_phone = $comment . "\n\n Phone: ".$phone;
+
+                          //send email
+                          mail($admin_email, "$subject", "Comment: \n" . $comment_phone, "From:" . $email);
+                          
+                          //Email response
+                          echo "<p>Thank you, your message has been sent successfully! We will be in touch with your very soon.</p>";
+                          }
+                          
+                          //if "email" variable is not filled out, display the form
+                          else  {
+                        ?>
+
+                        <form id="contact-form" method="post" action="index.php#contact">
+                            <fieldset>
+                                <legend>Please fill in all the fields below to send us a message online.</legend>
+                                <p>
+                                    <input type="text" placeholder="Name" name="subject" id="resqFullname" required>
+                                    <span></span>
+                                    <label for="resqFullname"></label>
+                                </p>
+                                <p>
+                                    <input type="email" placeholder="Email" name="email" id="resqEmail" required>
+                                    <span></span>
+                                    <label for="resqEmail"></label>
+                                </p>
+                                <p>
+                                    <input type="numbers" placeholder="Phone number (optional)" name="phone" id="resqPhone">
+                                    <span></span>
+                                    <label for="resqPhone"></label>
+                                </p>        
+                                <p id="textarea">
+                                    <textarea placeholder="Your message" name="comment" id="resqMessage" required></textarea>
+                                    <span></span>
+                                    <label for="resqMessage"></label>
+                                </p>
+                                <p>
+                                    <button type="submit" id="btn-submit" class="btn-animate">Send</button>
+                                </p>
+                            </fieldset>       
+                        </form>
+                    <?php
+                      }
+                    ?>
+                </article>
+            </div>
+            
+            <div class="row"> 
+                <hr />  
+                <div id="google-map" class="two-col">
+                    <div id="map"></div>
+                </div>
+
+                <div id="get-in-touch" class="two-col">
+                    <article class="intro">
+     
+                        <h1>Get in touch<span></span></h1>
+                    
+                        <p>Contact us today! Stop by the store during normal business hours or call us at<br> 
+                        (904) 310-0059.</p>
+
+                        <p>We look forward to hearing from you!</p>
+
+                        <p>1001 Atlantic Avenue,<br> 
+                        Suite B,<br> 
+                        Fernandina Beach,<br>
+                        Florida, 32034</p>
+
+                        <p>Email: <a href="mailto:info@phoneresq.com">info@phoneresq.com</a><br>
+                        Hours: 10:00AM to 5:00 PM <br>
+                        (Monday-Saturday)</p>
+
+                    </article>    
+
+                </div>
+            </div>            
+        </div>
+        
+    </section><!-- End of contact -->
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <ul id="client-list">
+                    <li class="client"><img src="<?php bloginfo('template_directory'); ?>/assets/images/clients/samsung.png" alt="Samsung" /></li>
+                    <li class="client"><img src="<?php bloginfo('template_directory'); ?>/assets/images/clients/apple.png" alt="Apple" /></li>
+                    <li class="client"><img src="<?php bloginfo('template_directory'); ?>/assets/images/clients/htc.png" alt="HTC" /></li>
+                    <li class="client"><img src="<?php bloginfo('template_directory'); ?>/assets/images/clients/android.png" alt="Android" /></li>
+                    <li class="client"><img src="<?php bloginfo('template_directory'); ?>/assets/images/clients/motorola.png" alt="Motorola" /></li>
+                    <li class="client"><img src="<?php bloginfo('template_directory'); ?>/assets/images/clients/blackberry.png" alt="Blackberry" /></li>
+                </ul>
+            </div>
+        </div>
+    </section><!-- End of clients -->
 </div><!-- #primary -->
 
 <?php get_footer(); ?>

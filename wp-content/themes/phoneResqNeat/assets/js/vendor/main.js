@@ -174,7 +174,7 @@ $(document).on('scroll',function(){
 function initMap() {
 	var phoneResq = {lat: 30.670774, lng: -81.456867};
 
-	var map = new google.maps.Map(document.getElementById('map'), {
+	var map = new google.maps.Map(document.getElementById("map"), {
 	zoom: 13,
 	center: phoneResq
 	});
@@ -209,27 +209,3 @@ function initMap() {
 	infowindow.open(map, marker);
 	});
 }
-
-
-
-// // Parallax effect for bg image on shop section
-// var parallax = document.querySelectorAll(".parallax"),
-// speed = 0.3;
-
-// window.onscroll = function(){
-// [].slice.call(parallax).forEach(function(el,i){
-
-// var windowYOffset = window.pageYOffset,
-// 	elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-
-// 	el.style.backgroundPosition = elBackgrounPos;
-
-// 	});
-// };
-
-// Get current scroll position * FIXME
-// $(window).scroll(function (event) {
-//     var scroll = $(window).scrollTop();
-//     // Do something
-//     console.log(scroll);
-// });

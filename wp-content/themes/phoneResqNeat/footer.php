@@ -29,9 +29,9 @@
 		                
 		                <nav id="footer-social-links" class="nav-global">
 		                    <ul>
-		                        <li><a href="#" title="Facebook share"><i class="fa fa-facebook fa-lg btn-animate"></i></a></li>
-		                        <li><a href="#" title="Twitter share"><i class="fa fa-twitter fa-lg btn-animate"></i></a></li>
-		                        <li><a href="#" title="Instagram share"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
+		                        <li><a href="https://www.facebook.com/PhoneResQ/" title="Facebook share" target="_blank"><i class="fa fa-facebook fa-lg btn-animate"></i></a></li>
+		                        <li><a href="https://twitter.com/PhoneResQ/" title="Twitter share" target="_blank"><i class="fa fa-twitter fa-lg btn-animate"></i></a></li>
+		                        <li><a href="https://www.instagram.com/dinaresq/" title="Instagram share" target="_blank"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
 		                    </ul>
 		                </nav>
 		            </div>
