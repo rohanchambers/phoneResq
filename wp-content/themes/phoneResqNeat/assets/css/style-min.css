@@ -313,7 +313,7 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 #header #nav-main i{margin-left:5px}#header #nav-main a{color:#FFF}#header #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#FFF;transition:all .2s linear}
 #header #nav-main a:hover::after{width:100%}#header #social-links,#header #footer-social-links{margin-left:40px}
 #header #social-links li,#header #footer-social-links li{margin:0 10px 0 0}#header #nav-cta{float:right;margin-top:10px}
-#header #nav-cta li{margin:0 0 0 10px}#header #nav-cta i{margin-right:7px}#header #logo{float:left;margin-right:5px;max-width:110px;height:112px;background:url(../images/global/phoneResqLogo.png) no-repeat;background-size:100%;overflow:hidden;text-indent:101%;white-space:nowrap}
+#header #nav-cta li{margin:0 0 0 10px}#header #nav-cta i{margin-right:7px}#header #logo{float:left;margin-right:5px;width:110px;height:99px;background:url(../images/global/phoneResqLogo.png) no-repeat;background-size:100%;overflow:hidden;text-indent:101%;white-space:nowrap}
 #header #logo a{display:block;width:100%;height:100%}#header.nav-min{position:fixed;z-index:200;top:0;width:100%;height:75px;padding:7px 0;background-color:#FFF;transition:background-color 1s;-moz-transition:background-color 1s;-webkit-transition:background-color 1s;-o-transition:background-color 1s;box-shadow:0 0 9px 2px rgba(0,0,0,0.75)}
 #header.nav-min #nav-main a,#header.nav-min #social-links a,#header.nav-min #footer-social-links a{color:#404040}
 #header.nav-min #nav-main a.active::after{width:100%}#header.nav-min .nav-global{margin-top:20px}

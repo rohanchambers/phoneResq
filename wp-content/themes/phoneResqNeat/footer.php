@@ -20,7 +20,7 @@
 		    <div class="container">
 		        <div class="row">
 		            <div id="company-details" class="two-col">
-		                <a href="/home.php"><img src="<?php bloginfo('template_directory'); ?>/assets/images/footer/logo.png" alt="Phone Resq." /></a>
+		                <a href="/#header"><img src="<?php bloginfo('template_directory'); ?>/assets/images/footer/logo.png" alt="Phone Resq." /></a>
 		                <p>(904) 310-0059</p>
 		                <p><a href="mailto:info@phoneresq.com">info@phoneresq.com</a></p>
 		                <p>1001 Atlantic Avenue Suite<br>
@@ -37,11 +37,11 @@
 		            </div>
 		            <div id="footer-links" class="two-col">
 		                <a href="#header" id="back-top"></a>
-		                <p><a href="#">Services</a></p> 
-		                <p><a href="#iphone-repair">iPhone Repair</a></p>
-		                <p><a href="#iphone-repair">iPod Repair</a></p>
-		                <p><a href="#iphone-repair">iPad Repair</a></p>
-		                <p><a href="#iphone-repair">Android Repair</a></p>
+		                <p><a href="#services">Services</a></p> 
+		                <p><a href="/iphone-repair">iPhone Repair</a></p>
+		                <p><a href="/ipod-repair">iPod Repair</a></p>
+		                <p><a href="/ipad-repair">iPad Repair</a></p>
+		                <p><a href="/android-repair">Android Repair</a></p>
 		                <p id="copyright">&copy;<?php echo date("Y") ?> Phone Resq. All Rights Reserved.</p>
 		            </div>
 		        </div>

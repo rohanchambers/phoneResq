@@ -304,8 +304,8 @@ select {
     #logo {
         float: left;
         margin-right: 5px;
-        max-width: 110px;
-        height: 112px;
+        width: 110px;
+        height: 99px;
         background: url(../images/global/phoneResqLogo.png) no-repeat;
         background-size: 100%;
         @include hide-text;

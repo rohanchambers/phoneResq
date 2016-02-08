@@ -36,9 +36,8 @@
 <body <?php body_class(); ?>>
 <?php tha_body_top(); ?>
 
-
 <div id="page" class="hfeed site">
-    <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'some-like-it-neat' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#main"><?php _e( 'Skip to content', 'some-like-it-neat' ); ?></a>
         <?php tha_header_before(); ?>
         <header id="header" class="site-header wrap" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
         <?php tha_header_top(); ?>
@@ -48,12 +47,12 @@
                     <ul>
                         <li id="dropdown"><a href="#services">Services<i class="fa fa-caret-down fa-lg"></i></a>
                             <ul id="subnav">
-                                <li><a href="iphone-repair.php">iPhone repair</a><span></span></li>
-                                <li><a href="ipad-repair.php">iPad repair</a><span></span></li>
-                                <li><a href="ipod-repair.php">iPod repair</a><span></span></li>
-                                <li><a href="android-repair.php">Android repair</a><span></span></li>
-                                <li><a href="laptop-repair.php">Laptop &amp; Desktop repair</a><span></span></li>
-                                <li><a href="unlock-repair.php">Cell Phone Unlocks</a><span></span></li>
+                                <li><a href="/iphone-repair">iPhone repair</a><span></span></li>
+                                <li><a href="/ipad-repair">iPad repair</a><span></span></li>
+                                <li><a href="/ipod-repair">iPod repair</a><span></span></li>
+                                <li><a href="/android-repair">Android repair</a><span></span></li>
+                                <li><a href="/laptop-repair">Laptop &amp; Desktop repair</a><span></span></li>
+                                <li><a href="/cellphone-unlocks">Cell Phone Unlocks</a><span></span></li>
                             </ul>
                         </li>
                         <li><a href="#about">About</a></li>
@@ -63,9 +62,9 @@
                 </nav>
                 <nav id="social-links" class="nav-global">
                     <ul>
-                        <li><a href="#" title="Facebook share"><i class="fa fa-facebook fa-lg btn-animate"></i></a></li>
-                        <li><a href="#" title="Twitter share"><i class="fa fa-twitter fa-lg btn-animate"></i></a></li>
-                        <li><a href="#" title="Instagram share"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
+                        <li><a href="https://www.facebook.com/PhoneResQ/" title="Facebook share" target="_blank"><i class="fa fa-facebook fa-lg btn-animate"></i></a></li>
+                        <li><a href="https://twitter.com/PhoneResQ/" title="Twitter share" target="_blank"><i class="fa fa-twitter fa-lg btn-animate"></i></a></li>
+                        <li><a href="https://www.instagram.com/dinaresq/" title="Instagram share" target="_blank"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
                         <li><a href="#" title="RSS share"><i class="fa fa-rss fa-lg btn-animate"></i></a></li>
                     </ul>
                 </nav>
