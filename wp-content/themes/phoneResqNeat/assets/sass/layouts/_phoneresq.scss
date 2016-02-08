@@ -1299,7 +1299,7 @@ footer#footer {
 
 }
 
-.page-template-services #header.nav-min {
+#header.nav-min {
     #nav-main {
         #social-links {
             a:hover {
@@ -1320,11 +1320,11 @@ footer#footer {
 }
 
 // Add margin when nav become minimised and positioned fixed. 
-.page-template-services .content-area #repair.nav-min {
+#repair.nav-min {
     margin-top: 175px;
 }
 
-.page-template-services .content-area #repair {
+#repair {
     article {
         width: 65%;
     }
@@ -1359,11 +1359,11 @@ footer#footer {
     
     .row {
         overflow: hidden;
-        padding: 0 0 50px 0;
+        margin: 0 0 50px 0;
     }
     
     .row-intro {
-        padding-bottom: 0; 
+        margin-bottom: 0; 
     }
 
     .container {
@@ -1803,7 +1803,7 @@ footer#footer {
     .repair,
     .about-rows,
     #contact .two-col,
-    #repair .two-col {
+    .page-template-services #repair .two-col {
         @include span-columns(12 of 12);
     }
 
@@ -1839,14 +1839,16 @@ footer#footer {
         article {
             width: 100%;
         }
-
+    
         .img-holder img {
             left: 50%;
             right: 50%;
             margin-left: -85px;
         }
-        
+
         .two-col {
+            
+
             p, h2 {
                 text-align: center;
             }
@@ -1901,7 +1903,10 @@ footer#footer {
 }
 
 
-
+// WORDPRESS STYLES
+.nav-links {
+    display: none;
+}
 
 
 

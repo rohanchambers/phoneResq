@@ -18,11 +18,29 @@ get_header(); ?>
 
         <div class="row row-intro">
             <header>
-                <article class="intro">
-                    <h1>iPhone repair<span></span></h1>
-                    <p>Just about any problem with your iPhone can be repaired. Cracked screens, broken home buttons and charging ports, along with swapping the back of your device to a different color, and any micro-soldering work that can be done is very possible.</p> 
-                    <p>Bring your device in and we can fix it without having to send it away to a third-party service center. We do all of our repairs in-house, for your convenience and a speedy return. Check below for your device model and it’s price menu. We work with the iPhone 6, 6 PLUS, 5S, 5C, 5, 4S, 4, 3GS, and 3G.</p>
-                </article>
+                    <?php while ( have_posts() ) : the_post(); ?>
+
+                    <?php get_template_part( 'page-templates/template-parts/content', 'page' ); ?>
+
+                    <?php
+                        // If comments are open or we have at least one comment, load up the comment template
+                        if ( comments_open() || '0' != get_comments_number() ) :
+                            comments_template();
+                        endif;
+                    ?>
+
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <h1><?php the_title(); ?></h1>
+                        <?php the_content(); ?>
+                    <?php endwhile; else: endif; ?>
+
+                    <?php query_posts('category_name='.get_the_title().'&post_status=publish,future');?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                    <p><?php the_content(); ?>
+                    <?php endwhile; else: endif; ?>
+
+                    <?php endwhile; // end of the loop. ?>                               
             </header>
         </div>
 
@@ -60,7 +78,17 @@ get_header(); ?>
             <div class="two-col"></div>
         </div>
             
-        <div class="row-container">    
+
+
+
+
+
+
+
+
+
+
+<!--         <div class="row-container">    
             <div class="row animatedParent">
                 <div class="two-col filter iphone6s">
                     <div class="img-holder animated fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone6s.png" alt="iPhone6s" /></div>
@@ -142,7 +170,7 @@ get_header(); ?>
                 </div>
             </div>
 
-        </div><!-- End of row container -->
+        </div> --><!-- End of row container -->
     </div>
 </div>    
 </section><!-- End of Repair section-->

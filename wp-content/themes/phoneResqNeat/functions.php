@@ -378,3 +378,13 @@ function some_like_it_neat_add_selectivizr() { 	?>
 	<![endif]-->
 <?php }
 add_action( 'tha_head_bottom', 'some_like_it_neat_add_selectivizr' );
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+global $post;
+if ( isset( $post ) ) {
+$classes[] = $post->post_type . '-' . $post->post_name;
+}
+return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );

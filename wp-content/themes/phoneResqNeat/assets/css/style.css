@@ -3081,73 +3081,73 @@ footer#footer {
 .page-template-services #header #social-links a:hover {
   color: #e20510 !important; }
 
-.page-template-services #header.nav-min #nav-main #social-links a:hover {
+#header.nav-min #nav-main #social-links a:hover {
   color: #e20510; }
 
-.page-template-services #header.nav-min #nav-main li ul#subnav {
+#header.nav-min #nav-main li ul#subnav {
   padding-top: 0; }
-  .page-template-services #header.nav-min #nav-main li ul#subnav li {
+  #header.nav-min #nav-main li ul#subnav li {
     border-bottom: 1px solid white; }
 
-.page-template-services .content-area #repair.nav-min {
+#repair.nav-min {
   margin-top: 175px; }
 
-.page-template-services .content-area #repair article {
+#repair article {
   width: 65%; }
 
-.page-template-services .content-area #repair article.intro {
+#repair article.intro {
   margin-bottom: 30px; }
-  .page-template-services .content-area #repair article.intro h1 span {
+  #repair article.intro h1 span {
     margin: 0 0 0 15px; }
 
-.page-template-services .content-area #repair h1, .page-template-services .content-area #repair p {
+#repair h1, #repair p {
   text-align: left; }
 
-.page-template-services .content-area #repair p {
+#repair p {
   width: 100%; }
 
-.page-template-services .content-area #repair a {
+#repair a {
   color: #404040; }
 
-.page-template-services .content-area #repair a:hover {
+#repair a:hover {
   background-color: #e20510;
   color: #FFF;
   text-decoration: none; }
 
-.page-template-services .content-area #repair .row {
+#repair .row {
   overflow: hidden;
-  padding: 0 0 50px 0; }
+  margin: 0 0 50px 0; }
 
-.page-template-services .content-area #repair .row-intro {
-  padding-bottom: 0; }
+#repair .row-intro {
+  margin-bottom: 0; }
 
-.page-template-services .content-area #repair .container {
+#repair .container {
   position: relative; }
 
-.page-template-services .content-area #repair .img-holder {
+#repair .img-holder {
   position: relative;
   min-height: 360px; }
-  .page-template-services .content-area #repair .img-holder img {
+  #repair .img-holder img {
     position: absolute;
     bottom: 0;
     max-width: 250px;
     max-height: 360px; }
 
-.page-template-services .content-area #repair .btn-global, .page-template-services .content-area #repair #header #nav-cta .btn-nav, #header #nav-cta .page-template-services .content-area #repair .btn-nav, .page-template-services .content-area #repair #shop #shop-products a, #shop #shop-products .page-template-services .content-area #repair a {
+#repair .btn-global, #repair #header #nav-cta .btn-nav, #header #nav-cta #repair .btn-nav, #repair #shop #shop-products a, #shop #shop-products #repair a {
   text-transform: uppercase;
   margin-right: 10px;
   box-shadow: 0px 1px 3px 0px #999999; }
-  .page-template-services .content-area #repair .btn-global i, .page-template-services .content-area #repair #header #nav-cta .btn-nav i, #header #nav-cta .page-template-services .content-area #repair .btn-nav i, .page-template-services .content-area #repair #shop #shop-products a i, #shop #shop-products .page-template-services .content-area #repair a i {
+  #repair .btn-global i, #repair #header #nav-cta .btn-nav i, #header #nav-cta #repair .btn-nav i, #repair #shop #shop-products a i, #shop #shop-products #repair a i {
     margin-right: 7px; }
 
-.page-template-services .content-area #repair .two-col h2 {
+#repair .two-col h2 {
   position: relative;
   font-size: 1.6875rem;
   margin-top: 30px;
   padding-top: 5px;
   color: #404040; }
 
-.page-template-services .content-area #repair .two-col h2::before {
+#repair .two-col h2::before {
   content: '';
   position: absolute;
   top: -5px;
@@ -3157,7 +3157,7 @@ footer#footer {
   background-color: #e20510;
   transition: all .2s linear; }
 
-.page-template-services .content-area #repair .two-col a:hover::before {
+#repair .two-col a:hover::before {
   width: 100%; }
 
 .parallax {
@@ -3389,7 +3389,7 @@ footer#footer {
   .repair,
   .about-rows,
   #contact .two-col,
-  #repair .two-col {
+  .page-template-services #repair .two-col {
     float: left;
     display: block;
     margin-right: 1.20482%;
@@ -3398,7 +3398,7 @@ footer#footer {
     .repair:last-child,
     .about-rows:last-child,
     #contact .two-col:last-child,
-    #repair .two-col:last-child {
+    .page-template-services #repair .two-col:last-child {
       margin-right: 0; }
   #carousel .slide .slide-content {
     width: 80%;
@@ -3447,6 +3447,9 @@ footer#footer {
   #sell,
   hr {
     display: none; } }
+
+.nav-links {
+  display: none; }
 
 /*--------------------------------------------------------------
     6.7 Accessibility

@@ -413,23 +413,18 @@ footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#f
 .page-template-services #header #nav-main li ul#subnav{background-color:#FFF}.page-template-services #header #nav-main li ul#subnav li{border-bottom:1px solid #404040}
 .page-template-services #header #nav-main li a::after{background-color:#404040}.page-template-services #header #nav-main a{color:#404040}
 .page-template-services #header #social-links a{color:#404040}.page-template-services #header #social-links a:hover{color:#e20510 !important}
-.page-template-services #header.nav-min #nav-main #social-links a:hover{color:#e20510}
-.page-template-services #header.nav-min #nav-main li ul#subnav{padding-top:0}.page-template-services #header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}
-.page-template-services .content-area #repair.nav-min{margin-top:175px}.page-template-services .content-area #repair article{width:65%}
-.page-template-services .content-area #repair article.intro{margin-bottom:30px}.page-template-services .content-area #repair article.intro h1 span{margin:0 0 0 15px}
-.page-template-services .content-area #repair h1,.page-template-services .content-area #repair p{text-align:left}
-.page-template-services .content-area #repair p{width:100%}.page-template-services .content-area #repair a{color:#404040}
-.page-template-services .content-area #repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}
-.page-template-services .content-area #repair .row{overflow:hidden;padding:0 0 50px 0}
-.page-template-services .content-area #repair .row-intro{padding-bottom:0}.page-template-services .content-area #repair .container{position:relative}
-.page-template-services .content-area #repair .img-holder{position:relative;min-height:360px}
-.page-template-services .content-area #repair .img-holder img{position:absolute;bottom:0;max-width:250px;max-height:360px}
-.page-template-services .content-area #repair .btn-global,.page-template-services .content-area #repair #header #nav-cta .btn-nav,#header #nav-cta .page-template-services .content-area #repair .btn-nav,.page-template-services .content-area #repair #shop #shop-products a,#shop #shop-products .page-template-services .content-area #repair a{text-transform:uppercase;margin-right:10px;box-shadow:0 1px 3px 0 #999}
-.page-template-services .content-area #repair .btn-global i,.page-template-services .content-area #repair #header #nav-cta .btn-nav i,#header #nav-cta .page-template-services .content-area #repair .btn-nav i,.page-template-services .content-area #repair #shop #shop-products a i,#shop #shop-products .page-template-services .content-area #repair a i{margin-right:7px}
-.page-template-services .content-area #repair .two-col h2{position:relative;font-size:1.6875rem;margin-top:30px;padding-top:5px;color:#404040}
-.page-template-services .content-area #repair .two-col h2::before{content:'';position:absolute;top:-5px;left:0;width:50%;height:2px;background-color:#e20510;transition:all .2s linear}
-.page-template-services .content-area #repair .two-col a:hover::before{width:100%}
-.parallax{position:absolute;top:50%;width:365px;height:626px;background:url(../images/page-repair/bg-parallax.png) no-repeat;opacity:.4}
+#header.nav-min #nav-main #social-links a:hover{color:#e20510}#header.nav-min #nav-main li ul#subnav{padding-top:0}
+#header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#repair.nav-min{margin-top:175px}
+#repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
+#repair h1,#repair p{text-align:left}#repair p{width:100%}#repair a{color:#404040}
+#repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}#repair .row{overflow:hidden;margin:0 0 50px 0}
+#repair .row-intro{margin-bottom:0}#repair .container{position:relative}#repair .img-holder{position:relative;min-height:360px}
+#repair .img-holder img{position:absolute;bottom:0;max-width:250px;max-height:360px}
+#repair .btn-global,#repair #header #nav-cta .btn-nav,#header #nav-cta #repair .btn-nav,#repair #shop #shop-products a,#shop #shop-products #repair a{text-transform:uppercase;margin-right:10px;box-shadow:0 1px 3px 0 #999}
+#repair .btn-global i,#repair #header #nav-cta .btn-nav i,#header #nav-cta #repair .btn-nav i,#repair #shop #shop-products a i,#shop #shop-products #repair a i{margin-right:7px}
+#repair .two-col h2{position:relative;font-size:1.6875rem;margin-top:30px;padding-top:5px;color:#404040}
+#repair .two-col h2::before{content:'';position:absolute;top:-5px;left:0;width:50%;height:2px;background-color:#e20510;transition:all .2s linear}
+#repair .two-col a:hover::before{width:100%}.parallax{position:absolute;top:50%;width:365px;height:626px;background:url(../images/page-repair/bg-parallax.png) no-repeat;opacity:.4}
 #parallax-1{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-2{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-3{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-4{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-5{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-6{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
@@ -461,8 +456,8 @@ footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#f
 #header.nav-min #nav-hamburger span{background-color:#404040}#header.nav-min #nav-hamburger.open span{background-color:#e20510}
 #header.nav-min #nav-main li#dropdown:hover>#subnav{display:block !important}#header.nav-min #nav-main a::after{display:none}
 #repair{margin-top:65px}}@media screen and (max-width:667px){.container{margin:0 4%;width:92%}
-.intro,.repair,.about-rows,#contact .two-col,#repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
-.intro:last-child,.repair:last-child,.about-rows:last-child,#contact .two-col:last-child,#repair .two-col:last-child{margin-right:0}
+.intro,.repair,.about-rows,#contact .two-col,.page-template-services #repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
+.intro:last-child,.repair:last-child,.about-rows:last-child,#contact .two-col:last-child,.page-template-services #repair .two-col:last-child{margin-right:0}
 #carousel .slide .slide-content{width:80%;margin:0 auto}#carousel .slide article{width:100%;float:none;margin:0;padding-top:80px;text-align:center}
 #services{padding-bottom:10px}#about .container article{margin-right:10%}.ipad-repair #repair .img-holder img{margin-left:-120px}
 #repair article{width:100%}#repair .img-holder img{left:50%;right:50%;margin-left:-85px}
@@ -470,5 +465,5 @@ footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#f
 article.intro p{width:100%}.repair,#services .row.row-products{margin-bottom:30px}
 #contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}#contact #get-in-touch .intro span{margin:0 auto}
 #contact #get-in-touch .intro p{width:100%}#about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
-}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
+}.nav-links{display:none}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
 .screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#7e0309;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#e20510;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
