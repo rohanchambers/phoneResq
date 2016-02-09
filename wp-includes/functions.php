@@ -5169,8 +5169,9 @@ function mysql_to_rfc3339( $date_string ) {
 
 // Get images from get_the_content edited
 // http://bavotasan.com/2009/retrieve-the-first-image-from-a-wordpress-post/ 
-function getImage($num) {
+function getImage($num, $left = true) {
     global $more;
+    $fadeClass = $left ? 'fadeInLeft' : 'fadeInRight';
     $more = 1;
     $link = get_permalink();
     $content = get_the_content();
@@ -5185,6 +5186,41 @@ function getImage($num) {
 	    $image[$i] = $postOutput;
 	    $start=$imgEnd+1;
     }
-    if(stristr($image[$num],'<img')) { echo '<div class="img-holder animated fadeInLeft">'.$image[$num]."</div>"; }
+    if(stristr($image[$num],'<img')) { echo '<div class="img-holder animated '.$fadeClass.'">'.$image[$num]."</div>"; }
     $more = 0;
 }
+
+function getTwoColumnBlock($left = true){
+	global $post;
+
+	?>
+	<div class="two-col filter <?php echo $post->post_name; ?>">
+	   
+	    <?php getImage('1', $left); ?>
+	    <h2><?php the_title(); ?></h2>
+	    
+	    <!-- Remove images from get_the_content -->
+	    <?php 
+	        $content = get_the_content();
+	        $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
+	        $content = apply_filters('the_content', $content);
+	        $content = str_replace(']]>', ']]>', $content);
+	        echo $content;
+	    ?>
+
+	    
+
+	    <!-- Remove allt he spaces from the string (the)
+	    $string = str_replace(' ', '', $string); -->
+
+	</div>
+	<?php
+}
+
+function more_posts() {
+  global $wp_query;
+  return $wp_query->current_post + 1 < $wp_query->post_count;
+}
+
+
+

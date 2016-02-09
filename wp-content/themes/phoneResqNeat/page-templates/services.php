@@ -36,14 +36,15 @@ get_header(); ?>
                 <form id="filter-model">
                     <div>
                         <select class="filter-model btn-animate">
-                            <option value="reset">Filter model</option>
-                            <option value="iphone4">iPhone 4</option>
-                            <option value="iphone4s">iPhone 4s</option>
-                            <option value="iphone5">iPhone 5</option>
-                            <option value="iphone5c">iPhone 5s</option>
-                            <option value="iphone5c">iPhone 5c</option>
-                            <option value="iphone6">iPhone 6</option>
-                            <option value="iphone6s">iPhone 6s</option>
+                        <?php
+                        //save the title for below
+                        $title = get_the_title();
+                        ?>
+                        <?php query_posts('category_name='. $title .'&post_status=publish', '&orderby=date&order=ASC');?>
+                        <option value="reset">Filter model</option>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <option value="<?php echo $post->post_name ?>"><?php the_title() ?></option>
+                        <?php endwhile; endif; ?>
                         </select>
                         <i class="fa fa-caret-down fa-lg"></i>
                     </div>
@@ -67,36 +68,33 @@ get_header(); ?>
 
         <div class="row-container">                        
 
-            <?php query_posts('category_name='.get_the_title().'&post_status=publish', '&orderby=date&order=ASC');?>
+            <?php query_posts('category_name='.$title.'&post_status=publish', '&orderby=date&order=ASC');?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             
             <div class="row animatedParent">
-                <div class="two-col filter iphone6s <?php '.get_the_title().' ?> ">
-                   
-                    <?php getImage('1'); ?>
-                    <h2><?php the_title(); ?></h2>
+
+                <?php getTwoColumnBlock(); ?> 
+
+                <?php if (more_posts()): the_post(); ?>
+                
+                    <?php getTwoColumnBlock(false); ?> 
                     
-                    <!-- Remove images from get_the_content -->
-                    <?php 
-                        $content = get_the_content();
-                        $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
-                        $content = apply_filters('the_content', $content);
-                        $content = str_replace(']]>', ']]>', $content);
-                        echo $content;
-                    ?>
-                </div>
+                <?php endif; ?>
+
             </div>      
             
-            <?php endwhile; else: endif; ?>
+            <?php endwhile; endif; ?>
 
         </div><!-- End of row container-->  
 
 
 
-<!-- 
+
+
+<!-- Please use this as referecne for the html that needs to be dynamic in the php
             <div class="row animatedParent">
                 <div class="two-col filter iphone5">
-                    <div class="img-holder animated fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone5.png" alt="iPhone5" /></div>
+                    <div class="img-holder animate d fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone5.png" alt="iPhone5" /></div>
                     <h2>iPhone 5</h2>
                     <p>Cracked Screen Replacement: $99<br>
                     Home Button: $40<br>
@@ -107,18 +105,6 @@ get_header(); ?>
                 <div class="two-col filter iphone4s">
                     <div class="img-holder animated fadeInRight"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone4s.png" alt="iPhone4s" /></div>
                     <h2>iPhone 4s</h2>
-                    <p>Cracked Screen Replacement: $65<br>
-                    Rear Cover Replacement: $35<br>
-                    Home Button: $45<br>
-                    Charging Port: $45<br>
-                    Color Swap Starting at: $80</p>
-                </div>
-            </div>
-
-            <div class="row animatedParent">
-                <div class="two-col filter iphone4">
-                    <div class="img-holder animated fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone4.png" alt="iPhone4" /></div>
-                    <h2>iPhone 4</h2>
                     <p>Cracked Screen Replacement: $65<br>
                     Rear Cover Replacement: $35<br>
                     Home Button: $45<br>
