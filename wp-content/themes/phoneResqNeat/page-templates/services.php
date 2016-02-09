@@ -86,34 +86,6 @@ get_header(); ?>
             <?php endwhile; endif; ?>
 
         </div><!-- End of row container-->  
-
-
-
-
-
-<!-- Please use this as referecne for the html that needs to be dynamic in the php
-            <div class="row animatedParent">
-                <div class="two-col filter iphone5">
-                    <div class="img-holder animate d fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone5.png" alt="iPhone5" /></div>
-                    <h2>iPhone 5</h2>
-                    <p>Cracked Screen Replacement: $99<br>
-                    Home Button: $40<br>
-                    Ear Speaker: $45<br>
-                    Vibrate Motor: $45<br>
-                    Charging Port: $50</p>
-                </div>
-                <div class="two-col filter iphone4s">
-                    <div class="img-holder animated fadeInRight"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone4s.png" alt="iPhone4s" /></div>
-                    <h2>iPhone 4s</h2>
-                    <p>Cracked Screen Replacement: $65<br>
-                    Rear Cover Replacement: $35<br>
-                    Home Button: $45<br>
-                    Charging Port: $45<br>
-                    Color Swap Starting at: $80</p>
-                </div>
-            </div>
-
-        </div> --><!-- End of row container -->
   
 </div><!-- End of container-->    
 </section><!-- End of Repair section-->

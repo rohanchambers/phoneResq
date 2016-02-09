@@ -37,7 +37,7 @@ get_header(); ?>
                         <h1>iPhone repair</h1>
                         <p>Whether you have the original iPhone or the latest model, we can take a look at your device and figure out what steps need to be made to get you back on the grid.</p>
                     </header>
-                    <a href="iphone-repair.php">&nbsp;</a>
+                    <a href="/iphone-repair/">&nbsp;</a>
                 </article>
                 <article id="ipad-repair" class="repair animated fadeInUp">
                     <header>
@@ -45,15 +45,15 @@ get_header(); ?>
                         <h1>iPad repair</h1>
                         <p>If you don’t have the time to make an appointment and have your tablet sent away to a third-party repair shop, consider our in-house services for all of your iPad needs.</p>
                     </header>
-                    <a href="ipad-repair.php">&nbsp;</a>
+                    <a href="/ipad-repair/">&nbsp;</a>
                 </article>
-                <article id="ipod-repair" class="repair animated fadeInRight">
+                <article id="/ipod-repair/" class="repair animated fadeInRight">
                     <header>
                         <span>iPod repair</span>
                         <h1>iPod Repair</h1>
                         <p>So your iPod is busted and you need to get back to jamming out on your favorite tunes. We get it.</p>
                     </header>
-                    <a href="ipod-repair.php">&nbsp;</a>
+                    <a href="/ipod-repair/">&nbsp;</a>
                 </article>
             </div><!-- End of row -->
 
@@ -64,7 +64,7 @@ get_header(); ?>
                         <h1>Android Repair</h1>
                         <p>We’re not just about Apple here. We work on Android devices as well. All devices and models are covered in the hands of our knowledgeable staff.</p>
                     </header>
-                    <a href="android-repair.php">&nbsp;</a>
+                    <a href="/android-repair/">&nbsp;</a>
                 </article>
                 <article id="laptop-repair" class="repair animated fadeInUp">
                     <header>
@@ -72,7 +72,7 @@ get_header(); ?>
                         <h1>Laptop &amp; Desktop Repair</h1>
                         <p>Doesn’t it feel like when your computer isn’t working, that life slows down? Let us take a look and we’ll get you up and running again in no time.</p>
                     </header>
-                    <a href="laptop-repair.php">&nbsp;</a>
+                    <a href="?laptop-repair/">&nbsp;</a>
                 </article>
                 <article id="unlocks-repair" class="repair animated fadeInRight">
                     <header>
@@ -80,7 +80,7 @@ get_header(); ?>
                         <h1>Cell Phone unlocks</h1>
                         <p>Interested in unlocking your phone? We’ve got the tools to safely and securely unlock almost any smartphone device.</p>
                     </header>
-                    <a href="unlock-repair.php"></a>
+                    <a href="/unlock-repair/"></a>
                 </article>
             </div><!-- End of row -->
         </div><!-- End of container -->

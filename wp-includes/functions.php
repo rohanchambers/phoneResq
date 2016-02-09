@@ -5207,12 +5207,6 @@ function getTwoColumnBlock($left = true){
 	        $content = str_replace(']]>', ']]>', $content);
 	        echo $content;
 	    ?>
-
-	    
-
-	    <!-- Remove allt he spaces from the string (the)
-	    $string = str_replace(' ', '', $string); -->
-
 	</div>
 	<?php
 }
@@ -5221,6 +5215,3 @@ function more_posts() {
   global $wp_query;
   return $wp_query->current_post + 1 < $wp_query->post_count;
 }
-
-
-
