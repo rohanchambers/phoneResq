@@ -5166,3 +5166,25 @@ function mysql_to_rfc3339( $date_string ) {
 	// Strip timezone information
 	return preg_replace( '/(?:Z|[+-]\d{2}(?::\d{2})?)$/', '', $formatted );
 }
+
+// Get images from get_the_content edited
+// http://bavotasan.com/2009/retrieve-the-first-image-from-a-wordpress-post/ 
+function getImage($num) {
+    global $more;
+    $more = 1;
+    $link = get_permalink();
+    $content = get_the_content();
+    $count = substr_count($content, '<img');
+    $start = 0;
+    for($i=1;$i<=$count;$i++) {
+	    $imgBeg = strpos($content, '<img', $start);
+	    $post = substr($content, $imgBeg);
+	    $imgEnd = strpos($post, '>');
+	    $postOutput = substr($post, 0, $imgEnd+1);
+	    $postOutput = preg_replace('/width="([0-9]*)" height="([0-9]*)"/', '',$postOutput);;
+	    $image[$i] = $postOutput;
+	    $start=$imgEnd+1;
+    }
+    if(stristr($image[$num],'<img')) { echo '<div class="img-holder animated fadeInLeft">'.$image[$num]."</div>"; }
+    $more = 0;
+}

@@ -28,7 +28,7 @@ get_header(); ?>
                 endif;
             ?>
 
-            <?php endwhile; // end of the loop. ?>                               
+            <?php endwhile; // end of the loop. ?>
         </div>
 
         <div class="row">            
@@ -51,12 +51,12 @@ get_header(); ?>
                     <div>
                         <select class="filter-model btn-animate" name="menu" onChange="top.location.href=this.options[this.selectedIndex].value;" value="GO">
                             <option>Change brand</option>
-                            <option value="iphone-repair.php">iPhone</option>
-                            <option value="ipad-repair.php">iPad</option>
-                            <option value="ipod-repair.php">iPod</option>
-                            <option value="android-repair.php">Android</option>
-                            <option value="laptop-repair.php">Laptop</option>
-                            <option value="unlock-repair.php">Unlocks</option>
+                            <option value="/iphone-repair/">iPhone</option>
+                            <option value="/ipad-repair/">iPad</option>
+                            <option value="/ipod-repair/">iPod</option>
+                            <option value="/android-repair/">Android</option>
+                            <option value="/laptop-repair/">Laptop</option>
+                            <option value="/unlock-repair/">Unlocks</option>
                         </select>
                         <i class="fa fa-caret-down fa-lg"></i>
                     </div>
@@ -65,69 +65,35 @@ get_header(); ?>
             <div class="two-col"></div>
         </div>
 
-        <?php
-            query_posts('cat=iphone');
-            while (have_posts()) : the_post();
+        <div class="row-container">                        
+
+            <?php query_posts('category_name='.get_the_title().'&post_status=publish', '&orderby=date&order=ASC');?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             
-            the_content();
-            endwhile;
-        ?>
-
-
-
-
-
-
-
-<!--         <div class="row-container">    
             <div class="row animatedParent">
-                <div class="two-col filter iphone6s">
-                    <div class="img-holder animated fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone6s.png" alt="iPhone6s" /></div>
-                    <h2>iPhone 6s and 6s plus</h2>
-                    <p>iPhone 6 Screen Replacement: $149.99<br>
-                    iPhone 6s+ Screen Replacement: $179.99<br>
-                    iPhone 6s and 6s+ Charging Port Replacement: $65<br>
-                    iPhone 6s and 6s+ Front Camera Replacement: $65<br>
-                    iPhone 6s and 6 Plus Rear Camera Replacement: $65<br>
-                    For more 6s and 6s+ repairs, please contact us!</p>
+                <div class="two-col filter iphone6s <?php '.get_the_title().' ?> ">
+                   
+                    <?php getImage('1'); ?>
+                    <h2><?php the_title(); ?></h2>
+                    
+                    <!-- Remove images from get_the_content -->
+                    <?php 
+                        $content = get_the_content();
+                        $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
+                        $content = apply_filters('the_content', $content);
+                        $content = str_replace(']]>', ']]>', $content);
+                        echo $content;
+                    ?>
                 </div>
-                <div class="two-col filter iphone6">
-                    <div class="img-holder animated fadeInRight"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone6.png" alt="iPhone6" /></div>
-                    <h2>iPhone 6 and 6 plus</h2>
-                    <p><p>iPhone 6 Screen Replacement: $149.99<br>
-                    iPhone 6+ Screen Replacement: $179.99<br>
-                    iPhone 6 and 6+ Charging Port Replacement: $65<br>
-                    iPhone 6 and 6+ Front Camera Replacement: $65<br>
-                    iPhone 6 and 6 Plus Rear Camera Replacement: $65<br>
-                    For more 6 and 6+ repairs, please contact us!</p>
-                </div>
-            </div>
+            </div>      
+            
+            <?php endwhile; else: endif; ?>
 
-            <div class="row animatedParent">
-                <div class="two-col filter iphone5s">
-                    <div class="img-holder animated fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone5s.png" alt="iPhone5s" /></div>
-                    <h2>iPhone 5s</h2>
-                    <p>Cracked Screen Replacement: $110<br>
-                    Home Button: $65<br>
-                    Ear Speaker: $45<br>
-                    Front facing Camera: $45<br>
-                    Rear Facing Camera: $50<br>
-                    Loud speaker: $45<br>
-                    Charging Port: $65</p>
-                </div>
-                <div class="two-col filter iphone5c">
-                    <div class="img-holder animated fadeInRight"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone5c.png" alt="iPhone6c" /></div>
-                    <h2>iPhone 5c</h2>
-                    <p>Cracked Screen Replacement: $105<br>
-                    Home Button: $40<br>
-                    Ear Speaker: $45<br>
-                    Front Facing Camera: $45<br>
-                    Rear Facing Camera: $50<br>
-                    Large Speaker: $45<br>
-                    Charging Port: $60</p>
-                </div>
-            </div>   
+        </div><!-- End of row container-->  
 
+
+
+<!-- 
             <div class="row animatedParent">
                 <div class="two-col filter iphone5">
                     <div class="img-holder animated fadeInLeft"><img src="<?php bloginfo('template_directory'); ?>/assets/images/page-repair/iphone/iphone5.png" alt="iPhone5" /></div>
@@ -162,8 +128,8 @@ get_header(); ?>
             </div>
 
         </div> --><!-- End of row container -->
-    </div>
-</div>    
+  
+</div><!-- End of container-->    
 </section><!-- End of Repair section-->
 
     <section id="contact">

@@ -37,7 +37,6 @@
 		            </div>
 		            <div id="footer-links" class="two-col">
 		                <a href="#header" id="back-top"></a>
-		                <p><a href="#services">Services</a></p> 
 		                <p><a href="/iphone-repair">iPhone Repair</a></p>
 		                <p><a href="/ipod-repair">iPod Repair</a></p>
 		                <p><a href="/ipad-repair">iPad Repair</a></p>
