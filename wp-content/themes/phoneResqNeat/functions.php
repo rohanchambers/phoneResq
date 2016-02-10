@@ -185,6 +185,12 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
 			wp_enqueue_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
 
+			wp_register_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.6', true );
+			wp_enqueue_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.60', true );
+
+			wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
+			wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
+
 			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '0.0.1', true );
 			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.0.1', true );
 

@@ -47,7 +47,7 @@ get_header(); ?>
                     </header>
                     <a href="/ipad-repair/">&nbsp;</a>
                 </article>
-                <article id="/ipod-repair/" class="repair animated fadeInRight">
+                <article id="ipod-repair" class="repair animated fadeInRight">
                     <header>
                         <span>iPod repair</span>
                         <h1>iPod Repair</h1>

@@ -16,7 +16,17 @@ get_header(); ?>
 <section id="repair">
     <div class="container">
 
+        <div id="parallax-1" class="parallax"></div>
+        <div id="parallax-2" class="parallax"></div>
+
+        <div id="parallax-3" class="parallax"></div>
+        <div id="parallax-4" class="parallax"></div>
+
+        <div id="parallax-5" class="parallax"></div>
+        <div id="parallax-6" class="parallax"></div>
+
         <div class="row row-intro">
+
             <?php while ( have_posts() ) : the_post(); ?>
 
             <?php get_template_part( 'page-templates/template-parts/content', 'page' ); ?>
@@ -29,6 +39,7 @@ get_header(); ?>
             ?>
 
             <?php endwhile; // end of the loop. ?>
+
         </div>
 
         <div class="row">            

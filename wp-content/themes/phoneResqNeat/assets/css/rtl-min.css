@@ -417,9 +417,9 @@ footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#f
 #header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#repair.nav-min{margin-top:175px}
 #repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
 #repair h1,#repair p{text-align:left}#repair p{width:100%}#repair a{color:#404040}
-#repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}#repair .row{overflow:hidden;margin:0 0 50px 0}
-#repair .row-intro{margin-bottom:0}#repair .container{position:relative}#repair .img-holder{position:relative;min-height:360px}
-#repair .img-holder img{position:absolute;bottom:0;max-width:250px;max-height:360px}
+#repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}#repair .row{overflow:hidden;margin:0 0 50px 0;padding-bottom:5px}
+#repair .row-intro{margin-bottom:0}#repair .container{position:relative}#repair .img-holder{position:relative;min-height:300px}
+#repair .img-holder img{position:absolute;bottom:0;max-width:250px;max-height:300px}
 #repair .btn-global,#repair #header #nav-cta .btn-nav,#header #nav-cta #repair .btn-nav,#repair #shop #shop-products a,#shop #shop-products #repair a{text-transform:uppercase;margin-right:10px;box-shadow:0 1px 3px 0 #999}
 #repair .btn-global i,#repair #header #nav-cta .btn-nav i,#header #nav-cta #repair .btn-nav i,#repair #shop #shop-products a i,#shop #shop-products #repair a i{margin-right:7px}
 #repair .two-col h2{position:relative;font-size:1.6875rem;margin-top:30px;padding-top:5px;color:#404040}
