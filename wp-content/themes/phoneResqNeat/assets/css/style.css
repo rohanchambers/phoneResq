@@ -3127,12 +3127,10 @@ footer#footer {
 
 #repair .img-holder {
   position: relative;
-  min-height: 300px; }
-  #repair .img-holder img {
-    position: absolute;
-    bottom: 0;
-    max-width: 250px;
-    max-height: 300px; }
+  min-height: 210px;
+  background-color: red img;
+    background-color-max-width: 250px;
+    background-color-max-height: 300px; }
 
 #repair .btn-global, #repair #header #nav-cta .btn-nav, #header #nav-cta #repair .btn-nav, #repair #shop #shop-products a, #shop #shop-products #repair a {
   text-transform: uppercase;
@@ -3416,18 +3414,25 @@ footer#footer {
     margin-right: 10%; }
   .ipad-repair #repair .img-holder img {
     margin-left: -120px; }
+  #repair .row {
+    margin: 0; }
+  #repair .row.row-filter .two-col {
+    margin-bottom: 20px; }
+  #repair .two-col {
+    margin-bottom: 50px; }
+    #repair .two-col p, #repair .two-col h2 {
+      text-align: center; }
+    #repair .two-col h2::before {
+      left: 50%;
+      right: 50%;
+      margin-left: -24%; }
   #repair article {
     width: 100%; }
   #repair .img-holder img {
-    left: 50%;
-    right: 50%;
-    margin-left: -85px; }
-  #repair .two-col p, #repair .two-col h2 {
-    text-align: center; }
-  #repair .two-col h2::before {
-    left: 50%;
-    right: 50%;
-    margin-left: -24%; }
+    margin: 0 auto;
+    display: block; }
+  #repair #filter-model div {
+    margin-bottom: 10px; }
   article.intro p {
     width: 100%; }
   .repair,

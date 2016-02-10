@@ -25,6 +25,9 @@ get_header(); ?>
         <div id="parallax-5" class="parallax"></div>
         <div id="parallax-6" class="parallax"></div>
 
+        <div id="parallax-7" class="parallax"></div>
+        <div id="parallax-8" class="parallax"></div>
+
         <div class="row row-intro">
 
             <?php while ( have_posts() ) : the_post(); ?>
@@ -42,7 +45,7 @@ get_header(); ?>
 
         </div>
 
-        <div class="row">            
+        <div class="row row-filter">            
             <div class="two-col">
                 <form id="filter-model">
                     <div>
@@ -68,7 +71,7 @@ get_header(); ?>
                             <option value="/ipod-repair/">iPod</option>
                             <option value="/android-repair/">Android</option>
                             <option value="/laptop-repair/">Laptop</option>
-                            <option value="/unlock-repair/">Unlocks</option>
+                            <option value="/cellphone-unlocks/">Unlocks</option>
                         </select>
                         <i class="fa fa-caret-down fa-lg"></i>
                     </div>
