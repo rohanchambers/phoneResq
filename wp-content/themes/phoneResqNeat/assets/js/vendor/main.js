@@ -21,11 +21,7 @@ if( getWidth() < 769 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Oper
 
 // Document ready
 $( document ).ready(function() {
-
-    skrollr.init({
-        forceHeight: false
-    });
-
+	
 	// Filter devices from dropdown
 	$('.filter-model').on('change', function(){
 		// Get value of the selected device from the dropdown
@@ -53,11 +49,11 @@ $( document ).ready(function() {
 
 
 	//Skrollr initialise
-	// if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-	//     skrollr.init({
-	//         forceHeight: false
-	//     });
-	// }
+	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+	    skrollr.init({
+	        forceHeight: false
+	    });
+	}
 
 	// Tablet on resize width show minified menu
 	function resize() {

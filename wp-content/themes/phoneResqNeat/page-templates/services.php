@@ -12,97 +12,97 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 
-<!-- iPhone repair -->
-<section id="repair">
-    <div class="container">
+    <!-- iPhone repair -->
+    <section id="repair">
+        <div class="container">
+        
+            <div id="parallax-1" class="parallax"></div>
+            <div id="parallax-2" class="parallax"></div>
 
-        <div id="parallax-1" class="parallax"></div>
-        <div id="parallax-2" class="parallax"></div>
+            <div id="parallax-3" class="parallax"></div>
+            <div id="parallax-4" class="parallax"></div>
 
-        <div id="parallax-3" class="parallax"></div>
-        <div id="parallax-4" class="parallax"></div>
+            <div id="parallax-5" class="parallax"></div>
+            <div id="parallax-6" class="parallax"></div>
 
-        <div id="parallax-5" class="parallax"></div>
-        <div id="parallax-6" class="parallax"></div>
+            <div id="parallax-7" class="parallax"></div>
+            <div id="parallax-8" class="parallax"></div>
 
-        <div id="parallax-7" class="parallax"></div>
-        <div id="parallax-8" class="parallax"></div>
+            <div class="row row-intro">
+                <?php while ( have_posts() ) : the_post(); ?>
 
-        <div class="row row-intro">
+                <?php get_template_part( 'page-templates/template-parts/content', 'page' ); ?>
 
-            <?php while ( have_posts() ) : the_post(); ?>
+                <?php
+                    // If comments are open or we have at least one comment, load up the comment template
+                    if ( comments_open() || '0' != get_comments_number() ) :
+                        comments_template();
+                    endif;
+                ?>
 
-            <?php get_template_part( 'page-templates/template-parts/content', 'page' ); ?>
-
-            <?php
-                // If comments are open or we have at least one comment, load up the comment template
-                if ( comments_open() || '0' != get_comments_number() ) :
-                    comments_template();
-                endif;
-            ?>
-
-            <?php endwhile; // end of the loop. ?>
-
-        </div>
-
-        <div class="row row-filter">            
-            <div class="two-col">
-                <form id="filter-model">
-                    <div>
-                        <select class="filter-model btn-animate">
-                        <?php
-                        //save the title for below
-                        $title = get_the_title();
-                        ?>
-                        <?php query_posts('category_name='. $title .'&post_status=publish', '&orderby=date&order=ASC');?>
-                        <option value="reset">Filter model</option>
-                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                            <option value="<?php echo $post->post_name ?>"><?php the_title() ?></option>
-                        <?php endwhile; endif; ?>
-                        </select>
-                        <i class="fa fa-caret-down fa-lg"></i>
-                    </div>
-
-                    <div>
-                        <select class="filter-model btn-animate" name="menu" onChange="top.location.href=this.options[this.selectedIndex].value;" value="GO">
-                            <option>Change brand</option>
-                            <option value="/iphone-repair/">iPhone</option>
-                            <option value="/ipad-repair/">iPad</option>
-                            <option value="/ipod-repair/">iPod</option>
-                            <option value="/android-repair/">Android</option>
-                            <option value="/laptop-repair/">Laptop</option>
-                            <option value="/cellphone-unlocks/">Unlocks</option>
-                        </select>
-                        <i class="fa fa-caret-down fa-lg"></i>
-                    </div>
-                </form>         
+                <?php endwhile; // end of the loop. ?>
             </div>
-            <div class="two-col"></div>
-        </div>
 
-        <div class="row-container">                        
+            <div class="row row-filter">            
+                <div class="two-col">
+                    <form id="filter-model">
+                        <div>
+                            <select class="filter-model btn-animate">
+                            <?php
+                                //save the title for below
+                                $title = get_the_title();
+                            ?>
 
-            <?php query_posts('category_name='.$title.'&post_status=publish', '&orderby=date&order=ASC');?>
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            
-            <div class="row animatedParent">
+                            <?php query_posts('category_name='. $title .'&post_status=publish', '&orderby=date&order=ASC');?>
+                            
+                                    <option value="reset">Filter model</option>
+                            
+                                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                <?php getTwoColumnBlock(); ?> 
+                                    <option value="<?php echo $post->post_name ?>"><?php the_title() ?></option>
 
-                <?php if (more_posts()): the_post(); ?>
+                                <?php endwhile; endif; ?>
+                            </select>
+                            <i class="fa fa-caret-down fa-lg"></i>
+                        </div>
+
+                        <div>
+                            <select class="filter-model btn-animate" name="menu" onChange="top.location.href=this.options[this.selectedIndex].value;" value="GO">
+                                <option>Change brand</option>
+                                <option value="/iphone-repair/">iPhone</option>
+                                <option value="/ipad-repair/">iPad</option>
+                                <option value="/ipod-repair/">iPod</option>
+                                <option value="/android-repair/">Android</option>
+                                <option value="/laptop-repair/">Laptop</option>
+                                <option value="/cellphone-unlocks/">Unlocks</option>
+                            </select>
+                            <i class="fa fa-caret-down fa-lg"></i>
+                        </div>
+                    </form>         
+                </div>
+                <div class="two-col"></div>
+            </div>
+
+            <div class="row-container">                        
+                <?php query_posts('category_name='.$title.'&post_status=publish', '&orderby=date&order=ASC');?>
                 
-                    <?php getTwoColumnBlock(false); ?> 
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                
+                <div class="row animatedParent">
+                    <?php getTwoColumnBlock(); ?> 
+
+                    <?php if (more_posts()): the_post(); ?>
                     
-                <?php endif; ?>
-
-            </div>      
-            
-            <?php endwhile; endif; ?>
-
-        </div><!-- End of row container-->  
-  
-</div><!-- End of container-->    
-</section><!-- End of Repair section-->
+                        <?php getTwoColumnBlock(false); ?> 
+                        
+                    <?php endif; ?>
+                </div>      
+                
+                <?php endwhile; endif; ?>
+            </div><!-- End of row container-->  
+      
+        </div><!-- End of container-->    
+    </section><!-- End of Repair section-->
 
     <section id="contact">
         <div class="container">
@@ -197,8 +197,7 @@ get_header(); ?>
 
                 </div>
             </div>            
-        </div>
-        
+        </div>       
     </section><!-- End of contact -->
 
     <section id="clients">

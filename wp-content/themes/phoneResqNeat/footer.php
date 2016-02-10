@@ -50,7 +50,7 @@
 </div><!-- #page -->
 
 <?php tha_body_bottom(); ?>
-
+  
 <?php wp_footer(); ?>
 
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAnlujjc073E2Ku0_K_HyCtbRDC-HjFgk&callback=initMap" async defer></script> -->
