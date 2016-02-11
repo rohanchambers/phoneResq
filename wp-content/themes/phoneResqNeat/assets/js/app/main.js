@@ -49,11 +49,11 @@ $( document ).ready(function() {
 
 
 	//Skrollr initialise
-	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-	    skrollr.init({
-	        forceHeight: false
-	    });
-	}
+	// if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+	//     skrollr.init({
+	//         forceHeight: false
+	//     });
+	// }
 
 	// Tablet on resize width show minified menu
 	function resize() {

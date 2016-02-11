@@ -21,13 +21,6 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">    
-	<style type="text/css">
-		<?php if ( 'no' === get_theme_mod( 'some-like-it-neat_post_format_support' ) ): ?>
-			h1.entry-title:before {
-				display: none;
-			}
-		<?php endif; ?>
-	</style>
 
     <?php tha_head_bottom(); ?>
     <?php wp_head(); ?>
