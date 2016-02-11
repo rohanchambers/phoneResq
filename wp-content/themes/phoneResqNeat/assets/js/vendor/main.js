@@ -22,12 +22,14 @@ if( getWidth() < 769 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Oper
 // Document ready
 $( document ).ready(function() {
 
-	$('#shop-products article a').click( function(){
-		alert(3)
-		//$("#modal-1").trigger("click");
+	// Trigger modal for shop
+	$('#shop-products article a').click( function(e){
+		e.preventDefault();
+		$('#modal-1').trigger('click');
 	});
 
-	$(".modal-1").on("change", function() {
+	$("#modal-1").on("change", function() {
+	
 	if ($(this).is(":checked")) {
 	  $("body").addClass("modal-open");
 	} else {
@@ -35,12 +37,12 @@ $( document ).ready(function() {
 	}
 	});
 
-	$(".modal-fade-screen, .modal-close").on("click", function() {
-	$(".modal-state:checked").prop("checked", false).change();
+		$(".modal-fade-screen, .modal-close").on("click", function() {
+		$(".modal-state:checked").prop("checked", false).change();
 	});
 
 	$(".modal-inner").on("click", function(e) {
-	e.stopPropagation();
+		e.stopPropagation();
 	});
 
 	

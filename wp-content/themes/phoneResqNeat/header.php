@@ -24,7 +24,7 @@
 
     <?php tha_head_bottom(); ?>
     <?php wp_head(); ?>
-    <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet /> -->       
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet />      
 </head>
 
 <body <?php body_class(); ?>>
