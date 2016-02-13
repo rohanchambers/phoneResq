@@ -24,7 +24,13 @@
 
     <?php tha_head_bottom(); ?>
     <?php wp_head(); ?>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet />      
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet />
+        <!-- Open graph tags -->
+    <meta property="og:title"   content="Phone ResQ" />
+    <meta property="og:description"   content="WELCOME TO PHONE RESQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online" />
+    <meta property="og:type"    content="site" />
+    <meta property="og:url"     content="http://www.phoneresq.com/" />
+    <meta property="og:image"   content="http://www.rohanchambers.net/projects/phoneResq/img/global/phoneResqLogo.png" />    
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,7 +42,7 @@
         <header id="header" class="site-header wrap" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
         <?php tha_header_top(); ?>
             <div class="container">    
-                <div id="logo"><a href="#header">Phone Resq</a></div>
+                <div id="logo"><a href="<?php homehash('header') ?>">Phone Resq</a></div>
                 <nav id="nav-main" class="nav-global">
                     <ul>
                         <li id="dropdown"><a href="#services">Services<i class="fa fa-caret-down fa-lg"></i></a>
@@ -49,9 +55,9 @@
                                 <li><a href="/cellphone-unlocks">Cell Phone Unlocks</a><span></span></li>
                             </ul>
                         </li>
-                        <li><a href="#about">About</a></li>
-                        <li id="nav-sell"><a href="#sell">Sell your device</a></li>
-                        <li><a href="#contact">Contact us</a></li>
+                        <li><a href="<?php homehash('about') ?>">About</a></li>
+                        <li id="nav-sell"><a href="<?php homehash('sell') ?>">Sell your device</a></li>
+                        <li><a href="<?php homehash('contact') ?>">Contact us</a></li>
                     </ul>
                 </nav>
                 <nav id="social-links" class="nav-global">
@@ -64,7 +70,7 @@
                 </nav>
                 <nav id="nav-cta" class="nav-global">
                     <ul>
-                        <li><a href="#contact" class="btn-nav btn-animate"><i class="fa fa-wrench fa-lg"></i>Request repair</a></li>
+                        <li><a href="<?php homehash('contact') ?>" class="btn-nav btn-animate"><i class="fa fa-wrench fa-lg"></i>Request repair</a></li>
                         <li><a href="tel:9043100059" class="btn-nav btn-animate"><i class="fa fa-phone fa-lg"></i>(904) 310-0059</a></li>
                     </ul>
                 </nav>

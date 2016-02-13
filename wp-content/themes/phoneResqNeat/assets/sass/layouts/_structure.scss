@@ -21,7 +21,7 @@ html {
 		line-height: 1.5em;
 		word-break: break-word;
 		direction: rtl;
-	  unicode-bidi: embed;
+	  	unicode-bidi: embed;
 	}
 }
 #page {
@@ -37,10 +37,10 @@ html {
 #primary {
 	@include clearfix;
 
-	@include media($sm) {
+	@include media($mobile) {
 		@include span-columns( 2 );
 	}
-	@include media($md) {
+	@include media($tablet) {
 		@include span-columns( 4 );
 		@include omega( block );
 	}
@@ -56,11 +56,11 @@ html {
 	}
 }
 #secondary {
-	@include media($sm) {
+	@include media($mobile) {
 		@include span-columns( 2 );
 		padding: 30px;
 	}
-	@include media($md) {
+	@include media($tablet) {
 		@include span-columns( 2 );
 		@include omega( block );
 	}

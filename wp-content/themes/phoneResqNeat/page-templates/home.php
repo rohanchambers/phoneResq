@@ -199,6 +199,24 @@ get_header(); ?>
 
     </section><!-- End of Shop -->
 
+    <!-- Shop Modal coming soon -->
+    <div class="modal">
+        <label for="modal-1">
+                </label>
+                <input class="modal-state" id="modal-1" type="checkbox" />
+                <div class="modal-fade-screen">
+                <div class="modal-inner">
+                <div class="modal-close" for="modal-1"></div>
+                <h1>Shop coming soon!</h1>
+                <p class="modal-intro">Please come back soon to find some products that are for sale or refurbished.</p>
+                <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/iphone.png" alt="iPhone repair" />        
+                <img style="margin: 0 10px;" src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/android.png" alt="iPad repair" />
+                <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungTablet.png" alt="Samsung Galaxy repair" />
+                <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>            
+            </div>
+        </div>
+    </div>
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -312,24 +330,5 @@ get_header(); ?>
     </section><!-- End of clients -->
 
 </div><!-- #primary -->
-
-<!-- Shop coming soon modal -->
-<div class="modal">
-    <label for="modal-1">
-        <div class="modal-trigger">Click for Modal</div>
-            </label>
-            <input class="modal-state" id="modal-1" type="checkbox" />
-            <div class="modal-fade-screen">
-            <div class="modal-inner">
-            <div class="modal-close" for="modal-1"></div>
-            <h1>Shop coming soon!</h1>
-            <p class="modal-intro">Please come back soon to find some products that are for sale or refurbished.</p>
-            <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/iphone.png" alt="iPhone repair" />        
-            <img style="margin: 0 10px;" src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/android.png" alt="iPad repair" />
-            <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungTablet.png" alt="Samsung Galaxy repair" />
-            <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>            
-        </div>
-    </div>
-</div>
 
 <?php get_footer(); ?>

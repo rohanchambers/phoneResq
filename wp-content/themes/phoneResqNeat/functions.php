@@ -173,8 +173,8 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'selectivizr-js', get_template_directory_uri() . '/assets/js/vendor/selectivizr/selectivizr.js', array( 'jquery' ), '1.0.2b', true );
 			wp_enqueue_script( 'selectivizr-js', get_template_directory_uri() . '/assets/js/vendor/selectivizr/selectivizr.js', array( 'jquery' ), '1.0.2b', true );
 
-			wp_register_script( 'css3-animate-it-js', get_template_directory_uri() . '/assets/js/vendor/css3-animate-it.min.js', array( 'jquery' ), '0.1.0', true );
-			wp_enqueue_script( 'css3-animate-it-js', get_template_directory_uri() . '/assets/js/vendor/css3-animate-it.min.js', array( 'jquery' ), '0.1.0', true );
+			wp_register_script( 'css3-animate-it-js', get_template_directory_uri() . '/assets/js/vendor/css3-animate-it.js', array( 'jquery' ), '0.1.0', true );
+			wp_enqueue_script( 'css3-animate-it-js', get_template_directory_uri() . '/assets/js/vendor/css3-animate-it.js', array( 'jquery' ), '0.1.0', true );
 
 			wp_register_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
 			wp_enqueue_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
@@ -380,3 +380,13 @@ function on_wp_footer_action() {
 }
 add_action( 'wp_footer', 'on_wp_footer_action', 9 );
 
+// Alberto redirect pages from sub and home
+function homehash($section){
+	$uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/';
+	if ($uri != '/'){
+		echo home_url( '#' . $section );
+	}
+	else{
+		echo '#' . $section;
+	}
+}
