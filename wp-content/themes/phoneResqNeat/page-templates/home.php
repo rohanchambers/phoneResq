@@ -229,7 +229,7 @@ get_header(); ?>
                           if (isset($_REQUEST['email']))  {
                           
                           //Email information
-                          $admin_email = "rohanchambers888@gmail.com";
+                          $admin_email = "phoneresq@gmail.com";
                           $email = $_REQUEST['email'];
                           $subject = "Phone Resq. message: " . $_REQUEST['subject'];
                           $comment = $_REQUEST['comment'].$phone;

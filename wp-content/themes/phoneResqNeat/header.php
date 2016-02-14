@@ -24,7 +24,7 @@
 
     <?php tha_head_bottom(); ?>
     <?php wp_head(); ?>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet />
+    <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet /> -->
         <!-- Open graph tags -->
     <meta property="og:title"   content="Phone ResQ" />
     <meta property="og:description"   content="WELCOME TO PHONE RESQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online" />

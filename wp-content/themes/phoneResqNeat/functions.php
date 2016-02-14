@@ -179,11 +179,11 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
 			wp_enqueue_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
 
-			wp_register_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.6', true );
-			wp_enqueue_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.60', true );
+			// wp_register_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.6', true );
+			// wp_enqueue_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.60', true );
 
-			wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
-			wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
+			// wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
+			// wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 
 			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '0.0.1', true );
 			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.0.1', true );
@@ -206,11 +206,11 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
 			wp_enqueue_script( 'validate-js', get_template_directory_uri() . '/assets/js/vendor/jquery.validate.min.js', array( 'jquery' ), '1.14.0', true );
 
-			wp_register_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.6', true );
-			wp_enqueue_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.60', true );
+			// wp_register_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.6', true );
+			// wp_enqueue_script( 'skrollr-stylesheet-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.stylesheets.min.js', array( 'jquery' ), '0.0.60', true );
 
-			wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
-			wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
+			// wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
+			// wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 
 			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '0.0.1', true );
 			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.0.1', true );
@@ -379,6 +379,55 @@ function on_wp_footer_action() {
     wp_dequeue_script( 'wp-embed' );
 }
 add_action( 'wp_footer', 'on_wp_footer_action', 9 );
+
+// Get images from get_the_content edited
+// http://bavotasan.com/2009/retrieve-the-first-image-from-a-wordpress-post/ 
+function getImage($num, $left = true) {
+    global $more;
+    $fadeClass = $left ? 'fadeInLeft' : 'fadeInRight';
+    $more = 1;
+    $link = get_permalink();
+    $content = get_the_content();
+    $count = substr_count($content, '<img');
+    $start = 0;
+    for($i=1;$i<=$count;$i++) {
+	    $imgBeg = strpos($content, '<img', $start);
+	    $post = substr($content, $imgBeg);
+	    $imgEnd = strpos($post, '>');
+	    $postOutput = substr($post, 0, $imgEnd+1);
+	    $postOutput = preg_replace('/width="([0-9]*)" height="([0-9]*)"/', '',$postOutput);;
+	    $image[$i] = $postOutput;
+	    $start=$imgEnd+1;
+    }
+    if(stristr($image[$num],'<img')) { echo '<div class="img-holder animated '.$fadeClass.'">'.$image[$num]."</div>"; }
+    $more = 0;
+}
+
+function getTwoColumnBlock($left = true){
+	global $post;
+
+	?>
+	<div class="two-col filter <?php echo $post->post_name; ?>">
+	   
+	    <?php getImage('1', $left); ?>
+	    <h2><?php the_title(); ?></h2>
+	    
+	    <!-- Remove images from get_the_content -->
+	    <?php 
+	        $content = get_the_content();
+	        $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
+	        $content = apply_filters('the_content', $content);
+	        $content = str_replace(']]>', ']]>', $content);
+	        echo $content;
+	    ?>
+	</div>
+	<?php
+}
+
+function more_posts() {
+  global $wp_query;
+  return $wp_query->current_post + 1 < $wp_query->post_count;
+}
 
 // Alberto redirect pages from sub and home
 function homehash($section){
