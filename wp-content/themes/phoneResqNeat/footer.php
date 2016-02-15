@@ -41,6 +41,7 @@
 		                <p><a href="/ipod-repair">iPod Repair</a></p>
 		                <p><a href="/ipad-repair">iPad Repair</a></p>
 		                <p><a href="/android-repair">Android Repair</a></p>
+		                <p id="site-developer">Site developed by <a href="#">RohanChambers.net</a>
 		                <p id="copyright">&copy;<?php echo date("Y") ?> Phone Resq. All Rights Reserved.</p>
 		            </div>
 		        </div>

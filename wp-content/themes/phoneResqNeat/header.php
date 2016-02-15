@@ -24,13 +24,23 @@
 
     <?php tha_head_bottom(); ?>
     <?php wp_head(); ?>
-    <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet /> -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet />
         <!-- Open graph tags -->
     <meta property="og:title"   content="Phone ResQ" />
-    <meta property="og:description"   content="WELCOME TO PHONE RESQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online" />
-    <meta property="og:type"    content="site" />
+    <meta property="og:description"   content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
+    <meta property="og:type"    content="website" />
     <meta property="og:url"     content="http://www.phoneresq.com/" />
-    <meta property="og:image"   content="http://www.rohanchambers.net/projects/phoneResq/img/global/phoneResqLogo.png" />    
+    <meta property="og:image"   content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/global/phoneResqLogo.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PhoneResQ">
+    <meta name="twitter:title" content="PhoneResq">
+    <meta name="twitter:description" content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online.">
+    <meta name="twitter:creator" content="@PhoneResQ">
+    <meta name="twitter:image:src" content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/global/phoneResqLogo.png">
+    <meta name="twitter:domain" content="phoneresq.com">
 </head>
 
 <body <?php body_class(); ?>>

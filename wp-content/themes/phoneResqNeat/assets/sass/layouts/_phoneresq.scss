@@ -1249,6 +1249,10 @@ footer#footer {
         }
 
     }
+
+    #site-developer {
+        @include hide-text;
+    }    
 }
 
 
@@ -1888,6 +1892,11 @@ footer#footer {
     }
 
     #contact {
+
+        #contact-form {
+            width: 100%;
+        }
+
         #map {
             width: 100%;
         }
@@ -1933,7 +1942,53 @@ footer#footer {
 
 
 
+.page-ipod-repair,
+.page-ipad-repair,
+.page-laptop-repair,
+.page-cellphone-unlocks {
+    #parallax-5,
+    #parallax-6,
+    #parallax-7,
+    #parallax-8 {
+        display: none;
+    }
+}
+
+.page-ipod-repair {
+    #parallax-5,
+    #parallax-6,
+    #parallax-7,
+    #parallax-8 {
+        display: none;
+    }
+}
+
+.page-ipad-repair {
+    #parallax-5,
+    #parallax-6,
+    #parallax-7,
+    #parallax-8 {
+        display: none;
+    }
+}
 
 
+.page-laptop-repair {
+    #parallax-5,
+    #parallax-6,
+    #parallax-7,
+    #parallax-8 {
+        display: none;
+    }
+}
+
+.page-cellphone-unlocks {
+    #parallax-5,
+    #parallax-6,
+    #parallax-7,
+    #parallax-8 {
+        display: none;
+    }
+}
 
 

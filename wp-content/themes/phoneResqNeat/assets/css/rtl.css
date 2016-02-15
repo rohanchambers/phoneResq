@@ -3180,6 +3180,10 @@ footer#footer {
     footer#footer #footer-links #copyright {
       margin-top: 25px;
       font-size: 0.6875rem; }
+  footer#footer #site-developer {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap; }
 
 .page-template-services #carousel {
   display: none; }
@@ -3558,6 +3562,8 @@ footer#footer {
   .repair,
   #services .row.row-products {
     margin-bottom: 30px; }
+  #contact #contact-form {
+    width: 100%; }
   #contact #map {
     width: 100%; }
   #contact #get-in-touch .intro {
@@ -3578,6 +3584,48 @@ footer#footer {
   display: none; }
 
 .error404 #carousel {
+  display: none; }
+
+.page-ipod-repair #parallax-5,
+.page-ipod-repair #parallax-6,
+.page-ipod-repair #parallax-7,
+.page-ipod-repair #parallax-8,
+.page-ipad-repair #parallax-5,
+.page-ipad-repair #parallax-6,
+.page-ipad-repair #parallax-7,
+.page-ipad-repair #parallax-8,
+.page-laptop-repair #parallax-5,
+.page-laptop-repair #parallax-6,
+.page-laptop-repair #parallax-7,
+.page-laptop-repair #parallax-8,
+.page-cellphone-unlocks #parallax-5,
+.page-cellphone-unlocks #parallax-6,
+.page-cellphone-unlocks #parallax-7,
+.page-cellphone-unlocks #parallax-8 {
+  display: none; }
+
+.page-ipod-repair #parallax-5,
+.page-ipod-repair #parallax-6,
+.page-ipod-repair #parallax-7,
+.page-ipod-repair #parallax-8 {
+  display: none; }
+
+.page-ipad-repair #parallax-5,
+.page-ipad-repair #parallax-6,
+.page-ipad-repair #parallax-7,
+.page-ipad-repair #parallax-8 {
+  display: none; }
+
+.page-laptop-repair #parallax-5,
+.page-laptop-repair #parallax-6,
+.page-laptop-repair #parallax-7,
+.page-laptop-repair #parallax-8 {
+  display: none; }
+
+.page-cellphone-unlocks #parallax-5,
+.page-cellphone-unlocks #parallax-6,
+.page-cellphone-unlocks #parallax-7,
+.page-cellphone-unlocks #parallax-8 {
   display: none; }
 
 /*--------------------------------------------------------------
