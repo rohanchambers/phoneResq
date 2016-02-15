@@ -200,37 +200,39 @@ function initMap() {
 	var phoneResq = {lat: 30.670774, lng: -81.456867};
 
 	var map = new google.maps.Map(document.getElementById("map"), {
-	zoom: 13,
-	center: phoneResq
+		zoom: 13,
+		center: phoneResq
 	});
 
-	var contentString = '<div id="content">'+
-	  '<div id="siteNotice">'+
-	  '</div>'+
-	  '<h1 id="firstHeading" class="firstHeading">Welcome to Phone Resq.</h1>'+
-	  '<div id="bodyContent">'+
-	  '<p>We repair and improve all of your handheld devices and home computers. ' +
-	  'Our hassle-free customer service is centered around your interests and the intention of getting you back online.</p> '+
-	  '<p>Website: <a href="https://phoneResq.com/" target="_blank">'+
-	  'http://phoneResq.com/</a> <br>'+
-	  'Email: <a href="@mailto:phoneresq@gmail.com">'+
-	  'phoneresq@gmail.com</a><br>'+
-	  'Phone: (904) 310-0059'+	  
+	var image = 'http://phoneresq.com/wp-content/themes/phoneResq/assets/images/global/mapPin.png';
+	var phoneResqMarker = new google.maps.Marker({
+		position: phoneResq,
+		map: map,
+		icon: image,
+		title: 'Phone ResQ'		
+	});
 
-	  '</div>'+
+	var contentString = '<div id="map-info">'+
+		  '<div id="siteNotice">'+
+		  '</div>'+
+		  '<h1 id="firstHeading" class="firstHeading">Welcome to Phone ResQ</h1>'+
+		  '<div id="bodyContent">'+
+		  '<p>We repair and improve all of your handheld devices and home computers. ' +
+		  '<p>1001 Atlantic Avenue,<br> Suite B,<br> Fernandina Beach,<br> Florida, 32034</p>'+
+		  '<p>Website: <a href="https://phoneResq.com/" target="_blank">'+
+		  'http://phoneresq.com/</a> <br>'+
+		  'Email: <a href="@mailto:phoneresq@gmail.com">'+
+		  'phoneresq@gmail.com</a><br>'+
+		  'Phone: <a href="tel:9043100059">(904) 310-0059</a>'+	  
+		  '</div>'+
 	  '</div>';
 
 	var infowindow = new google.maps.InfoWindow({
-	content: contentString
+	content: contentString,
+	maxWidth: 450
 	});
 
-	var marker = new google.maps.Marker({
-	position: phoneResq,
-	map: map,
-	title: 'Phone ResQ'
-	});
-
-	marker.addListener('click', function() {
-	infowindow.open(map, marker);
+	phoneResqMarker.addListener('click', function() {
+		infowindow.open(map, phoneResqMarker);
 	});
 }

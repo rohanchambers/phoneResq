@@ -72,7 +72,7 @@ get_header(); ?>
                         <h1>Laptop &amp; Desktop Repair</h1>
                         <p>Doesn’t it feel like when your computer isn’t working, that life slows down? Let us take a look and we’ll get you up and running again in no time.</p>
                     </header>
-                    <a href="?laptop-repair/">&nbsp;</a>
+                    <a href="/laptop-repair/">&nbsp;</a>
                 </article>
                 <article id="unlocks-repair" class="repair animated fadeInRight">
                     <header>
@@ -80,7 +80,7 @@ get_header(); ?>
                         <h1>Cell Phone unlocks</h1>
                         <p>Interested in unlocking your phone? We’ve got the tools to safely and securely unlock almost any smartphone device.</p>
                     </header>
-                    <a href="/unlock-repair/"></a>
+                    <a href="/cellphone-unlocks/"></a>
                 </article>
             </div><!-- End of row -->
         </div><!-- End of container -->
@@ -293,7 +293,7 @@ get_header(); ?>
                             <h1>Get in touch<span></span></h1>
                         
                             <p>Contact us today! Stop by the store during normal business hours or call us at<br> 
-                            (904) 310-0059.</p>
+                            <a href="tel:9043100059">(904) 310-0059</a>.</p>
 
                             <p>We look forward to hearing from you!</p>
 
@@ -332,3 +332,4 @@ get_header(); ?>
 </div><!-- #primary -->
 
 <?php get_footer(); ?>
+<!-- Google Maps API -->

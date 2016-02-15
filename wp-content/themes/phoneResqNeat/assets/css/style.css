@@ -1,8 +1,8 @@
 /*
-Theme Name: Some Like it Neat
-Theme URI: https://github.com/digisavvy/some-like-it-neat
-Author: Alex Vasquez
-Author URI: http://alexhasnicehair.com
+Theme Name: Phone ResQ
+Theme URI: http://phoneresq.com
+Author: Rohan Chambers
+Author URI: http://rohanchambers.net
 Description: A simple yet advanced Starter Theme built using _S, Bourbon and Neat (http://underscores.me, http://bourbon.io, http://neat.bourbon.io). Please refer to the README.md file for basic usage instructions and prerequisites. You can always grab the latest version over at http://github.com/digisavvy.some-like-it-neat
 Version: 1.3.4
 License: GNU General Public License
@@ -14,7 +14,7 @@ Tags: white, light, one-column, two-columns, right-sidebar, responsive-layout, c
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Some Like it Neat is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+Based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
@@ -2744,7 +2744,7 @@ article.intro {
   margin: 15px auto 15px auto;
   width: 25px;
   height: 72px;
-  background-image: url(../images/global/iconMouseDown2.png);
+  background-image: url(../images/global/iconMouseDown.png);
   clear: both;
   cursor: pointer; }
 
@@ -3097,6 +3097,22 @@ article.intro {
     width: 95%;
     height: 370px;
     margin-top: 25px; }
+    #contact #map img {
+      max-width: none;
+      max-height: none; }
+    #contact #map .gm-style-iw {
+      max-height: 400px; }
+    #contact #map #map-info {
+      padding: 5px 0 0 20px; }
+      #contact #map #map-info h1 {
+        margin: 0;
+        font-size: 1.25rem; }
+      #contact #map #map-info p {
+        line-height: 1;
+        margin: 8px 0; }
+      #contact #map #map-info a {
+        color: #e20510;
+        line-height: 1.2; }
   #contact #get-in-touch .intro {
     text-align: left; }
     #contact #get-in-touch .intro p {
@@ -3502,7 +3518,9 @@ footer#footer {
     #header.nav-min #nav-main a::after {
       display: none; }
   #repair {
-    margin-top: 65px; } }
+    margin-top: 65px; }
+    #repair #filter-model div {
+      margin-bottom: 10px; } }
 
 @media screen and (max-width: 667px) {
   .container {
@@ -3555,8 +3573,6 @@ footer#footer {
   #repair .img-holder img {
     margin: 0 auto;
     display: block; }
-  #repair #filter-model div {
-    margin-bottom: 10px; }
   article.intro p {
     width: 100%; }
   .repair,
@@ -3598,30 +3614,6 @@ footer#footer {
 .page-laptop-repair #parallax-6,
 .page-laptop-repair #parallax-7,
 .page-laptop-repair #parallax-8,
-.page-cellphone-unlocks #parallax-5,
-.page-cellphone-unlocks #parallax-6,
-.page-cellphone-unlocks #parallax-7,
-.page-cellphone-unlocks #parallax-8 {
-  display: none; }
-
-.page-ipod-repair #parallax-5,
-.page-ipod-repair #parallax-6,
-.page-ipod-repair #parallax-7,
-.page-ipod-repair #parallax-8 {
-  display: none; }
-
-.page-ipad-repair #parallax-5,
-.page-ipad-repair #parallax-6,
-.page-ipad-repair #parallax-7,
-.page-ipad-repair #parallax-8 {
-  display: none; }
-
-.page-laptop-repair #parallax-5,
-.page-laptop-repair #parallax-6,
-.page-laptop-repair #parallax-7,
-.page-laptop-repair #parallax-8 {
-  display: none; }
-
 .page-cellphone-unlocks #parallax-5,
 .page-cellphone-unlocks #parallax-6,
 .page-cellphone-unlocks #parallax-7,

@@ -623,7 +623,7 @@ article.intro {
         margin: 15px auto 15px auto;
         width: 25px;
         height: 72px;
-        background-image: url(../images/global/iconMouseDown2.png);
+        background-image: url(../images/global/iconMouseDown.png);
         clear: both;
         cursor: pointer;
     }
@@ -1116,6 +1116,33 @@ article.intro {
         width: 95%;
         height: 370px;
         margin-top: 25px;
+
+        img {
+            max-width: none;
+            max-height: none;
+        }
+
+        .gm-style-iw{
+            max-height: 400px;
+        }
+
+        #map-info {
+            padding: 5px 0 0 20px; 
+            h1 {
+                margin: 0;
+                font-size: rem(20);
+            }
+
+            p {
+                line-height: 1;
+                margin: 8px 0;
+            }
+
+            a {
+                color: $color-red;
+                line-height: 1.2;
+            }
+        }
     }
 
     #get-in-touch {        
@@ -1792,6 +1819,10 @@ footer#footer {
 
     #repair {
         margin-top: 65px;
+
+        #filter-model div {
+            margin-bottom: 10px;
+        }        
     }
 
 }
@@ -1874,10 +1905,6 @@ footer#footer {
             display: block;
         }
 
-        #filter-model div {
-            margin-bottom: 10px;
-        }
-
     }
 
     // Section Intro text articles
@@ -1940,48 +1967,9 @@ footer#footer {
     }
 }
 
-
-
 .page-ipod-repair,
 .page-ipad-repair,
 .page-laptop-repair,
-.page-cellphone-unlocks {
-    #parallax-5,
-    #parallax-6,
-    #parallax-7,
-    #parallax-8 {
-        display: none;
-    }
-}
-
-.page-ipod-repair {
-    #parallax-5,
-    #parallax-6,
-    #parallax-7,
-    #parallax-8 {
-        display: none;
-    }
-}
-
-.page-ipad-repair {
-    #parallax-5,
-    #parallax-6,
-    #parallax-7,
-    #parallax-8 {
-        display: none;
-    }
-}
-
-
-.page-laptop-repair {
-    #parallax-5,
-    #parallax-6,
-    #parallax-7,
-    #parallax-8 {
-        display: none;
-    }
-}
-
 .page-cellphone-unlocks {
     #parallax-5,
     #parallax-6,
