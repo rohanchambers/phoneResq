@@ -23,8 +23,6 @@ get_header(); ?>
 
 					<?php get_search_form(); ?>
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
 					<?php if ( some_like_it_neat_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 
 				<div class="widget widget_categories">
@@ -47,12 +45,6 @@ get_header(); ?>
 				</div><!-- .widget -->
 		<?php endif; ?>
 
-		<?php
-		/* translators: %1$s: smiley */
-		$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'some-like-it-neat' ), convert_smilies( ':)' ) ) . '</p>';
-		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-		?>
-
 				<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 
 				</div><!-- .page-content -->
@@ -60,5 +52,4 @@ get_header(); ?>
 		</div>
 	</div><!-- #primary -->
 
-    <?php get_sidebar(); ?>
 <?php get_footer(); ?>

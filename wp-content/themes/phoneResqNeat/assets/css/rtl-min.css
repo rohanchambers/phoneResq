@@ -329,30 +329,31 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 #header #nav-main li ul#subnav li:hover span{width:100%}#header #nav-main li#dropdown:hover>#subnav{display:block;-webkit-animation:fadeIn .5s ease-in;animation:fadeIn .5s ease-in}
 #header #nav-main i{margin-left:5px}#header #nav-main a{color:#FFF}#header #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#FFF;transition:all .2s linear}
 #header #nav-main a:hover::after{width:100%}#header #social-links,#header #footer-social-links{margin-left:40px}
-#header #social-links li,#header #footer-social-links li{margin:0 10px 0 0}#header #social-links ul#share-me{position:fixed;top:60px;height:auto;width:auto;margin-left:-125px}
+#header #social-links li,#header #footer-social-links li{margin:0 10px 0 0}#header #social-links ul#share-me{position:absolute;top:35px;height:auto;width:280px;margin-left:-125px}
 #header #social-links ul#share-me li{display:block;width:auto}#header #nav-cta{float:right;margin-top:10px}
 #header #nav-cta li{margin:0 0 5px 10px}#header #nav-cta i{margin-right:7px}#header #logo{float:left;margin-right:5px;width:110px;height:99px;background:url(../images/global/phoneResqLogo.png) no-repeat;background-size:100%;overflow:hidden;text-indent:101%;white-space:nowrap}
 #header #logo a{display:block;width:100%;height:100%}#header.nav-min{position:fixed;z-index:200;top:0;width:100%;height:75px;padding:7px 0;background-color:#FFF;transition:background-color 1s;-moz-transition:background-color 1s;-webkit-transition:background-color 1s;-o-transition:background-color 1s;box-shadow:0 0 9px 2px rgba(0,0,0,0.75)}
 #header.nav-min #nav-main a,#header.nav-min #social-links a,#header.nav-min #footer-social-links a{color:#404040}
 #header.nav-min #nav-main a.active::after{width:100%}#header.nav-min .nav-global{margin-top:20px}
 #header.nav-min #nav-cta{margin-top:15px}#header.nav-min #social-links a:hover,#header.nav-min #footer-social-links a:hover{color:#e20510}
-#header.nav-min #social-links ul#share-me{top:54px}#header.nav-min #sub-nav,#header.nav-min #dropdown i,#header.nav-min li#dropdown:hover>#subnav{display:none !important}
+#header.nav-min #social-links ul#share-me{background-color:#FFF;top:38px;padding-left:10px;margin-left:-163px;box-shadow:0 4px 15px -4px rgba(0,0,0,0.58);-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
+#header.nav-min #sub-nav,#header.nav-min #dropdown i,#header.nav-min li#dropdown:hover>#subnav{display:none !important}
 #header.nav-min #logo{max-width:70px;height:63px;background:url(../images/global/phoneResqLogo.png) no-repeat;background-size:100%}
 #header.nav-min #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#404040;transition:all .2s linear}
 #header.nav-min #nav-main a:hover::after{width:100%}.nav-global{position:relative;float:left;margin-top:15px}
 .nav-global ul{margin:0;padding:0}.nav-global li{float:left;list-style-type:none;padding:0}
 .nav-global a{font-family:'Open Sans',Arial,sans-serif;font-size:.9375rem;text-decoration:none;color:#FFF;text-transform:uppercase}
-.nav-global a:hover{color:#e20510}#carousel{position:absolute;top:0;left:0;z-index:0;width:100%;height:530px}
-#carousel .slide{margin:0 auto}#carousel .slide .slide-content{width:960px;margin:0 auto}
-#carousel .slide article{float:right;margin-right:90px;margin-top:140px;width:550px;text-align:right;font-family:'Open Sans',sans-serif}
-#carousel .slide article h1{margin:0;color:#FFF;text-transform:uppercase;font-size:2rem;font-weight:600}
-#carousel .slide article p{margin:10px 0 30px 0;font-size:1.375rem;line-height:1.4;font-weight:300;color:#FFF}
-#carousel .slide article a{padding:8px 25px;font-size:22px;color:#FFF;font-weight:600;text-transform:uppercase;text-decoration:none;border-radius:4px;border:3px solid #FFF}
-#carousel .slide article a:hover{background-color:#e20510;border:3px solid #e20510;border-radius:5px}
-#carousel .section-divider{top:510px}#carousel #carousel-btn{position:absolute;top:200px;width:100%}
-#carousel .btn-slide{position:absolute;width:30px;height:40px;color:#FFF;display:none}
-#carousel .btn-slide:hover{color:#e20510}#carousel #btn-prev{left:30px}#carousel #btn-nxt{right:30px}
-#carousel #slide-1{width:100%;height:530px;background:url(../images/carousel/slide-1.jpg) center center;background-size:cover}
+.nav-global a:hover{color:#e20510}#page #carousel{display:none}.page-home #page #carousel{position:absolute;top:0;left:0;display:block;z-index:0;width:100%;height:530px}
+.page-home #page #carousel .slide{margin:0 auto}.page-home #page #carousel .slide .slide-content{width:960px;margin:0 auto}
+.page-home #page #carousel .slide article{float:right;margin-right:90px;margin-top:140px;width:550px;text-align:right;font-family:'Open Sans',sans-serif}
+.page-home #page #carousel .slide article h1{margin:0;color:#FFF;text-transform:uppercase;font-size:2rem;font-weight:600}
+.page-home #page #carousel .slide article p{margin:10px 0 30px 0;font-size:1.375rem;line-height:1.4;font-weight:300;color:#FFF}
+.page-home #page #carousel .slide article a{padding:8px 25px;font-size:22px;color:#FFF;font-weight:600;text-transform:uppercase;text-decoration:none;border-radius:4px;border:3px solid #FFF}
+.page-home #page #carousel .slide article a:hover{background-color:#e20510;border:3px solid #e20510;border-radius:5px}
+.page-home #page #carousel .section-divider{top:510px}.page-home #page #carousel #carousel-btn{position:absolute;top:200px;width:100%}
+.page-home #page #carousel .btn-slide{position:absolute;width:30px;height:40px;color:#FFF;display:none}
+.page-home #page #carousel .btn-slide:hover{color:#e20510}.page-home #page #carousel #btn-prev{left:30px}
+.page-home #page #carousel #btn-nxt{right:30px}.page-home #page #carousel #slide-1{width:100%;height:530px;background:url(../images/carousel/slide-1.jpg) center center;background-size:cover}
 .container{max-width:1024px;margin-left:auto;margin-right:auto}.container::after{clear:both;content:"";display:table}
 .row{display:block;margin:0}.row::after{clear:both;content:"";display:table}
 .two-col{float:left;display:block;margin-right:1.20482%;width:49.39759%}.two-col:last-child{margin-right:0}
@@ -431,12 +432,15 @@ footer#footer #company-details #social-links li,footer#footer #company-details #
 footer#footer #footer-links{text-align:right}footer#footer #footer-links #back-top{display:inline-block;width:62px;height:74px;background:url(../images/footer/backTop.png) 0 0}
 footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#footer #footer-links #copyright{margin-top:25px;font-size:.6875rem}
 footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowrap}
-.page-template-services #carousel{display:none}.page-template-services #header #nav-main{position:relative}
-.page-template-services #header #nav-main li ul#subnav{background-color:#FFF}.page-template-services #header #nav-main li ul#subnav li{border-bottom:1px solid #404040}
-.page-template-services #header #nav-main li a::after{background-color:#404040}.page-template-services #header #nav-main a{color:#404040}
-.page-template-services #header #social-links a{color:#404040}.page-template-services #header #social-links a:hover{color:#e20510 !important}
+.page-template-services #header #nav-main,.error404 #header #nav-main{position:relative}
+.page-template-services #header #nav-main li ul#subnav,.error404 #header #nav-main li ul#subnav{background-color:#FFF}
+.page-template-services #header #nav-main li ul#subnav li,.error404 #header #nav-main li ul#subnav li{border-bottom:1px solid #404040}
+.page-template-services #header #nav-main li a::after,.error404 #header #nav-main li a::after{background-color:#404040}
+.page-template-services #header #nav-main a,.error404 #header #nav-main a{color:#404040}
+.page-template-services #header #social-links a,.error404 #header #social-links a{color:#404040}
+.page-template-services #header #social-links a:hover,.error404 #header #social-links a:hover{color:#e20510 !important}
 #header.nav-min #nav-main #social-links a:hover{color:#e20510}#header.nav-min #nav-main li ul#subnav{padding-top:0}
-#header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#repair.nav-min{margin-top:175px}
+#header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#repair.nav-min,.error-404.nav-min{margin-top:175px}
 #repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
 #repair h1,#repair p{text-align:left}#repair p{width:100%}#repair a{color:#404040}
 #repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}#repair .row{overflow:hidden;margin:0 0 50px 0;padding-bottom:5px}
@@ -445,13 +449,14 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #repair .btn-global i,#repair #header #nav-cta .btn-nav i,#header #nav-cta #repair .btn-nav i,#repair #shop #shop-products a i,#shop #shop-products #repair a i{margin-right:7px}
 #repair .two-col h2{position:relative;font-size:1.6875rem;margin-top:30px;padding-top:5px;color:#404040}
 #repair .two-col h2::before{content:'';position:absolute;top:-5px;left:0;width:50%;height:2px;background-color:#e20510;transition:all .2s linear}
-#repair .two-col a:hover::before{width:100%}.parallax{position:absolute;top:50%;width:365px;height:626px;background:url(../images/page-repair/bg-parallax.png) no-repeat;opacity:.4}
+#repair .two-col a:hover::before{width:100%}.error404 #primary a{color:#404040}.error-404{padding-bottom:50px}
+.parallax{position:absolute;top:50%;width:365px;height:626px;background:url(../images/page-repair/bg-parallax.png) no-repeat;opacity:.4}
 #parallax-1{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-2{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-3{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-4{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-5{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-6{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-7{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-8{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 @media screen and (min-width:1200px){#sell .sell-row-img{background-position:center bottom}
-}@media screen and (max-width:1030px){.container{margin:0 4%}#carousel .slide .slide-content{width:100%}
+}@media screen and (max-width:1030px){.container{margin:0 4%}.page-home #page #carousel .slide .slide-content{width:100%}
 }@media(max-width:1028px){#social-links{display:none}}@media(max-width:873px){#nav-cta{display:none}
 }@media screen and (max-width:867px){.about-row-img,.sell-row-img{width:50%;min-height:652px;position:absolute;right:0}
 }@media screen and (max-width:768px){.container{margin:0 2%}.about-row-img,.sell-row-img{width:50%;min-height:620px;position:absolute;right:0}
@@ -479,7 +484,7 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #repair{margin-top:65px}#repair #filter-model div{margin-bottom:10px}}@media screen and (max-width:667px){.container{margin:0 4%;width:92%}
 .intro,.repair,.about-rows,#contact .two-col,.page-template-services #repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
 .intro:last-child,.repair:last-child,.about-rows:last-child,#contact .two-col:last-child,.page-template-services #repair .two-col:last-child{margin-right:0}
-#carousel .slide .slide-content{width:80%;margin:0 auto}#carousel .slide article{width:100%;float:none;margin:0;padding-top:80px;text-align:center}
+.page-home #page #carousel .slide .slide-content{width:80%;margin:0 auto}.page-home #page #carousel .slide article{width:100%;float:none;margin:0;padding-top:80px;text-align:center}
 #services{padding-bottom:10px}#about .container article{margin-right:10%}.ipad-repair #repair .img-holder img{margin-left:-120px}
 #repair .row{margin:0}#repair .row.row-filter .two-col{margin-bottom:20px}#repair .two-col{margin-bottom:50px}
 #repair .two-col p,#repair .two-col h2{text-align:center}#repair .two-col h2::before{left:50%;right:50%;margin-left:-24%}
@@ -487,6 +492,6 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 .repair,#services .row.row-products{margin-bottom:30px}#contact #contact-form{width:100%}
 #contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}#contact #get-in-touch .intro span{margin:0 auto}
 #contact #get-in-touch .intro p{width:100%}#about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
-}.nav-links{display:none}.error404 #carousel{display:none}.page-ipod-repair #parallax-5,.page-ipod-repair #parallax-6,.page-ipod-repair #parallax-7,.page-ipod-repair #parallax-8,.page-ipad-repair #parallax-5,.page-ipad-repair #parallax-6,.page-ipad-repair #parallax-7,.page-ipad-repair #parallax-8,.page-laptop-repair #parallax-5,.page-laptop-repair #parallax-6,.page-laptop-repair #parallax-7,.page-laptop-repair #parallax-8,.page-cellphone-unlocks #parallax-5,.page-cellphone-unlocks #parallax-6,.page-cellphone-unlocks #parallax-7,.page-cellphone-unlocks #parallax-8{display:none}
+}.nav-links{display:none}.page-ipod-repair #parallax-5,.page-ipod-repair #parallax-6,.page-ipod-repair #parallax-7,.page-ipod-repair #parallax-8,.page-ipad-repair #parallax-5,.page-ipad-repair #parallax-6,.page-ipad-repair #parallax-7,.page-ipad-repair #parallax-8,.page-laptop-repair #parallax-5,.page-laptop-repair #parallax-6,.page-laptop-repair #parallax-7,.page-laptop-repair #parallax-8,.page-cellphone-unlocks #parallax-5,.page-cellphone-unlocks #parallax-6,.page-cellphone-unlocks #parallax-7,.page-cellphone-unlocks #parallax-8{display:none}
 .screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
 .screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#7e0309;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#e20510;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}

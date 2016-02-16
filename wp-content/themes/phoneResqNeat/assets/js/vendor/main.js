@@ -30,13 +30,12 @@ $( document ).ready(function() {
 
 	$("#modal-1").on("change", function() {
 	
-	if ($(this).is(":checked")) {
-	  $("body").addClass("modal-open");
-	} else {
-	  $("body").removeClass("modal-open");
-	}
+		if ($(this).is(":checked")) {
+		  $("body").addClass("modal-open");
+		} else {
+		  $("body").removeClass("modal-open");
+		}
 	});
-
 		$(".modal-fade-screen, .modal-close").on("click", function() {
 		$(".modal-state:checked").prop("checked", false).change();
 	});
@@ -140,6 +139,10 @@ $( document ).ready(function() {
 	      
 	      $('html, body').animate({scrollTop : 0}, speed);
 	    
+	    } else if ( target == '#nogo'){
+	    	
+	    	return false;
+
 	    } else {
 
 	    	$('html, body').animate({
@@ -148,7 +151,7 @@ $( document ).ready(function() {
 	   
 	    	}, speed);
 	    }
-	});	
+	});
 
 
 	// Icon mouse show hide intro text only if it hasn't scrolled down
@@ -180,10 +183,12 @@ $(document).on('scroll',function(){
 	        $('#header').addClass('nav-min');
 	        $('#services').addClass('nav-min');
 	        $('#repair').addClass('nav-min');
+	        $('.error-404').addClass('nav-min');
 	    } else {
 	        $('#header').removeClass('nav-min');
 	        $('#services').removeClass('nav-min');
 	        $('#repair').removeClass('nav-min');
+	        $('.error-404').removeClass('nav-min');
 	    }
 
 	    // If scroll top is 400 + show hide intro paragraph
@@ -195,7 +200,6 @@ $(document).on('scroll',function(){
 	}
 
 });
-
 
 
 // Load Google maps
@@ -222,7 +226,7 @@ function initMap() {
 		  '<div id="bodyContent">'+
 		  '<p>We repair and improve all of your handheld devices and home computers. ' +
 		  '<p>1001 Atlantic Avenue,<br> Suite B,<br> Fernandina Beach,<br> Florida, 32034</p>'+
-		  '<p>Website: <a href="https://phoneResq.com/" target="_blank">'+
+		  '<p>Website: <a href="http://phoneResq.com/" target="_blank">'+
 		  'http://phoneresq.com/</a> <br>'+
 		  'Email: <a href="@mailto:phoneresq@gmail.com">'+
 		  'phoneresq@gmail.com</a><br>'+

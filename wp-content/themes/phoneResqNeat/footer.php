@@ -20,7 +20,7 @@
 		    <div class="container">
 		        <div class="row">
 		            <div id="company-details" class="two-col">
-		                <a href="/#header"><img src="<?php bloginfo('template_directory'); ?>/assets/images/footer/logo.png" alt="Phone Resq." /></a>
+		                <a href="#header"><img src="<?php bloginfo('template_directory'); ?>/assets/images/footer/logo.png" alt="Phone Resq." /></a>
 		                <p><a href="tel:9043100059">(904) 310-0059</a></p>
 		                <p><a href="mailto:info@phoneresq.com">info@phoneresq.com</a></p>
 		                <p>1001 Atlantic Avenue Suite<br>

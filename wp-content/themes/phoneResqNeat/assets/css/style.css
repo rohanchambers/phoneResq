@@ -2509,10 +2509,10 @@ select {
     #header #footer-social-links li {
       margin: 0 10px 0 0; }
   #header #social-links ul#share-me {
-    position: fixed;
-    top: 60px;
+    position: absolute;
+    top: 35px;
     height: auto;
-    width: auto;
+    width: 280px;
     margin-left: -125px; }
     #header #social-links ul#share-me li {
       display: block;
@@ -2569,7 +2569,17 @@ select {
   #header.nav-min #footer-social-links a:hover {
     color: #e20510; }
   #header.nav-min #social-links ul#share-me {
-    top: 54px; }
+    background-color: #FFF;
+    top: 38px;
+    padding-left: 10px;
+    margin-left: -163px;
+    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.58);
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
   #header.nav-min #sub-nav, #header.nav-min #dropdown i,
   #header.nav-min li#dropdown:hover > #subnav {
     display: none !important; }
@@ -2610,38 +2620,42 @@ select {
   .nav-global a:hover {
     color: #e20510; }
 
-#carousel {
+#page #carousel {
+  display: none; }
+
+.page-home #page #carousel {
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
   z-index: 0;
   width: 100%;
   height: 530px; }
-  #carousel .slide {
+  .page-home #page #carousel .slide {
     margin: 0 auto; }
-    #carousel .slide .slide-content {
+    .page-home #page #carousel .slide .slide-content {
       width: 960px;
       margin: 0 auto; }
-    #carousel .slide article {
+    .page-home #page #carousel .slide article {
       float: right;
       margin-right: 90px;
       margin-top: 140px;
       width: 550px;
       text-align: right;
       font-family: 'Open Sans', sans-serif; }
-      #carousel .slide article h1 {
+      .page-home #page #carousel .slide article h1 {
         margin: 0;
         color: #FFF;
         text-transform: uppercase;
         font-size: 2rem;
         font-weight: 600; }
-      #carousel .slide article p {
+      .page-home #page #carousel .slide article p {
         margin: 10px 0 30px 0;
         font-size: 1.375rem;
         line-height: 1.4;
         font-weight: 300;
         color: #FFF; }
-      #carousel .slide article a {
+      .page-home #page #carousel .slide article a {
         padding: 8px 25px;
         font-size: 22px;
         color: #FFF;
@@ -2650,29 +2664,29 @@ select {
         text-decoration: none;
         border-radius: 4px;
         border: 3px solid #FFF; }
-      #carousel .slide article a:hover {
+      .page-home #page #carousel .slide article a:hover {
         background-color: #e20510;
         border: 3px solid #e20510;
         border-radius: 5px; }
-  #carousel .section-divider {
+  .page-home #page #carousel .section-divider {
     top: 510px; }
-  #carousel #carousel-btn {
+  .page-home #page #carousel #carousel-btn {
     position: absolute;
     top: 200px;
     width: 100%; }
-  #carousel .btn-slide {
+  .page-home #page #carousel .btn-slide {
     position: absolute;
     width: 30px;
     height: 40px;
     color: #FFF;
     display: none; }
-  #carousel .btn-slide:hover {
+  .page-home #page #carousel .btn-slide:hover {
     color: #e20510; }
-  #carousel #btn-prev {
+  .page-home #page #carousel #btn-prev {
     left: 30px; }
-  #carousel #btn-nxt {
+  .page-home #page #carousel #btn-nxt {
     right: 30px; }
-  #carousel #slide-1 {
+  .page-home #page #carousel #slide-1 {
     width: 100%;
     height: 530px;
     background: url(../images/carousel/slide-1.jpg) center center;
@@ -3213,24 +3227,28 @@ footer#footer {
     text-indent: 101%;
     white-space: nowrap; }
 
-.page-template-services #carousel {
-  display: none; }
-
-.page-template-services #header #nav-main {
+.page-template-services #header #nav-main,
+.error404 #header #nav-main {
   position: relative; }
-  .page-template-services #header #nav-main li ul#subnav {
+  .page-template-services #header #nav-main li ul#subnav,
+  .error404 #header #nav-main li ul#subnav {
     background-color: #FFF; }
-    .page-template-services #header #nav-main li ul#subnav li {
+    .page-template-services #header #nav-main li ul#subnav li,
+    .error404 #header #nav-main li ul#subnav li {
       border-bottom: 1px solid #404040; }
-  .page-template-services #header #nav-main li a::after {
+  .page-template-services #header #nav-main li a::after,
+  .error404 #header #nav-main li a::after {
     background-color: #404040; }
-  .page-template-services #header #nav-main a {
+  .page-template-services #header #nav-main a,
+  .error404 #header #nav-main a {
     color: #404040; }
 
-.page-template-services #header #social-links a {
+.page-template-services #header #social-links a,
+.error404 #header #social-links a {
   color: #404040; }
 
-.page-template-services #header #social-links a:hover {
+.page-template-services #header #social-links a:hover,
+.error404 #header #social-links a:hover {
   color: #e20510 !important; }
 
 #header.nav-min #nav-main #social-links a:hover {
@@ -3241,7 +3259,8 @@ footer#footer {
   #header.nav-min #nav-main li ul#subnav li {
     border-bottom: 1px solid white; }
 
-#repair.nav-min {
+#repair.nav-min,
+.error-404.nav-min {
   margin-top: 175px; }
 
 #repair article {
@@ -3311,6 +3330,12 @@ footer#footer {
 #repair .two-col a:hover::before {
   width: 100%; }
 
+.error404 #primary a {
+  color: #404040; }
+
+.error-404 {
+  padding-bottom: 50px; }
+
 .parallax {
   position: absolute;
   top: 50%;
@@ -3366,7 +3391,7 @@ footer#footer {
 @media screen and (max-width: 1030px) {
   .container {
     margin: 0 4%; }
-  #carousel .slide .slide-content {
+  .page-home #page #carousel .slide .slide-content {
     width: 100%; } }
 
 @media (max-width: 1028px) {
@@ -3553,10 +3578,10 @@ footer#footer {
     #contact .two-col:last-child,
     .page-template-services #repair .two-col:last-child {
       margin-right: 0; }
-  #carousel .slide .slide-content {
+  .page-home #page #carousel .slide .slide-content {
     width: 80%;
     margin: 0 auto; }
-  #carousel .slide article {
+  .page-home #page #carousel .slide article {
     width: 100%;
     float: none;
     margin: 0;
@@ -3609,9 +3634,6 @@ footer#footer {
     display: none; } }
 
 .nav-links {
-  display: none; }
-
-.error404 #carousel {
   display: none; }
 
 .page-ipod-repair #parallax-5,

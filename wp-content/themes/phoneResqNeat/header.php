@@ -49,6 +49,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/assets/images/icons/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_directory'); ?>/assets/images/icons/android-icon-192x192.png">
     <link rel="manifest" href="<?php bloginfo('template_directory'); ?>/assets/images/icons/manifest.json">
+    <link rel="image_src" type="image/jpeg" href="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/og_image.jpg" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_directory'); ?>/assets/images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -56,13 +57,12 @@
     <!-- Open graph tags -->
     <meta property="og:title"           content="Phone ResQ" />
     <meta property="og:description"     content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
-    <meta property="og:type"            content="website" />
-    <meta property="og:url"             content="http://www.phoneresq.com/" />
+    <meta property="og:url"             content="http://phoneresq.com/" />
     <meta property="og:image"           content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/og_image.jpg" />
-    <meta property="og:image:width"     content="1200" />
-    <meta property="og:image:height"    content="1200" />    
+    <meta property="og:image:width"     content="600" />
+    <meta property="og:image:height"    content="600" />
+    <meta property="og:image:type"      content="image/jpeg" /> 
     <meta property="og:locale"          content="en_US" />
-    <meta property="og:type"            content="website" />
     <meta property="fb:app_id"          content="628421490629466" />
 
     <meta name="twitter:card"           content="summary">
@@ -106,7 +106,7 @@
                         <li><a href="https://www.facebook.com/PhoneResQ/" title="Facebook share" target="_blank"><i class="fa fa-facebook fa-lg btn-animate"></i></a></li>
                         <li><a href="https://twitter.com/PhoneResQ/" title="Twitter share" target="_blank"><i class="fa fa-twitter fa-lg btn-animate"></i></a></li>
                         <li><a href="https://www.instagram.com/dinaresq/" title="Instagram share" target="_blank"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
-                        <li><a id="share-me-cta" class="animatedClick" href="#" title="Social share" data-target="share-me-panel"><i class="fa fa-lg fa-share-alt btn-animate"></i></a>
+                        <li><a href="#nogo" id="share-me-cta" class="animatedClick fast" title="Share this site" data-target="share-me-panel"><i class="fa fa-lg fa-share-alt btn-animate"></i></a>
                             <ul id="share-me" class="animated fadeInDown fast share-me-panel">
                                 <li><div class="fb-share-button" data-href="http://phoneresq.com/" data-layout="button"></div></li>
                                 <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://phoneresq.com/" data-text="We repair and improve all of your handheld devices and home computers." data-via="PhoneResQ">Tweet</a></li>                            
