@@ -283,13 +283,26 @@ select {
         }
     }
 
+    #social-links ul#share-me {
+        position: fixed;
+        top: 60px;
+        height: auto;
+        width: auto;
+        margin-left: -125px;
+
+        li {
+            display: block;
+            width: auto;
+        }
+    }
+
     // Request repair and phone
     #nav-cta {
         float: right;
         margin-top: 10px;
 
         li {
-            margin: 0 0 0 10px;
+            margin: 0 0 5px 10px;
         }
 
         i {
@@ -362,6 +375,10 @@ select {
     #social-links a:hover,
     #footer-social-links a:hover {
         color: $color-red;   
+    }
+
+    #social-links ul#share-me {
+        top: 54px;
     }
     
     #sub-nav, #dropdown i,

@@ -246,10 +246,9 @@ get_header(); ?>
                           //if "email" variable is not filled out, display the form
                           else  {
                         ?>
-
+                        <p>Please fill in all the fields below to send us a message online.</p>
                         <form id="contact-form" method="post" action="index.php#contact">
                             <fieldset>
-                                <legend>Please fill in all the fields below to send us a message online.</legend>
                                 <p>
                                     <input type="text" placeholder="Name" name="subject" id="resqFullname" required>
                                     <span></span>

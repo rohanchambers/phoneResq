@@ -140,11 +140,14 @@ $( document ).ready(function() {
 	      
 	      $('html, body').animate({scrollTop : 0}, speed);
 	    
-	    } else $('html, body').animate({
+	    } else {
+
+	    	$('html, body').animate({
 	   
-	        scrollTop: $(target).offset().top - 45
+	        	scrollTop: $(target).offset().top - 45
 	   
-	    }, speed);
+	    	}, speed);
+	    }
 	});	
 
 

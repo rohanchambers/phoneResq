@@ -124,7 +124,8 @@ a:focus {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline: 0; }
 
 /* ==========================================================================
@@ -2507,11 +2508,20 @@ select {
     #header #social-links li,
     #header #footer-social-links li {
       margin: 0 10px 0 0; }
+  #header #social-links ul#share-me {
+    position: fixed;
+    top: 60px;
+    height: auto;
+    width: auto;
+    margin-left: -125px; }
+    #header #social-links ul#share-me li {
+      display: block;
+      width: auto; }
   #header #nav-cta {
     float: right;
     margin-top: 10px; }
     #header #nav-cta li {
-      margin: 0 0 0 10px; }
+      margin: 0 0 5px 10px; }
     #header #nav-cta i {
       margin-right: 7px; }
   #header #logo {
@@ -2558,6 +2568,8 @@ select {
   #header.nav-min #social-links a:hover,
   #header.nav-min #footer-social-links a:hover {
     color: #e20510; }
+  #header.nav-min #social-links ul#share-me {
+    top: 54px; }
   #header.nav-min #sub-nav, #header.nav-min #dropdown i,
   #header.nav-min li#dropdown:hover > #subnav {
     display: none !important; }

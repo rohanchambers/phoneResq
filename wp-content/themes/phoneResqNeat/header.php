@@ -54,21 +54,24 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Open graph tags -->
-    <meta property="og:title"   content="Phone ResQ" />
-    <meta property="og:description"   content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
-    <meta property="og:type"    content="website" />
-    <meta property="og:url"     content="http://www.phoneresq.com/" />
-    <meta property="og:image"   content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/global/phoneResqLogo.png" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title"           content="Phone ResQ" />
+    <meta property="og:description"     content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
+    <meta property="og:type"            content="website" />
+    <meta property="og:url"             content="http://www.phoneresq.com/" />
+    <meta property="og:image"           content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/og_image.jpg" />
+    <meta property="og:image:width"     content="1200" />
+    <meta property="og:image:height"    content="1200" />    
+    <meta property="og:locale"          content="en_US" />
+    <meta property="og:type"            content="website" />
+    <meta property="fb:app_id"          content="628421490629466" />
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@PhoneResQ">
-    <meta name="twitter:title" content="PhoneResq">
-    <meta name="twitter:description" content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online.">
-    <meta name="twitter:creator" content="@PhoneResQ">
-    <meta name="twitter:image:src" content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/global/phoneResqLogo.png">
-    <meta name="twitter:domain" content="phoneresq.com">
+    <meta name="twitter:card"           content="summary">
+    <meta name="twitter:site"           content="@PhoneResQ">
+    <meta name="twitter:title"          content="PhoneResq">
+    <meta name="twitter:description"    content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online.">
+    <meta name="twitter:creator"        content="@PhoneResQ">
+    <meta name="twitter:image:src"      content="http://phoneresq.com/wp-content/themes/phoneResq/assets/global/og_image.jpg">
+    <meta name="twitter:domain"         content="phoneresq.com">
 </head>
 
 <body <?php body_class(); ?>>
@@ -103,7 +106,14 @@
                         <li><a href="https://www.facebook.com/PhoneResQ/" title="Facebook share" target="_blank"><i class="fa fa-facebook fa-lg btn-animate"></i></a></li>
                         <li><a href="https://twitter.com/PhoneResQ/" title="Twitter share" target="_blank"><i class="fa fa-twitter fa-lg btn-animate"></i></a></li>
                         <li><a href="https://www.instagram.com/dinaresq/" title="Instagram share" target="_blank"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
-                        <!-- <li><a href="http://www.phoneresq.com/feed" title="RSS share"><i class="fa fa-rss fa-lg btn-animate"></i></a></li> -->
+                        <li><a id="share-me-cta" class="animatedClick" href="#" title="Social share" data-target="share-me-panel"><i class="fa fa-lg fa-share-alt btn-animate"></i></a>
+                            <ul id="share-me" class="animated fadeInDown fast share-me-panel">
+                                <li><div class="fb-share-button" data-href="http://phoneresq.com/" data-layout="button"></div></li>
+                                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://phoneresq.com/" data-text="We repair and improve all of your handheld devices and home computers." data-via="PhoneResQ">Tweet</a></li>                            
+                                <li><script type="IN/Share" data-url="http://phoneresq.com/"></script></li>
+                                <li><div class="g-plusone" data-annotation="none"></div></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <nav id="nav-cta" class="nav-global">
