@@ -12,14 +12,13 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-
     <?php tha_head_top(); ?>
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="author" content="Phone ResQ">
-    <meta name="description" content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
+    <meta name="author" content="Welcome to Phone ResQ">
+    <meta name="description" content="We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
     <meta name="keywords" content="mobile repair, cell phone repair, tablet repair, iphone repair, ipad repair, ipod repair, Android repaair" />    
 
     <meta name="apple-mobile-web-app-title" content="Phone ResQ">
@@ -32,11 +31,27 @@
     <link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <?php tha_head_bottom(); ?>
-    <?php wp_head(); ?>
-    <link rel="alternate" type="application/rss+xml" title="Example" href="http://www.aweber.com/blog/feed/" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/keyframes.css" data-skrollr-stylesheet />
+    <link rel="alternate" type="application/rss+xml" title="Example" href="http://www.aweber.com/blog/feed/" />
+
+    <!-- Open graph tags -->
+    <meta property="og:image"           content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/share-image.jpg" />    
+    <meta property="og:title"           content="Welcome to PhoneResQ" />
+    <meta property="og:description"     content="We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
+    <meta property="og:url"             content="http://phoneresq.com/" />    
+    <meta property="og:image:width"     content="600" />
+    <meta property="og:image:height"    content="600" />
+    <meta property="og:image:type"      content="image/jpg" /> 
+    <meta property="fb:app_id"          content="628421490629466" />
+
+    <meta name="twitter:card"           content="summary">
+    <meta name="twitter:site"           content="@PhoneResQ">
+    <meta name="twitter:title"          content="Welcome to PhoneResQ">
+    <meta name="twitter:description"    content="We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online.">
+    <meta name="twitter:creator"        content="@PhoneResQ">
+    <meta name="twitter:image:src"      content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/share-image.jpg">
+    <meta name="twitter:domain"         content="phoneresq.com">
+
     <!-- Web and App Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/assets/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('template_directory'); ?>/assets/images/icons/apple-icon-60x60.png">
@@ -49,29 +64,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/assets/images/icons/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_directory'); ?>/assets/images/icons/android-icon-192x192.png">
     <link rel="manifest" href="<?php bloginfo('template_directory'); ?>/assets/images/icons/manifest.json">
-    <link rel="image_src" type="image/jpeg" href="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/og_image.jpg" />
+    <link rel="image_src" type="image/jpg" href="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/share-image.jpg" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_directory'); ?>/assets/images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Open graph tags -->
-    <meta property="og:title"           content="Phone ResQ" />
-    <meta property="og:description"     content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
-    <meta property="og:url"             content="http://phoneresq.com/" />
-    <meta property="og:image"           content="http://phoneresq.com/wp-content/themes/phoneResq/assets/images/og_image.jpg" />
-    <meta property="og:image:width"     content="600" />
-    <meta property="og:image:height"    content="600" />
-    <meta property="og:image:type"      content="image/jpeg" /> 
-    <meta property="og:locale"          content="en_US" />
-    <meta property="fb:app_id"          content="628421490629466" />
+    <?php tha_head_bottom(); ?>
+    <?php wp_head(); ?>
 
-    <meta name="twitter:card"           content="summary">
-    <meta name="twitter:site"           content="@PhoneResQ">
-    <meta name="twitter:title"          content="PhoneResq">
-    <meta name="twitter:description"    content="Welcome to PhoneResQ. We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online.">
-    <meta name="twitter:creator"        content="@PhoneResQ">
-    <meta name="twitter:image:src"      content="http://phoneresq.com/wp-content/themes/phoneResq/assets/global/og_image.jpg">
-    <meta name="twitter:domain"         content="phoneresq.com">
 </head>
 
 <body <?php body_class(); ?>>

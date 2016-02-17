@@ -185,8 +185,8 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 			wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 
-			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '0.0.9', true );
-			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.0.9', true );
+			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.1', true );
+			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.1', true );
 
 
 			// Concatonated Scripts
@@ -212,8 +212,8 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 			wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 
-			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.0.9', true );
-			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.0.9', true );
+			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.1', true );
+			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.1', true );
 
 
 			// Concatonated Scripts
@@ -241,14 +241,14 @@ if ( ! function_exists( 'some_like_it_neat_styles' ) ) :
 		if ( SCRIPT_DEBUG || WP_DEBUG ) :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style.css', '', '2.3', 'screen'
+				get_template_directory_uri() . '/assets/css/style.css', '', '2.5', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 
 			else :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style-min.css', '', '2.3', 'screen'
+				get_template_directory_uri() . '/assets/css/style-min.css', '', '2.5', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 		endif;

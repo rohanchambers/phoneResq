@@ -184,6 +184,8 @@ $(document).on('scroll',function(){
 	        $('#services').addClass('nav-min');
 	        $('#repair').addClass('nav-min');
 	        $('.error-404').addClass('nav-min');
+	        $('#share-me').removeClass('go');
+	        $('#share-me').addClass('goAway');
 	    } else {
 	        $('#header').removeClass('nav-min');
 	        $('#services').removeClass('nav-min');
