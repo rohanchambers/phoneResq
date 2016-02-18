@@ -3590,7 +3590,17 @@ footer#footer {
   #services {
     padding-bottom: 10px; }
   #about .container article {
-    margin-right: 10%; }
+    margin-right: 10%;
+    border-bottom: 1px solid white; }
+  #about .container article.left {
+    margin-left: 11%; }
+  #about .container #about-row-three article {
+    border: none; }
+  #about-row-one-img,
+  #about-row-two-img,
+  #about-row-three-img {
+    background: none;
+    background-color: #475573; }
   .ipad-repair #repair .img-holder img {
     margin-left: -120px; }
   #repair .row {

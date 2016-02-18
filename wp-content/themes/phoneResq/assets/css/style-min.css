@@ -485,13 +485,16 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 .intro,.repair,.about-rows,#contact .two-col,.page-template-services #repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
 .intro:last-child,.repair:last-child,.about-rows:last-child,#contact .two-col:last-child,.page-template-services #repair .two-col:last-child{margin-right:0}
 .page-home #page #carousel .slide .slide-content{width:80%;margin:0 auto}.page-home #page #carousel .slide article{width:100%;float:none;margin:0;padding-top:80px;text-align:center}
-#services{padding-bottom:10px}#about .container article{margin-right:10%}.ipad-repair #repair .img-holder img{margin-left:-120px}
-#repair .row{margin:0}#repair .row.row-filter .two-col{margin-bottom:20px}#repair .two-col{margin-bottom:50px}
-#repair .two-col p,#repair .two-col h2{text-align:center}#repair .two-col h2::before{left:50%;right:50%;margin-left:-24%}
-#repair article{width:100%}#repair .img-holder img{margin:0 auto;display:block}article.intro p{width:100%}
-.repair,#services .row.row-products{margin-bottom:30px}#contact #contact-form{width:100%}
-#contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}#contact #get-in-touch .intro span{margin:0 auto}
-#contact #get-in-touch .intro p{width:100%}#about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
+#services{padding-bottom:10px}#about .container article{margin-right:10%;border-bottom:1px solid white}
+#about .container article.left{margin-left:11%}#about .container #about-row-three article{border:0}
+#about-row-one-img,#about-row-two-img,#about-row-three-img{background:0;background-color:#475573}
+.ipad-repair #repair .img-holder img{margin-left:-120px}#repair .row{margin:0}#repair .row.row-filter .two-col{margin-bottom:20px}
+#repair .two-col{margin-bottom:50px}#repair .two-col p,#repair .two-col h2{text-align:center}
+#repair .two-col h2::before{left:50%;right:50%;margin-left:-24%}#repair article{width:100%}
+#repair .img-holder img{margin:0 auto;display:block}article.intro p{width:100%}.repair,#services .row.row-products{margin-bottom:30px}
+#contact #contact-form{width:100%}#contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}
+#contact #get-in-touch .intro span{margin:0 auto}#contact #get-in-touch .intro p{width:100%}
+#about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
 }.nav-links{display:none}.page-ipod-repair #parallax-5,.page-ipod-repair #parallax-6,.page-ipod-repair #parallax-7,.page-ipod-repair #parallax-8,.page-ipad-repair #parallax-5,.page-ipad-repair #parallax-6,.page-ipad-repair #parallax-7,.page-ipad-repair #parallax-8,.page-laptop-repair #parallax-5,.page-laptop-repair #parallax-6,.page-laptop-repair #parallax-7,.page-laptop-repair #parallax-8,.page-cellphone-unlocks #parallax-5,.page-cellphone-unlocks #parallax-6,.page-cellphone-unlocks #parallax-7,.page-cellphone-unlocks #parallax-8{display:none}
 .screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
 .screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#7e0309;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#e20510;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
