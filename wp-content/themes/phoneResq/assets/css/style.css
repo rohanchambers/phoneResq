@@ -469,7 +469,7 @@ table {
     text-transform: capitalize; }
   .modal .modal-inner p {
     color: #333;
-    line-height: 1.5em; }
+    line-height: 1.5; }
   .modal .modal-inner .modal-intro {
     margin-bottom: 1em; }
   .modal .modal-inner .modal-content {
@@ -2458,7 +2458,8 @@ select {
         top: 20px;
         left: -5px;
         width: 220px;
-        padding-top: 5px; }
+        padding-top: 5px;
+        background-color: #FFF; }
         #header #nav-main li ul#subnav li {
           position: relative;
           display: block;
@@ -2469,7 +2470,7 @@ select {
             width: 100%;
             height: 100%;
             padding: 5px 6px;
-            border-bottom: 1px solid #FFF; }
+            border-bottom: 1px solid #404040; }
           #header #nav-main li ul#subnav li a::after {
             content: '';
             background: none; }
@@ -2490,7 +2491,7 @@ select {
     #header #nav-main i {
       margin-left: 5px; }
     #header #nav-main a {
-      color: #FFF; }
+      color: #404040; }
     #header #nav-main a::after {
       position: absolute;
       bottom: -2px;
@@ -2498,7 +2499,7 @@ select {
       content: '';
       width: 0%;
       height: 1px;
-      background-color: #FFF;
+      background-color: #404040;
       transition: all .2s linear; }
     #header #nav-main a:hover::after {
       width: 100%; }
@@ -2508,6 +2509,10 @@ select {
     #header #social-links li,
     #header #footer-social-links li {
       margin: 0 10px 0 0; }
+  #header #social-links a {
+    color: #404040; }
+  #header #social-links a:hover {
+    color: #e20510; }
   #header #social-links ul#share-me {
     position: absolute;
     top: 35px;
@@ -2538,6 +2543,25 @@ select {
       display: block;
       width: 100%;
       height: 100%; }
+
+.page-home #header #nav-main li ul#subnav {
+  background-color: transparent; }
+  .page-home #header #nav-main li ul#subnav li a {
+    border-bottom: 1px solid #FFF; }
+  .page-home #header #nav-main li ul#subnav li span {
+    background-color: #e20510; }
+
+.page-home #header #nav-main a {
+  color: #FFF; }
+
+.page-home #header #nav-main a::after {
+  background-color: #FFF; }
+
+.page-home #header #social-links a {
+  color: #FFF; }
+
+.page-home #header #social-links a:hover {
+  color: #e20510; }
 
 #header.nav-min {
   position: fixed;
@@ -3227,30 +3251,6 @@ footer#footer {
     text-indent: 101%;
     white-space: nowrap; }
 
-.page-template-services #header #nav-main,
-.error404 #header #nav-main {
-  position: relative; }
-  .page-template-services #header #nav-main li ul#subnav,
-  .error404 #header #nav-main li ul#subnav {
-    background-color: #FFF; }
-    .page-template-services #header #nav-main li ul#subnav li,
-    .error404 #header #nav-main li ul#subnav li {
-      border-bottom: 1px solid #404040; }
-  .page-template-services #header #nav-main li a::after,
-  .error404 #header #nav-main li a::after {
-    background-color: #404040; }
-  .page-template-services #header #nav-main a,
-  .error404 #header #nav-main a {
-    color: #404040; }
-
-.page-template-services #header #social-links a,
-.error404 #header #social-links a {
-  color: #404040; }
-
-.page-template-services #header #social-links a:hover,
-.error404 #header #social-links a:hover {
-  color: #e20510 !important; }
-
 #header.nav-min #nav-main #social-links a:hover {
   color: #e20510; }
 
@@ -3663,6 +3663,65 @@ footer#footer {
 .page-cellphone-unlocks #parallax-7,
 .page-cellphone-unlocks #parallax-8 {
   display: none; }
+
+.page-home #main,
+.page-template-services #main {
+  max-width: 100%; }
+
+#primary a,
+#secondary a {
+  color: #e20510; }
+
+#primary {
+  float: left;
+  margin: 0 auto;
+  width: 73%; }
+  #primary::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 1030px) {
+    #primary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 74.6988%; }
+      #primary:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    #primary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 100%; }
+      #primary:last-child {
+        margin-right: 0; } }
+  #primary ul {
+    list-style: none; }
+    #primary ul li {
+      list-style-type: square; }
+
+#secondary {
+  float: right;
+  margin: 20px auto;
+  padding: 0 30px 0 0;
+  width: 25%; }
+  @media screen and (max-width: 1030px) {
+    #secondary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 24.09639%; }
+      #secondary:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    #secondary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 100%; }
+      #secondary:last-child {
+        margin-right: 0; } }
 
 /*--------------------------------------------------------------
     6.7 Accessibility

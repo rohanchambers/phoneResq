@@ -27,7 +27,7 @@ table{border-collapse:collapse;border-spacing:0}.modal label{cursor:pointer;marg
 .modal .modal-inner{transition:opacity .25s ease;background:#fff;border-radius:3px;margin-top:0;margin:auto;max-height:95%;overflow:auto;padding:1.5em;position:relative;width:95%}
 @media screen and (min-width:40em){.modal .modal-inner{max-height:70%;padding:3em;width:60%}
 }@media screen and (min-width:53.75em){.modal .modal-inner{width:50%}}.modal .modal-inner h1{color:#333;text-align:left;text-transform:capitalize}
-.modal .modal-inner p{color:#333;line-height:1.5em}.modal .modal-inner .modal-intro{margin-bottom:1em}
+.modal .modal-inner p{color:#333;line-height:1.5}.modal .modal-inner .modal-intro{margin-bottom:1em}
 .modal .modal-inner .modal-content{color:#333}@media screen and (min-width:40em){.modal .modal-inner .modal-content{-webkit-columns:2 8em;-moz-columns:2 8em;columns:2 8em}
 }.modal .modal-inner a.cta{color:#fff;display:inline-block;margin-right:.5em;margin-top:1em}
 .modal .modal-inner a.cta:last-child{padding:0 2em}.modal .modal-state:checked+.modal-fade-screen{opacity:1;visibility:visible}
@@ -321,18 +321,23 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 }.shake,.shake{-webkit-animation-name:shakeit;-webkit-animation-duration:.8s;-webkit-transform-origin:50% 50%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear}
 .section-divider{position:absolute;z-index:100;width:100%;height:25px;background:url(../images/global/sectionDividerFull.png) center top no-repeat}
 #header{z-index:10;padding:10px 0}#header #nav-hamburger{display:none}#header #nav-main{position:relative}
-#header #nav-main li{position:relative;margin:0 0 0 15px}#header #nav-main li ul#subnav{display:none;position:absolute;top:20px;left:-5px;width:220px;padding-top:5px}
+#header #nav-main li{position:relative;margin:0 0 0 15px}#header #nav-main li ul#subnav{display:none;position:absolute;top:20px;left:-5px;width:220px;padding-top:5px;background-color:#FFF}
 #header #nav-main li ul#subnav li{position:relative;display:block;float:none;margin:0}
-#header #nav-main li ul#subnav li a{display:block;width:100%;height:100%;padding:5px 6px;border-bottom:1px solid #FFF}
+#header #nav-main li ul#subnav li a{display:block;width:100%;height:100%;padding:5px 6px;border-bottom:1px solid #404040}
 #header #nav-main li ul#subnav li a::after{content:'';background:0}
 #header #nav-main li ul#subnav li span{position:absolute;bottom:-1px;display:block;width:0;height:2px;background-color:#e20510;transition:width .5s ease}
 #header #nav-main li ul#subnav li:hover span{width:100%}#header #nav-main li#dropdown:hover>#subnav{display:block;-webkit-animation:fadeIn .5s ease-in;animation:fadeIn .5s ease-in}
-#header #nav-main i{margin-left:5px}#header #nav-main a{color:#FFF}#header #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#FFF;transition:all .2s linear}
+#header #nav-main i{margin-left:5px}#header #nav-main a{color:#404040}#header #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#404040;transition:all .2s linear}
 #header #nav-main a:hover::after{width:100%}#header #social-links,#header #footer-social-links{margin-left:40px}
-#header #social-links li,#header #footer-social-links li{margin:0 10px 0 0}#header #social-links ul#share-me{position:absolute;top:35px;height:auto;width:280px;margin-left:-125px}
+#header #social-links li,#header #footer-social-links li{margin:0 10px 0 0}#header #social-links a{color:#404040}
+#header #social-links a:hover{color:#e20510}#header #social-links ul#share-me{position:absolute;top:35px;height:auto;width:280px;margin-left:-125px}
 #header #social-links ul#share-me li{display:block;width:auto}#header #nav-cta{float:right;margin-top:10px}
 #header #nav-cta li{margin:0 0 5px 10px}#header #nav-cta i{margin-right:7px}#header #logo{float:left;margin-right:5px;width:110px;height:99px;background:url(../images/global/phoneResqLogo.png) no-repeat;background-size:100%;overflow:hidden;text-indent:101%;white-space:nowrap}
-#header #logo a{display:block;width:100%;height:100%}#header.nav-min{position:fixed;z-index:200;top:0;width:100%;height:75px;padding:7px 0;background-color:#FFF;transition:background-color 1s;-moz-transition:background-color 1s;-webkit-transition:background-color 1s;-o-transition:background-color 1s;box-shadow:0 0 9px 2px rgba(0,0,0,0.75)}
+#header #logo a{display:block;width:100%;height:100%}.page-home #header #nav-main li ul#subnav{background-color:transparent}
+.page-home #header #nav-main li ul#subnav li a{border-bottom:1px solid #FFF}.page-home #header #nav-main li ul#subnav li span{background-color:#e20510}
+.page-home #header #nav-main a{color:#FFF}.page-home #header #nav-main a::after{background-color:#FFF}
+.page-home #header #social-links a{color:#FFF}.page-home #header #social-links a:hover{color:#e20510}
+#header.nav-min{position:fixed;z-index:200;top:0;width:100%;height:75px;padding:7px 0;background-color:#FFF;transition:background-color 1s;-moz-transition:background-color 1s;-webkit-transition:background-color 1s;-o-transition:background-color 1s;box-shadow:0 0 9px 2px rgba(0,0,0,0.75)}
 #header.nav-min #nav-main a,#header.nav-min #social-links a,#header.nav-min #footer-social-links a{color:#404040}
 #header.nav-min #nav-main a.active::after{width:100%}#header.nav-min .nav-global{margin-top:20px}
 #header.nav-min #nav-cta{margin-top:15px}#header.nav-min #social-links a:hover,#header.nav-min #footer-social-links a:hover{color:#e20510}
@@ -432,13 +437,6 @@ footer#footer #company-details #social-links li,footer#footer #company-details #
 footer#footer #footer-links{text-align:right}footer#footer #footer-links #back-top{display:inline-block;width:62px;height:74px;background:url(../images/footer/backTop.png) 0 0}
 footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#footer #footer-links #copyright{margin-top:25px;font-size:.6875rem}
 footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowrap}
-.page-template-services #header #nav-main,.error404 #header #nav-main{position:relative}
-.page-template-services #header #nav-main li ul#subnav,.error404 #header #nav-main li ul#subnav{background-color:#FFF}
-.page-template-services #header #nav-main li ul#subnav li,.error404 #header #nav-main li ul#subnav li{border-bottom:1px solid #404040}
-.page-template-services #header #nav-main li a::after,.error404 #header #nav-main li a::after{background-color:#404040}
-.page-template-services #header #nav-main a,.error404 #header #nav-main a{color:#404040}
-.page-template-services #header #social-links a,.error404 #header #social-links a{color:#404040}
-.page-template-services #header #social-links a:hover,.error404 #header #social-links a:hover{color:#e20510 !important}
 #header.nav-min #nav-main #social-links a:hover{color:#e20510}#header.nav-min #nav-main li ul#subnav{padding-top:0}
 #header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#repair.nav-min,.error-404.nav-min{margin-top:175px}
 #repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
@@ -496,5 +494,12 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #contact #get-in-touch .intro span{margin:0 auto}#contact #get-in-touch .intro p{width:100%}
 #about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
 }.nav-links{display:none}.page-ipod-repair #parallax-5,.page-ipod-repair #parallax-6,.page-ipod-repair #parallax-7,.page-ipod-repair #parallax-8,.page-ipad-repair #parallax-5,.page-ipad-repair #parallax-6,.page-ipad-repair #parallax-7,.page-ipad-repair #parallax-8,.page-laptop-repair #parallax-5,.page-laptop-repair #parallax-6,.page-laptop-repair #parallax-7,.page-laptop-repair #parallax-8,.page-cellphone-unlocks #parallax-5,.page-cellphone-unlocks #parallax-6,.page-cellphone-unlocks #parallax-7,.page-cellphone-unlocks #parallax-8{display:none}
-.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
+.page-home #main,.page-template-services #main{max-width:100%}#primary a,#secondary a{color:#e20510}
+#primary{float:left;margin:0 auto;width:73%}#primary::after{clear:both;content:"";display:table}
+@media screen and (max-width:1030px){#primary{float:left;display:block;margin-right:1.20482%;width:74.6988%}
+#primary:last-child{margin-right:0}}@media screen and (max-width:768px){#primary{float:left;display:block;margin-right:1.20482%;width:100%}
+#primary:last-child{margin-right:0}}#primary ul{list-style:none}#primary ul li{list-style-type:square}
+#secondary{float:right;margin:20px auto;padding:0 30px 0 0;width:25%}@media screen and (max-width:1030px){#secondary{float:left;display:block;margin-right:1.20482%;width:24.09639%}
+#secondary:last-child{margin-right:0}}@media screen and (max-width:768px){#secondary{float:left;display:block;margin-right:1.20482%;width:100%}
+#secondary:last-child{margin-right:0}}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
 .screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#7e0309;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#e20510;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
