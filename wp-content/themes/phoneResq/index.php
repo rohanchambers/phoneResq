@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-
+<div class="container">
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content">
 
@@ -41,6 +41,6 @@ endif; ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
