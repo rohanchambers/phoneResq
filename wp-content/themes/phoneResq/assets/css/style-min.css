@@ -330,7 +330,7 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 #header #nav-main i{margin-left:5px}#header #nav-main a{color:#404040}#header #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#404040;transition:all .2s linear}
 #header #nav-main a:hover::after{width:100%}#header #social-links,#header #footer-social-links{margin-left:40px}
 #header #social-links li,#header #footer-social-links li{margin:0 10px 0 0}#header #social-links a{color:#404040}
-#header #social-links a:hover{color:#e20510}#header #social-links ul#share-me{position:absolute;top:35px;right:-128px;height:auto;width:280px;margin-left:-125px}
+#header #social-links a:hover{color:#e20510}#header #social-links ul#share-me{position:absolute;top:35px;right:-125px;height:auto;width:310px}
 #header #social-links ul#share-me li{display:block;width:auto}#header #nav-cta{float:right;margin-top:10px}
 #header #nav-cta li{margin:0 0 5px 10px}#header #nav-cta i{margin-right:7px}#header #logo{float:left;margin-right:5px;width:110px;height:99px;background:url(../images/global/phoneResqLogo.png) no-repeat;background-size:100%;overflow:hidden;text-indent:101%;white-space:nowrap}
 #header #logo a{display:block;width:100%;height:100%}.page-home #header #nav-main li ul#subnav{background-color:transparent}
@@ -439,11 +439,11 @@ footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#f
 footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowrap}
 #header.nav-min #nav-main #social-links a:hover{color:#e20510}#header.nav-min #nav-main li ul#subnav{padding-top:0}
 #header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#main .container.nav-min{margin-top:175px}
-.page-home #main .container.nav-min{margin-top:0}#repair article{width:65%}#repair article.intro{margin-bottom:30px}
-#repair article.intro h1 span{margin:0 0 0 15px}#repair h1,#repair p{text-align:left}
-#repair p{width:100%}#repair a{color:#404040}#repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}
-#repair .row{overflow:hidden;margin:0 0 50px 0;padding-bottom:5px}#repair .row-intro{margin-bottom:0}
-#repair .container{position:relative}#repair .img-holder{position:relative;min-height:210px;background-color:red img;background-color-max-width:250px;background-color-max-height:300px}
+.page-home #main .container.nav-min,.page-template-services #main .container.nav-min{margin-top:0}
+#repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
+#repair h1,#repair p{text-align:left}#repair p{width:100%}#repair a{color:#404040}
+#repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}#repair .row{overflow:hidden;margin:0 0 50px 0;padding-bottom:5px}
+#repair .row-intro{margin-bottom:0}#repair .container{position:relative}#repair .img-holder{position:relative;min-height:210px;background-color:red img;background-color-max-width:250px;background-color-max-height:300px}
 #repair .btn-global,#repair #header #nav-cta .btn-nav,#header #nav-cta #repair .btn-nav,#repair #shop #shop-products a,#shop #shop-products #repair a{text-transform:uppercase;margin-right:10px;box-shadow:0 1px 3px 0 #999}
 #repair .btn-global i,#repair #header #nav-cta .btn-nav i,#header #nav-cta #repair .btn-nav i,#repair #shop #shop-products a i,#shop #shop-products #repair a i{margin-right:7px}
 #repair .two-col h2{position:relative;font-size:1.6875rem;margin-top:30px;padding-top:5px;color:#404040}
@@ -453,9 +453,18 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #parallax-3{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-4{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-5{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-6{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
 #parallax-7{left:100px;-webkit-transform:rotate(65deg);transform:rotate(65deg)}#parallax-8{right:150px;-webkit-transform:rotate(20deg);transform:rotate(20deg)}
-@media screen and (min-width:1200px){#sell .sell-row-img{background-position:center bottom}
+.page-ipod-repair #parallax-5,.page-ipod-repair #parallax-6,.page-ipod-repair #parallax-7,.page-ipod-repair #parallax-8,.page-ipad-repair #parallax-5,.page-ipad-repair #parallax-6,.page-ipad-repair #parallax-7,.page-ipad-repair #parallax-8,.page-laptop-repair #parallax-5,.page-laptop-repair #parallax-6,.page-laptop-repair #parallax-7,.page-laptop-repair #parallax-8,.page-cellphone-unlocks #parallax-5,.page-cellphone-unlocks #parallax-6,.page-cellphone-unlocks #parallax-7,.page-cellphone-unlocks #parallax-8{display:none}
+.nav-links,#primary article .updated{display:none}.page-home #main,.page-template-services #main{max-width:100%}
+#primary a,#primary .entry-title,#secondary a,#secondary .entry-title{color:#475573}
+#primary{float:left;margin:0 auto;width:65%}#primary::after{clear:both;content:"";display:table}
+@media screen and (max-width:1030px){#primary{float:left;display:block;margin-right:1.20482%;width:74.6988%}
+#primary:last-child{margin-right:0}}@media screen and (max-width:768px){#primary{float:left;display:block;margin-right:1.20482%;width:100%}
+#primary:last-child{margin-right:0}}#primary article{margin-bottom:50px;padding-bottom:20px;border-bottom:1px dashed #CCC}
+#secondary{float:right;margin:20px auto;padding:0;width:30%}@media screen and (max-width:1030px){#secondary{float:left;display:block;margin-right:1.20482%;width:24.09639%}
+#secondary:last-child{margin-right:0}}@media screen and (max-width:768px){#secondary{float:left;display:block;margin-right:1.20482%;width:100%}
+#secondary:last-child{margin-right:0}}@media screen and (min-width:1200px){#sell .sell-row-img{background-position:center bottom}
 }@media screen and (max-width:1030px){.container{margin:0 4%}.page-home #page #carousel .slide .slide-content{width:100%}
-#nav-cta{display:none}#social-links{float:right;margin-left:0}#header #social-links ul#share-me{right:-14px}
+#nav-cta{display:none}#social-links{float:right;margin-left:0}#header #social-links ul#share-me{right:-12px}
 }@media(max-width:873px){#nav-cta{display:none}}@media(max-width:805px){#social-links{display:none}
 }@media screen and (max-width:867px){.about-row-img,.sell-row-img{width:50%;min-height:652px;position:absolute;right:0}
 }@media screen and (max-width:768px){.about-row-img,.sell-row-img{width:50%;min-height:620px;position:absolute;right:0}
@@ -481,7 +490,7 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #header.nav-min #nav-hamburger span{background-color:#404040}#header.nav-min #nav-hamburger.open span{background-color:#e20510}
 #header.nav-min #nav-main li#dropdown:hover>#subnav{display:block !important}#header.nav-min #nav-main a::after{display:none}
 #repair{margin-top:65px}#repair #filter-model div{margin-bottom:10px}}@media screen and (max-width:667px){.container{margin:0 4%;width:92%}
-#header.nav-min #social-links ul#share-me{right:-30px}.intro,.repair,.about-rows,#contact .two-col,.page-template-services #repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
+#header.nav-min #social-links ul#share-me{right:-42px}.intro,.repair,.about-rows,#contact .two-col,.page-template-services #repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
 .intro:last-child,.repair:last-child,.about-rows:last-child,#contact .two-col:last-child,.page-template-services #repair .two-col:last-child{margin-right:0}
 .page-home #page #carousel .slide .slide-content{width:80%;margin:0 auto}.page-home #page #carousel .slide article{width:100%;float:none;margin:0;padding-top:80px;text-align:center}
 #services{padding-bottom:10px}#about .container article{margin-right:10%;border-bottom:1px solid white}
@@ -494,15 +503,7 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #contact #contact-form{width:100%}#contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}
 #contact #get-in-touch .intro span{margin:0 auto}#contact #get-in-touch .intro p{width:100%}
 #about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
-}.nav-links{display:none}.page-ipod-repair #parallax-5,.page-ipod-repair #parallax-6,.page-ipod-repair #parallax-7,.page-ipod-repair #parallax-8,.page-ipad-repair #parallax-5,.page-ipad-repair #parallax-6,.page-ipad-repair #parallax-7,.page-ipad-repair #parallax-8,.page-laptop-repair #parallax-5,.page-laptop-repair #parallax-6,.page-laptop-repair #parallax-7,.page-laptop-repair #parallax-8,.page-cellphone-unlocks #parallax-5,.page-cellphone-unlocks #parallax-6,.page-cellphone-unlocks #parallax-7,.page-cellphone-unlocks #parallax-8{display:none}
-.page-home #main,.page-template-services #main{max-width:100%}#primary a,#secondary a{color:#e20510}
-#primary{float:left;margin:0 auto;width:65%}#primary::after{clear:both;content:"";display:table}
-@media screen and (max-width:1030px){#primary{float:left;display:block;margin-right:1.20482%;width:74.6988%}
-#primary:last-child{margin-right:0}}@media screen and (max-width:768px){#primary{float:left;display:block;margin-right:1.20482%;width:100%}
-#primary:last-child{margin-right:0}}#primary article{margin-bottom:50px;padding-bottom:20px;border-bottom:1px dashed #CCC}
-#secondary{float:right;margin:20px auto;padding:0 30px 0 0;width:30%}@media screen and (max-width:1030px){#secondary{float:left;display:block;margin-right:1.20482%;width:24.09639%}
-#secondary:last-child{margin-right:0}}@media screen and (max-width:768px){#secondary{float:left;display:block;margin-right:1.20482%;width:100%}
-#secondary:last-child{margin-right:0}}input{line-height:normal}button,button[disabled]:hover,button[disabled]:focus,input[type="button"],input[type="button"][disabled]:hover,input[type="button"][disabled]:focus,input[type="reset"],input[type="reset"][disabled]:hover,input[type="reset"][disabled]:focus,input[type="submit"],input[type="submit"][disabled]:hover,input[type="submit"][disabled]:focus{background:#475573;border:0;border-radius:2px;color:#fff;font-family:Montserrat,"Helvetica Neue",sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.046875em;line-height:1;padding:.84375em .875em .78125em;text-transform:uppercase}
+}input{line-height:normal}button,button[disabled]:hover,button[disabled]:focus,input[type="button"],input[type="button"][disabled]:hover,input[type="button"][disabled]:focus,input[type="reset"],input[type="reset"][disabled]:hover,input[type="reset"][disabled]:focus,input[type="submit"],input[type="submit"][disabled]:hover,input[type="submit"][disabled]:focus{background:#475573;border:0;border-radius:2px;color:#fff;font-family:Montserrat,"Helvetica Neue",sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.046875em;line-height:1;padding:.84375em .875em .78125em;text-transform:uppercase}
 button:hover,button:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="reset"]:hover,input[type="reset"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{background:#e20510}
 button:focus,input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus{outline:thin dotted;outline-offset:-4px}
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea{background:#f7f7f7;background-image:-webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));border:1px solid #d1d1d1;border-radius:2px;color:#686868;padding:.625em .4375em;width:100%}

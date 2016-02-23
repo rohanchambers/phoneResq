@@ -297,10 +297,9 @@ select {
     #social-links ul#share-me {
         position: absolute;
         top: 35px;
-        right: -128px;
+        right: -125px;
         height: auto;
-        width: 280px;
-        margin-left: -125px;
+        width: 310px;
 
         li {
             display: block;
@@ -1403,7 +1402,8 @@ footer#footer {
     margin-top: 175px;
 }
 
-.page-home #main .container.nav-min {
+.page-home #main .container.nav-min,
+.page-template-services #main .container.nav-min {
     margin-top: 0;
 }
 
@@ -1560,6 +1560,87 @@ footer#footer {
     }    
 
 
+// Error 404
+// Remove paralax elements for pages that are too short
+.page-ipod-repair,
+.page-ipad-repair,
+.page-laptop-repair,
+.page-cellphone-unlocks {
+    #parallax-5,
+    #parallax-6,
+    #parallax-7,
+    #parallax-8 {
+        display: none;
+    }
+}
+
+
+
+// WORDPRESS BLOG STYLES
+
+// Reset #main div for home and serivces to cater for 
+//blog structure of primary and secondary wrapper by #page
+// Wordpress links that go back and forward between posts.
+.nav-links, 
+#primary article .updated {
+    display: none;
+}
+
+.page-home, 
+.page-template-services {
+    #main {
+        max-width: 100%;
+    }
+}
+
+#primary,
+#secondary {
+    a, .entry-title {
+        color: $color-grey;
+    }
+}
+
+
+
+#primary {
+    float: left;
+    margin: 0 auto;
+    width: 65%;
+
+    @include clearfix;
+
+    @include media($desktop-med) {
+        @include span-columns( 9 of 12 );
+    }
+
+    @include media($tablet) {
+        @include span-columns( 12 of 12 );
+    }
+    
+    article {
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #CCC;
+    }
+}
+
+#secondary {
+    float: right;    
+    
+    @include media($desktop-med) {
+        @include span-columns( 3 of 12 );
+    }
+
+    @include media($tablet) {
+        @include span-columns( 12 of 12 );
+    }
+
+    margin: 20px auto;
+    padding: 0 0 0 0;
+    width: 30%;
+}
+
+
 
 
 
@@ -1596,7 +1677,7 @@ footer#footer {
 
     #header {
         #social-links ul#share-me {
-            right: -14px;
+            right: -12px;
         }
     }
 }
@@ -1900,7 +1981,7 @@ footer#footer {
 
     #header.nav-min {
         #social-links ul#share-me {
-            right: -30px;
+            right: -42px;
         }
     }
 
@@ -2037,86 +2118,6 @@ footer#footer {
     }
 
 }
-
-
-// WORDPRESS STYLES
-// Wordpress links that go back and forward between posts.
-.nav-links {
-    display: none;
-}
-
-// Error 404
-// Remove paralax elements for pages that are too short
-.page-ipod-repair,
-.page-ipad-repair,
-.page-laptop-repair,
-.page-cellphone-unlocks {
-    #parallax-5,
-    #parallax-6,
-    #parallax-7,
-    #parallax-8 {
-        display: none;
-    }
-}
-
-
-
-
-// BLOG
-// Reset #main div for home and serivces to cate for 
-//blog structure of primary and secondary wrapper by #page
-.page-home, 
-.page-template-services {
-    #main {
-        max-width: 100%;
-    }
-}
-
-#primary,
-#secondary {
-    a {
-        color: $color-red;
-    }
-}
-
-#primary {
-    float: left;
-    margin: 0 auto;
-    width: 65%;
-
-    @include clearfix;
-
-    @include media($desktop-med) {
-        @include span-columns( 9 of 12 );
-    }
-
-    @include media($tablet) {
-        @include span-columns( 12 of 12 );
-    }
-    
-    article {
-        margin-bottom: 50px;
-        padding-bottom: 20px;
-        border-bottom: 1px dashed #CCC;
-    }
-}
-
-#secondary {
-    float: right;    
-    
-    @include media($desktop-med) {
-        @include span-columns( 3 of 12 );
-    }
-
-    @include media($tablet) {
-        @include span-columns( 12 of 12 );
-    }
-
-    margin: 20px auto;
-    padding: 0 30px 0 0;
-    width: 30%;
-}
-
 
 
 

@@ -2516,10 +2516,9 @@ select {
   #header #social-links ul#share-me {
     position: absolute;
     top: 35px;
-    right: -128px;
+    right: -125px;
     height: auto;
-    width: 280px;
-    margin-left: -125px; }
+    width: 310px; }
     #header #social-links ul#share-me li {
       display: block;
       width: auto; }
@@ -3264,7 +3263,8 @@ footer#footer {
 #main .container.nav-min {
   margin-top: 175px; }
 
-.page-home #main .container.nav-min {
+.page-home #main .container.nav-min,
+.page-template-services #main .container.nav-min {
   margin-top: 0; }
 
 #repair article {
@@ -3382,6 +3382,88 @@ footer#footer {
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg); }
 
+.page-ipod-repair #parallax-5,
+.page-ipod-repair #parallax-6,
+.page-ipod-repair #parallax-7,
+.page-ipod-repair #parallax-8,
+.page-ipad-repair #parallax-5,
+.page-ipad-repair #parallax-6,
+.page-ipad-repair #parallax-7,
+.page-ipad-repair #parallax-8,
+.page-laptop-repair #parallax-5,
+.page-laptop-repair #parallax-6,
+.page-laptop-repair #parallax-7,
+.page-laptop-repair #parallax-8,
+.page-cellphone-unlocks #parallax-5,
+.page-cellphone-unlocks #parallax-6,
+.page-cellphone-unlocks #parallax-7,
+.page-cellphone-unlocks #parallax-8 {
+  display: none; }
+
+.nav-links,
+#primary article .updated {
+  display: none; }
+
+.page-home #main,
+.page-template-services #main {
+  max-width: 100%; }
+
+#primary a, #primary .entry-title,
+#secondary a,
+#secondary .entry-title {
+  color: #475573; }
+
+#primary {
+  float: left;
+  margin: 0 auto;
+  width: 65%; }
+  #primary::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 1030px) {
+    #primary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 74.6988%; }
+      #primary:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    #primary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 100%; }
+      #primary:last-child {
+        margin-right: 0; } }
+  #primary article {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #CCC; }
+
+#secondary {
+  float: right;
+  margin: 20px auto;
+  padding: 0 0 0 0;
+  width: 30%; }
+  @media screen and (max-width: 1030px) {
+    #secondary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 24.09639%; }
+      #secondary:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    #secondary {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 100%; }
+      #secondary:last-child {
+        margin-right: 0; } }
+
 @media screen and (min-width: 1200px) {
   #sell .sell-row-img {
     background-position: center bottom; } }
@@ -3397,7 +3479,7 @@ footer#footer {
     float: right;
     margin-left: 0; }
   #header #social-links ul#share-me {
-    right: -14px; } }
+    right: -12px; } }
 
 @media (max-width: 873px) {
   #nav-cta {
@@ -3569,7 +3651,7 @@ footer#footer {
     margin: 0 4%;
     width: 92%; }
   #header.nav-min #social-links ul#share-me {
-    right: -30px; }
+    right: -42px; }
   .intro,
   .repair,
   .about-rows,
@@ -3649,86 +3731,6 @@ footer#footer {
   #sell,
   hr {
     display: none; } }
-
-.nav-links {
-  display: none; }
-
-.page-ipod-repair #parallax-5,
-.page-ipod-repair #parallax-6,
-.page-ipod-repair #parallax-7,
-.page-ipod-repair #parallax-8,
-.page-ipad-repair #parallax-5,
-.page-ipad-repair #parallax-6,
-.page-ipad-repair #parallax-7,
-.page-ipad-repair #parallax-8,
-.page-laptop-repair #parallax-5,
-.page-laptop-repair #parallax-6,
-.page-laptop-repair #parallax-7,
-.page-laptop-repair #parallax-8,
-.page-cellphone-unlocks #parallax-5,
-.page-cellphone-unlocks #parallax-6,
-.page-cellphone-unlocks #parallax-7,
-.page-cellphone-unlocks #parallax-8 {
-  display: none; }
-
-.page-home #main,
-.page-template-services #main {
-  max-width: 100%; }
-
-#primary a,
-#secondary a {
-  color: #e20510; }
-
-#primary {
-  float: left;
-  margin: 0 auto;
-  width: 65%; }
-  #primary::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (max-width: 1030px) {
-    #primary {
-      float: left;
-      display: block;
-      margin-right: 1.20482%;
-      width: 74.6988%; }
-      #primary:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 768px) {
-    #primary {
-      float: left;
-      display: block;
-      margin-right: 1.20482%;
-      width: 100%; }
-      #primary:last-child {
-        margin-right: 0; } }
-  #primary article {
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    border-bottom: 1px dashed #CCC; }
-
-#secondary {
-  float: right;
-  margin: 20px auto;
-  padding: 0 30px 0 0;
-  width: 30%; }
-  @media screen and (max-width: 1030px) {
-    #secondary {
-      float: left;
-      display: block;
-      margin-right: 1.20482%;
-      width: 24.09639%; }
-      #secondary:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 768px) {
-    #secondary {
-      float: left;
-      display: block;
-      margin-right: 1.20482%;
-      width: 100%; }
-      #secondary:last-child {
-        margin-right: 0; } }
 
 /**
  * 5.0 - Forms
