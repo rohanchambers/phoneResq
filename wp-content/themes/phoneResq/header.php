@@ -19,7 +19,7 @@
 
     <meta name="author" content="Welcome to Phone ResQ">
     <meta name="description" content="We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
-    <meta name="keywords" content="mobile repair, cell phone repair, tablet repair, iphone repair, ipad repair, ipod repair, Android repaair" />    
+    <meta name="keywords" content="Cell Phone Repair, Cell Phone Repair Fernandina, Cell Phone Repair Yulee, iPhone Screen Repair, iPad screen Repair, iPod Screen Repair, Samsung Screen Repair, mobile phone repair, Tablet Repair, Cell phone unlock, iPhone for sale, Samsung For Sale" />    
 
     <meta name="apple-mobile-web-app-title" content="Phone ResQ">
     <meta name="apple-mobile-web-app-capable" content="yes">
