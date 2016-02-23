@@ -1507,19 +1507,6 @@ footer#footer {
 }
 
 
-// Page 404
-.error404  {
-    #primary a { 
-        color: $color-text;
-    }
-}
-
-.error-404 {
-    padding-bottom: 50px;
-}
-
-
-
 // PARALLAX ELEMENTS
 
 .parallax {
@@ -2094,6 +2081,8 @@ footer#footer {
 
 #primary {
     float: left;
+    margin: 0 auto;
+    width: 65%;
 
     @include clearfix;
 
@@ -2104,22 +2093,11 @@ footer#footer {
     @include media($tablet) {
         @include span-columns( 12 of 12 );
     }
-
-    margin: 0 auto;
-    width: 70%;
     
     article {
         margin-bottom: 50px;
         padding-bottom: 20px;
-        border-bottom: 2px solid $color-red;
-    }
-
-    ul {
-        list-style: none;
-
-        li {
-            list-style-type: square;
-        }
+        border-bottom: 1px dashed #CCC;
     }
 }
 
@@ -2136,7 +2114,7 @@ footer#footer {
 
     margin: 20px auto;
     padding: 0 30px 0 0;
-    width: 25%;
+    width: 30%;
 }
 
 

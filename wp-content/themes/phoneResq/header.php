@@ -109,7 +109,7 @@
                         <li><a href="https://www.instagram.com/dinaresq/" title="Instagram share" target="_blank"><i class="fa fa-instagram fa-lg btn-animate"></i></a></li>
                         <li><a href="#nogo" id="share-me-cta" class="animatedClick fast" title="Share this site" data-target="share-me-panel"><i class="fa fa-lg fa-share-alt btn-animate"></i></a>
                             <ul id="share-me" class="animated fadeInDown fast share-me-panel">
-                                <li><div class="fb-share-button" data-href="http://phoneresq.com/" data-layout="button"></div></li>
+                                <li><div class="fb-share-button" data-href="http://phoneresq.com/" data-layout="button_count"></div></li>
                                 <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://phoneresq.com/" data-text="We repair and improve all of your handheld devices and home computers." data-via="PhoneResQ">Tweet</a></li>                            
                                 <li><script type="IN/Share" data-url="http://phoneresq.com/"></script></li>
                                 <li><div class="g-plusone" data-annotation="none"></div></li>

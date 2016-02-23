@@ -88,7 +88,7 @@ $( document ).ready(function() {
 
 
 	// Show hide value of form inputs and textarea
-    $('input, textarea').each(function(){
+    $('#contact-form input, #contact-form textarea').each(function(){
         var txtval = $(this).val();
         $(this).focus(function(){
             if($(this).val() == txtval){
