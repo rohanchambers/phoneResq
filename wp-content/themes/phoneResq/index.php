@@ -15,6 +15,7 @@ get_header(); ?>
 <div class="container">
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content">
+		<!-- Display only post with the category blog -->
  		<?php query_posts('category_name=blog&showposts=20'); ?>
 		<?php if ( have_posts() ) : ?>
 
