@@ -2516,6 +2516,7 @@ select {
   #header #social-links ul#share-me {
     position: absolute;
     top: 35px;
+    right: -128px;
     height: auto;
     width: 280px;
     margin-left: -125px; }
@@ -2547,7 +2548,7 @@ select {
 .page-home #header #nav-main li ul#subnav {
   background-color: transparent; }
   .page-home #header #nav-main li ul#subnav li a {
-    border-bottom: 1px solid #FFF; }
+    border-color: #FFF; }
   .page-home #header #nav-main li ul#subnav li span {
     background-color: #e20510; }
 
@@ -2595,6 +2596,7 @@ select {
   #header.nav-min #social-links ul#share-me {
     background-color: #FFF;
     top: 38px;
+    right: -7px;
     padding-left: 10px;
     margin-left: -163px;
     box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.58);
@@ -2786,7 +2788,7 @@ article.intro {
     bottom: -25px; }
 
 #services.nav-min {
-  margin-top: 505px; }
+  margin-top: 500px; }
 
 #mouse-scroll {
   position: relative;
@@ -3259,9 +3261,11 @@ footer#footer {
   #header.nav-min #nav-main li ul#subnav li {
     border-bottom: 1px solid white; }
 
-#repair.nav-min,
-.error-404.nav-min {
+#main .container.nav-min {
   margin-top: 175px; }
+
+.page-home #main .container.nav-min {
+  margin-top: 0; }
 
 #repair article {
   width: 65%; }
@@ -3392,14 +3396,21 @@ footer#footer {
   .container {
     margin: 0 4%; }
   .page-home #page #carousel .slide .slide-content {
-    width: 100%; } }
-
-@media (max-width: 1028px) {
+    width: 100%; }
+  #nav-cta {
+    display: none; }
   #social-links {
-    display: none; } }
+    float: right;
+    margin-left: 0; }
+  #header #social-links ul#share-me {
+    right: -14px; } }
 
 @media (max-width: 873px) {
   #nav-cta {
+    display: none; } }
+
+@media (max-width: 805px) {
+  #social-links {
     display: none; } }
 
 @media screen and (max-width: 867px) {
@@ -3411,8 +3422,6 @@ footer#footer {
     right: 0; } }
 
 @media screen and (max-width: 768px) {
-  .container {
-    margin: 0 2%; }
   .about-row-img,
   .sell-row-img {
     width: 50%;
@@ -3420,13 +3429,15 @@ footer#footer {
     position: absolute;
     right: 0; }
   #services {
-    margin-top: 510px; }
+    margin-top: 450px; }
   #shop, #sell .section-divider,
   .parallax,
   #nav-sell {
     display: none; }
   #sell .sell-row-img {
     min-height: 325px; }
+  #main .container {
+    margin-top: 60px; }
   #header {
     position: fixed;
     width: 100%;
@@ -3538,7 +3549,7 @@ footer#footer {
     height: 60px;
     padding: 0; }
     #header.nav-min #nav-main {
-      margin-top: 4px; }
+      margin-top: 3px; }
       #header.nav-min #nav-main a {
         color: #FFF; }
     #header.nav-min #logo {
@@ -3563,6 +3574,8 @@ footer#footer {
   .container {
     margin: 0 4%;
     width: 92%; }
+  #header.nav-min #social-links ul#share-me {
+    right: -30px; }
   .intro,
   .repair,
   .about-rows,
@@ -3675,7 +3688,7 @@ footer#footer {
 #primary {
   float: left;
   margin: 0 auto;
-  width: 73%; }
+  width: 70%; }
   #primary::after {
     clear: both;
     content: "";
@@ -3696,6 +3709,10 @@ footer#footer {
       width: 100%; }
       #primary:last-child {
         margin-right: 0; } }
+  #primary article {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e20510; }
   #primary ul {
     list-style: none; }
     #primary ul li {

@@ -297,6 +297,7 @@ select {
     #social-links ul#share-me {
         position: absolute;
         top: 35px;
+        right: -128px;
         height: auto;
         width: 280px;
         margin-left: -125px;
@@ -354,7 +355,7 @@ select {
 
                     li {                                             
                         a {
-                            border-bottom: 1px solid $color-white;
+                            border-color: $color-white;
                         }
 
                         span {
@@ -412,7 +413,7 @@ select {
             color: $color-text;
         }
     }
-    
+
     // Underline on .active nav states added in JS
     #nav-main a.active::after {
         width: 100%;
@@ -434,6 +435,7 @@ select {
     #social-links ul#share-me {
         background-color: $color-white;
         top: 38px;
+        right: -7px;
         padding-left: 10px;
         margin-left: -163px;
         -webkit-box-shadow: 0px 4px 15px -4px rgba(0,0,0,0.58);
@@ -702,9 +704,10 @@ article.intro {
     }          
 }
 
-// Add margin when nav become minimised and positioned fixed. 
+// Add margin top on homepage only when nav become minimised 
+// and positioned fixed. JS adds class nav-min
 #services.nav-min {
-    margin-top: 505px;
+    margin-top: 500px;
 }
 
     // Mouse scroll down animate
@@ -1373,51 +1376,6 @@ footer#footer {
     }    
 }
 
-
-
-
-
-
-// REPAIR PAGE
-// .page-template-services #header,
-// .error404 #header {
-
-//     #nav-main {
-//         position: relative;
-            
-//         li {
-//             // Sub nav   
-//             ul#subnav {
-//                 background-color: $color-white;
-
-//                 li {
-//                     border-bottom: 1px solid $color-text;
-//                 }
-//             }
-            
-//             // On hover of subnav items. Animate from 0 - 100% red 
-//             a::after {
-//                 background-color: $color-text;
-//             }        
-//         }
-
-//         a {
-//             color: $color-text;
-//         }
-//     }
-
-//     #social-links {
-//         a {
-//             color: $color-text;
-//         }
-                
-//         a:hover {
-//             color: $color-red!important;
-//         }
-//     }  
-
-// }
-
 #header.nav-min {
     #nav-main {
         #social-links {
@@ -1439,9 +1397,14 @@ footer#footer {
 }
 
 // Add margin when nav become minimised and positioned fixed. 
-#repair.nav-min, 
-.error-404.nav-min {
+// #repair.nav-min, 
+// .error-404.nav-min,
+#main .container.nav-min {
     margin-top: 175px;
+}
+
+.page-home #main .container.nav-min {
+    margin-top: 0;
 }
 
 #repair {
@@ -1497,8 +1460,6 @@ footer#footer {
         background-color: red
 
         img {
-            // position: absolute;
-            // bottom: 0;
             max-width: 250px;
             max-height: 300px;           
         }
@@ -1636,17 +1597,34 @@ footer#footer {
     .page-home #page #carousel .slide .slide-content {
         width: 100%;
     }
+
+    #nav-cta {
+        display: none;
+    }
+
+    #social-links {
+        float: right;
+        margin-left: 0;
+    }
+
+    #header {
+        #social-links ul#share-me {
+            right: -14px;
+        }
+    }
 }
 
 // Remove social links when resizing browser down
-@media (max-width: 1028px) {
-    #social-links {
+
+
+@media (max-width: 873px) {
+    #nav-cta {
         display: none;
     }
 }
 
-@media (max-width: 873px) {
-    #nav-cta {
+@media (max-width: 805px) {
+    #social-links {
         display: none;
     }
 }
@@ -1665,10 +1643,6 @@ footer#footer {
 // Desktop small 768px
 @include media($tablet) {
 
-    .container {
-        margin: 0 2%;
-    }
-    
     .about-row-img,
     .sell-row-img {
         width: 50%;
@@ -1678,7 +1652,7 @@ footer#footer {
     }
 
     #services {
-        margin-top: 510px;
+        margin-top: 450px;
     }
     
     #shop, #sell .section-divider,
@@ -1689,6 +1663,10 @@ footer#footer {
 
     #sell .sell-row-img {
         min-height: 325px;
+    }
+
+    #main .container {
+        margin-top: 60px;
     }
 
     #header {
@@ -1836,10 +1814,6 @@ footer#footer {
             transition: .25s ease-in-out;
         }
 
-        // #nav-hamburger.open span {
-        //     background: $color-text;
-        // }
-
         #nav-hamburger span:nth-child(1) {
             top: 0px;
         }
@@ -1887,7 +1861,7 @@ footer#footer {
         padding: 0;
         
         #nav-main {
-            margin-top: 4px;
+            margin-top: 3px;
 
             a {
                 color: $color-white;
@@ -1916,11 +1890,6 @@ footer#footer {
         #nav-main a::after {
             display: none;
         }
-        
-        // #social-links ul#share-me {
-        //     top: 21px;
-        //     margin-left: -360px;
-        // }
 
     }
 
@@ -1940,6 +1909,12 @@ footer#footer {
     .container {
         margin: 0 4%;
         width: 92%;           
+    }
+
+    #header.nav-min {
+        #social-links ul#share-me {
+            right: -30px;
+        }
     }
 
     // Change to 1 column so everything blocks under each other
@@ -2131,7 +2106,13 @@ footer#footer {
     }
 
     margin: 0 auto;
-    width: 73%;
+    width: 70%;
+    
+    article {
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $color-red;
+    }
 
     ul {
         list-style: none;

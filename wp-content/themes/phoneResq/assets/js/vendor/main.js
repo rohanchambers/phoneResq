@@ -22,7 +22,7 @@ if( getWidth() < 769 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Oper
 // Document ready
 $( document ).ready(function() {
 
-	// Trigger modal for shop
+	// Trigger modal for shop products
 	$('#shop-products article a').click( function(e){
 		e.preventDefault();
 		$('#modal-1').trigger('click');
@@ -105,12 +105,18 @@ $( document ).ready(function() {
     });
 
 	// Validate form
-	 $("#contact-form").validate();
+	$("#contact-form").validate();
 
-	 $('#btn-submit').click( function(){
+	$('#btn-submit').click( function(){
 		$('#contact-form').submit();
-	 });
-	 
+	});
+
+	// On click of hamburger hide social share
+	$('#nav-hamburger').click( function(){
+        $('#share-me').removeClass('go');
+        $('#share-me').addClass('goAway');
+	});
+
 	// Mobile icon hamburger show/hide mobile nav
 	$('#nav-hamburger, #nav-main li a').click(function(){
 		$('#nav-hamburger').toggleClass('open');
@@ -119,7 +125,7 @@ $( document ).ready(function() {
 
 	// Minimal nav add active state to show underline
 	$('#nav-main a').click( function(){
-		$('#nav-main a').removeClass('active');		
+		$('#nav-main a').removeClass('active');
 		$(this).addClass('active');		
 	});
 
@@ -130,7 +136,7 @@ $( document ).ready(function() {
 		$(this).parent().find('span, img').removeClass();
 	});
 
-	//Scroll to sections
+	// Scroll to sections
 	$('a[href^=#]').click(function(){
 	    var target = $(this).attr('href');
 	    var speed = 600;
@@ -184,6 +190,7 @@ $(document).on('scroll',function(){
 	        $('#services').addClass('nav-min');
 	        $('#repair').addClass('nav-min');
 	        $('.error-404').addClass('nav-min');
+	        $('#main .container').addClass('nav-min');
 	        $('#share-me').removeClass('go');
 	        $('#share-me').addClass('goAway');
 	    } else {
@@ -191,6 +198,7 @@ $(document).on('scroll',function(){
 	        $('#services').removeClass('nav-min');
 	        $('#repair').removeClass('nav-min');
 	        $('.error-404').removeClass('nav-min');
+	        $('#main .container').removeClass('nav-min');
 	    }
 
 	    // If scroll top is 400 + show hide intro paragraph
