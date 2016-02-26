@@ -156,8 +156,7 @@ select {
     100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.shake,
-.shake {
+.page-home .shake {
     -webkit-animation-name: shakeit;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin:50% 50%;
@@ -1625,7 +1624,11 @@ footer#footer {
 }
 
 #secondary {
-    float: right;    
+    float: right;
+    margin: 20px auto;
+    padding: 0 0 0 0;
+    width: 30%;    
+    font-size: rem(13);    
     
     @include media($desktop-med) {
         @include span-columns( 3 of 12 );
@@ -1635,9 +1638,43 @@ footer#footer {
         @include span-columns( 12 of 12 );
     }
 
-    margin: 20px auto;
-    padding: 0 0 0 0;
-    width: 30%;
+    aside {
+        h4 {
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-weight: 600;
+            font-size: rem(15);
+            text-transform: uppercase;            
+            width: 50%;
+            border-top: 2px solid $color-red;    
+            margin-bottom: 0;
+            padding-top: 5px;
+        }
+        
+        ul {
+            padding: 0;
+            li {
+                list-style: none;
+                margin-bottom: 3px;
+
+                a {
+                    text-decoration: none;
+                    padding: 2px;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                    background-color: $color-grey;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .widget_recent_comments,
+    .widget_meta {
+        display: none;
+    }
 }
 
 
@@ -2122,9 +2159,43 @@ footer#footer {
 
 
 
+// WooCommerce styles
+.woocommerce #primary {
+    width: 75%;
 
+    .products li {
+        @include span-columns(4 of 12);
+    }
+    
+    @include media($tablet) {
+        .products li {
+            background-color: blue;
+            @include span-columns(6 of 12);
+        }
+    }
 
+    @include media($mobile) {   
+        .products li {
+            background-color: green;
+            @include span-columns(12 of 12);
+        }
+    }
+}
 
+.woocommerce ul.products li.product a img {
+    width:auto;
+    height:auto;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.woocommerce div.product div.images img {
+    width: auto;
+}
+
+.woocommerce #secondary {    
+    width: 20%;
+}
 
 
 

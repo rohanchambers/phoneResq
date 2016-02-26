@@ -70,7 +70,7 @@
 <!-- Linkedin Share -->
 <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 <!-- Google Maps api -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhbCpomcdBHz8oDL7STcqrTKQ5UKAjmwU&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6w8Hmte-H4bI060xWOYKawQdSDnUd79o&callback=initMap" async defer></script>
 <!-- Google Analytics: -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

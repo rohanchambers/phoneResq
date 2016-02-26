@@ -183,7 +183,7 @@ get_header(); ?>
                 </article>      
 
                 <article id="samsung-galaxy" class="product animated fadeInUp" data-id='4'>
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungTablet.png" alt="Samsung Galaxy repair" />
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungtablet.png" alt="Samsung Galaxy repair" />
                     <a href="#" class="btn-global btn-animate modal-trigger">Find out more</a>
                 </article>
 
@@ -226,7 +226,7 @@ get_header(); ?>
                       if (isset($_REQUEST['email']))  {
                       
                       //Email information
-                      $admin_email = "phoneresq@gmail.com";
+                      $admin_email = "nate@phoneresq.com";
                       $email = $_REQUEST['email'];
                       $subject = "Phone Resq. message: " . $_REQUEST['subject'];
                       $comment = $_REQUEST['comment'].$phone;
