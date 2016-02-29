@@ -209,7 +209,7 @@ get_header(); ?>
             <p class="modal-intro">Please come back soon to find some products that are for sale or refurbished.</p>
             <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/iphone.png" alt="iPhone repair" />        
             <img style="margin: 0 10px;" src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/android.png" alt="iPad repair" />
-            <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungTablet.png" alt="Samsung Galaxy repair" />         
+            <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungtablet.png" alt="Samsung Galaxy repair" />         
         </div>
     </div>
 </div>

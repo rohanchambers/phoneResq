@@ -189,7 +189,8 @@ $(document).on('scroll',function(){
 	        $('#services').addClass('nav-min');
 	        $('#repair').addClass('nav-min');
 	        $('.error-404').addClass('nav-min');
-	        $('#main .container').addClass('nav-min');
+	        // Only first .container gets nav-min or adds to all containers 
+	        $('#main .container').first().addClass('nav-min');
 	        $('#share-me').removeClass('go');
 	        $('#share-me').addClass('goAway');
 	    } else {
@@ -197,7 +198,7 @@ $(document).on('scroll',function(){
 	        $('#services').removeClass('nav-min');
 	        $('#repair').removeClass('nav-min');
 	        $('.error-404').removeClass('nav-min');
-	        $('#main .container').removeClass('nav-min');
+	        $('#main .container').first().removeClass('nav-min');
 	    }
 
 	    // If scroll top is 400 + show hide intro paragraph

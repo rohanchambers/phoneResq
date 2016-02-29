@@ -439,8 +439,9 @@ footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#f
 footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowrap}
 #header.nav-min #nav-main #social-links a:hover{color:#e20510}#header.nav-min #nav-main li ul#subnav{padding-top:0}
 #header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#main .container.nav-min{margin-top:175px}
-.page-home #main .container.nav-min,.page-template-services #main .container.nav-min{margin-top:0}
-#repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
+.page-template-services #main #repair .container.nav-min{margin-top:130px}.page-home #main .container.nav-min{margin-top:0}
+@media screen and (max-width:768px){.page-home #services .container,#repair .container,#main .container #primary{margin-top:60px}
+}#repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
 #repair h1,#repair p{text-align:left}#repair p{width:100%}#repair a{color:#404040}
 #repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}#repair .row{overflow:hidden;margin:0 0 50px 0;padding-bottom:5px}
 #repair .row-intro{margin-bottom:0}#repair .container{position:relative}#repair .img-holder{position:relative;min-height:210px;background-color:red img;background-color-max-width:250px;background-color-max-height:300px}
@@ -460,7 +461,8 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 @media screen and (max-width:1030px){#primary{float:left;display:block;margin-right:1.20482%;width:74.6988%}
 #primary:last-child{margin-right:0}}@media screen and (max-width:768px){#primary{float:left;display:block;margin-right:1.20482%;width:100%}
 #primary:last-child{margin-right:0}}#primary article{margin-bottom:50px;padding-bottom:20px;border-bottom:1px dashed #CCC}
-#secondary{float:right;margin:20px auto;padding:0;width:30%;font-size:.8125rem}@media screen and (max-width:1030px){#secondary{float:left;display:block;margin-right:1.20482%;width:24.09639%}
+#primary img.post-border{padding:3px;border:1px solid #CCC}#secondary{float:right;margin:20px auto;padding:0;width:30%;font-size:.8125rem}
+@media screen and (max-width:1030px){#secondary{float:left;display:block;margin-right:1.20482%;width:24.09639%}
 #secondary:last-child{margin-right:0}}@media screen and (max-width:768px){#secondary{float:left;display:block;margin-right:1.20482%;width:100%}
 #secondary:last-child{margin-right:0}}#secondary aside h4{font-family:'Open Sans',Arial,sans-serif;font-weight:600;font-size:.9375rem;text-transform:uppercase;width:50%;border-top:2px solid #e20510;margin-bottom:0;padding-top:5px}
 #secondary aside ul{padding:0}#secondary aside ul li{list-style:none;margin-bottom:3px}
@@ -471,8 +473,8 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 }@media(max-width:873px){#nav-cta{display:none}}@media(max-width:805px){#social-links{display:none}
 }@media screen and (max-width:867px){.about-row-img,.sell-row-img{width:50%;min-height:652px;position:absolute;right:0}
 }@media screen and (max-width:768px){.about-row-img,.sell-row-img{width:50%;min-height:620px;position:absolute;right:0}
-#services{margin-top:450px}#shop,#sell .section-divider,.parallax,#nav-sell{display:none}
-#sell .sell-row-img{min-height:325px}#main .container{margin-top:60px}#header{position:fixed;width:100%;top:0;padding:0;border-top:6px solid #e20510}
+#services,#services.nav-min{margin-top:440px}#shop,#sell .section-divider,.parallax,#nav-sell{display:none}
+#sell .sell-row-img{min-height:325px}#header{position:fixed;width:100%;top:0;padding:0;border-top:6px solid #e20510}
 #header #nav-hamburger{display:block}#header #nav-main{margin:0;width:100%}#header #nav-main ul{display:none}
 #header #nav-main ul.mobile-dropdown{display:block}#header #nav-main li{float:none;width:100%;margin:0;background-color:#e20510;border-bottom:1px solid #FFF}
 #header #nav-main li a{display:block;text-transform:uppercase;width:100%;height:100%;padding:17px 15px;font-size:1rem}
@@ -492,7 +494,7 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #header.nav-min #nav-main{margin-top:3px}#header.nav-min #nav-main a{color:#FFF}#header.nav-min #logo{display:block;height:46px;margin-top:5px;background-size:70%}
 #header.nav-min #nav-hamburger span{background-color:#404040}#header.nav-min #nav-hamburger.open span{background-color:#e20510}
 #header.nav-min #nav-main li#dropdown:hover>#subnav{display:block !important}#header.nav-min #nav-main a::after{display:none}
-#repair{margin-top:65px}#repair #filter-model div{margin-bottom:10px}}@media screen and (max-width:667px){.container{margin:0 4%;width:92%}
+#repair #filter-model div{margin-bottom:10px}}@media screen and (max-width:667px){.container{margin:0 4%;width:92%}
 #header.nav-min #social-links ul#share-me{right:-42px}.intro,.repair,.about-rows,#contact .two-col,.page-template-services #repair .two-col{float:left;display:block;margin-right:1.20482%;width:100%}
 .intro:last-child,.repair:last-child,.about-rows:last-child,#contact .two-col:last-child,.page-template-services #repair .two-col:last-child{margin-right:0}
 .page-home #page #carousel .slide .slide-content{width:80%;margin:0 auto}.page-home #page #carousel .slide article{width:100%;float:none;margin:0;padding-top:80px;text-align:center}
@@ -506,11 +508,11 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #contact #contact-form{width:100%}#contact #map{width:100%}#contact #get-in-touch .intro{text-align:center}
 #contact #get-in-touch .intro span{margin:0 auto}#contact #get-in-touch .intro p{width:100%}
 #about .section-divider,#sell .section-divider,#clients,#shop,#sell,hr{display:none}
-}.woocommerce #primary{width:75%}.woocommerce #primary .products li{float:left;display:block;margin-right:1.20482%;width:32.53012%}
+}.woocommerce #primary{width:70%}.woocommerce #primary .products li{float:left;display:block;margin-right:1.20482%;width:32.53012%}
 .woocommerce #primary .products li:last-child{margin-right:0}@media screen and (max-width:768px){.woocommerce #primary .products li{background-color:blue;float:left;display:block;margin-right:1.20482%;width:49.39759%}
 .woocommerce #primary .products li:last-child{margin-right:0}}@media screen and (max-width:667px){.woocommerce #primary .products li{background-color:green;float:left;display:block;margin-right:1.20482%;width:100%}
 .woocommerce #primary .products li:last-child{margin-right:0}}.woocommerce ul.products li.product a img{width:auto;height:auto;max-height:300px;margin:0 auto}
-.woocommerce div.product div.images img{width:auto}.woocommerce #secondary{width:20%}
+.woocommerce div.product div.images img{width:auto}.woocommerce #secondary{width:25%}
 input{line-height:normal}button,button[disabled]:hover,button[disabled]:focus,input[type="button"],input[type="button"][disabled]:hover,input[type="button"][disabled]:focus,input[type="reset"],input[type="reset"][disabled]:hover,input[type="reset"][disabled]:focus,input[type="submit"],input[type="submit"][disabled]:hover,input[type="submit"][disabled]:focus{background:#475573;border:0;border-radius:2px;color:#fff;font-family:Montserrat,"Helvetica Neue",sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.046875em;line-height:1;padding:.84375em .875em .78125em;text-transform:uppercase}
 button:hover,button:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="reset"]:hover,input[type="reset"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{background:#e20510}
 button:focus,input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus{outline:thin dotted;outline-offset:-4px}
