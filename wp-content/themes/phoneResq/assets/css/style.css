@@ -3647,7 +3647,9 @@ footer#footer {
     height: 60px;
     padding: 0; }
     #header.nav-min #nav-main {
-      margin-top: 3px; }
+      margin-top: 3px;
+      max-height: 490px;
+      overflow-y: scroll; }
       #header.nav-min #nav-main a {
         color: #FFF; }
     #header.nav-min #logo {

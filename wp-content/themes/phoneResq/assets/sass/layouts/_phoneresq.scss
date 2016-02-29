@@ -1789,8 +1789,6 @@ footer#footer {
         min-height: 325px;
     }
 
-
-
     #header {
         position: fixed;
         width: 100%;
@@ -1984,6 +1982,8 @@ footer#footer {
         
         #nav-main {
             margin-top: 3px;
+            max-height: 490px;
+            overflow-y: scroll;
 
             a {
                 color: $color-white;
