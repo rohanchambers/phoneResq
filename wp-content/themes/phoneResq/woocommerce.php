@@ -12,10 +12,11 @@
 
 get_header(); ?>
 	<div class="container">
+		<?php woocommerce_breadcrumb( ); ?>
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content">
 			
-				<?php woocommerce_breadcrumb( ); ?>
+				
 				<?php woocommerce_content(); ?>
 
 			</div><!-- #content -->

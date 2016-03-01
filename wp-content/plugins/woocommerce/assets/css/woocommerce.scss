@@ -52,6 +52,7 @@ p.demo_store {
  * Main WooCommerce styles
  */
 .woocommerce {
+	background-color: red;
 	.blockUI.blockOverlay {
 		position: relative;
 		@include loader();

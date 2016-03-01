@@ -129,7 +129,7 @@ $( document ).ready(function() {
 	});
 
 	// Service shake repair products
-	$('.repair a, .product a, .product img').hover( function(){
+	$('.repair a, .page-home .product a, .page-home .product img').hover( function(){
 		$(this).parent().find('span, img').addClass('shake');
 	}, function() {
 		$(this).parent().find('span, img').removeClass();
