@@ -661,7 +661,7 @@ article.intro {
         }
     }
 
-    P {
+    p {
         width: 60%;
         margin: 0 auto 10px auto;
         color: $color-text;                
@@ -1644,8 +1644,8 @@ footer#footer {
 
 #secondary {
     float: right;
-    margin: 20px auto;
-    padding: 0 0 0 0;
+    margin: 38px auto;
+    padding: 0;
     width: 25%;    
     font-size: rem(13);    
     
@@ -1690,6 +1690,16 @@ footer#footer {
         }
 
     }
+
+    .search-field {
+        padding: 0.625em 0.4375em;
+    }
+
+    .search-submit {
+        text-transform: none;
+        font-weight: normal;
+    }
+
 
     .widget_recent_comments,
     .widget_meta {
@@ -2178,13 +2188,6 @@ footer#footer {
 
 
 // WooCommerce override styles
-.woocommerce-cart {
-    article.intro h1 span { 
-        width: 55px;
-    }
-}
-
-
 
 .woocommerce, 
 .woocommerce-page {
@@ -2192,6 +2195,23 @@ footer#footer {
     .woocommerce-breadcrumb {
         padding: 1em 0;
         border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+    
+    .woocommerce-billing-fields h3 {
+        position: relative;
+        color: $color-red;
+        text-transform: uppercase;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 600;
+    }
+
+    .woocommerce-billing-fields h3::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 10px;
+        width: 50px;
+        border-bottom: 2px solid $color-grey;        
     }
 
     #primary {
@@ -2212,8 +2232,35 @@ footer#footer {
             }
         }
 
+        h2, .product_title {
+            text-transform: uppercase;
+            color: $color-grey;
+        }
+
+        p, select {
+            font-size: rem(13);
+        }
+
         .page-title {
-            margin: 0 0 10px 0;
+            position: relative;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            font-size: rem(36);
+            color: $color-grey;
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            width: 55px;
+            background-color: red;
+            border-bottom: 2px solid $color-grey;
+        }
+
+        p.price {
+            font-size: rem(16);
         }
 
         .products {
@@ -2222,6 +2269,7 @@ footer#footer {
             
             li {
                 @include span-columns(4 of 12);
+                text-align: center;
 
                 h3, span {
                     text-align: center;
@@ -2238,12 +2286,25 @@ footer#footer {
                     color: #60646c;
                     font-size: rem(13);
                 }
-
-                a.button {
-                    display: block;
-                    margin: 10px auto;
-                    width: 90px;
+                
+                a {
+                    margin: 0;
                 }
+                
+                .add_to_cart_button {
+                    //@include clearfix;
+                }
+
+                .added_to_cart {
+                    display: inline-block;
+                    padding: .618em 1em;
+                    border-radius: 3px;
+                    background-color: #a46497;
+                }
+
+                .added_to_cart:hover {
+                    background-color: #935386;
+                }                
             }
 
             li:nth-child(3n+3) {  
@@ -2263,26 +2324,87 @@ footer#footer {
     }
 }
 
+
+// Specific overrides
+.woocommerce-result-count {
+    background-color: $color-grey;
+    color: $color-white;
+    padding: 0 5px;
+}
+
+.woocommerce-cart {
+    article.intro h1 span { 
+        width: 55px;
+    }
+}
+
+.woocommerce ul.products li.product a img {
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.woocommerce div.product div.images img {
+    width: auto;
+}
+
+.woocommerce table.cart td.actions #coupon_code.input-text {
+    width: auto;
+}
+
+.woocommerce p.form-row-wide, 
+.woocommerce p.notes {
+    width: 100%;
+}
+
+.woocommerce .woocommerce-info {
+    border-top: 2px solid $color-red;
+}
+
+.woocommerce .woocommerce-info:before {
+    color: $color-grey;
+}
+
+.woocommerce .woocommerce-error {
+    border-top: 2px solid $color-red;
+
+    li {
+        margin-bottom: 3px;
+        padding: 5px!important;
+        background-color: $color-grey;
+        color: $color-white;
+    }
+}
+
+// Buttons styles override
 .woocommerce {
     #respond input#submit, 
     a.button, 
     button.button, 
-    input.button {
+    input.button,
+    .added_to_cart  {
         background-color: $color-grey;
         color: $color-white!important;
         font-weight: normal;
-        font-size: rem(13)!important;
+        font-size: rem(12);
         font-family: "Helvetica Neue", verdana, sans-serif;
-        text-transform: none!important;      
+        text-transform: none!important;
+        padding: 0.74em 1em;
     }
     
     #respond input#submit:hover, 
     a.button:hover, 
     button.button:hover, 
-    input.button:hover {
+    input.button:hover,
+    .added_to_cart:hover  {
         background-color: $color-red;
         color: $color-white;
     }    
+
+    input[type="number"] {
+        padding: 0.45em 0.4375em;
+    }
 }
 
 @include media($tablet) {   
@@ -2296,20 +2418,6 @@ footer#footer {
         
     }
 }
-
-
-
-.woocommerce ul.products li.product a img {
-    width:auto;
-    height:auto;
-    max-height: 300px;
-    margin: 0 auto;
-}
-
-.woocommerce div.product div.images img {
-    width: auto;
-}
-
 
 
 
