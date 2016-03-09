@@ -19,7 +19,8 @@ input[type="reset"][disabled]:hover,
 input[type="reset"][disabled]:focus,
 input[type="submit"],
 input[type="submit"][disabled]:hover,
-input[type="submit"][disabled]:focus {
+input[type="submit"][disabled]:focus,
+.woocommerce-product-search input[type="submit"] {
 	background: $color-grey;
 	border: 0;
 	border-radius: 2px;
@@ -126,12 +127,17 @@ input[type="search"].search-field {
 	width: auto;
 }
 
-.search-submit {
+// Form styling on search product to be same as blog search
+.woocommerce-product-search {
+	position: relative;
+}
+
+.search-submit,
+.woocommerce-product-search input[type="submit"]{
 	min-height: 34px;
 	border-radius: 0 2px 2px 0;
 	bottom: 0;
 	overflow: hidden;
-	padding: 0;
 	position: absolute;
 	right: 0;
 	top: 0;

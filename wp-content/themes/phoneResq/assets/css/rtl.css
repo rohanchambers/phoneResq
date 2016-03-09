@@ -3442,7 +3442,7 @@ footer#footer {
 
 #secondary {
   float: right;
-  margin: 20px auto;
+  margin: 19px auto;
   padding: 0;
   width: 25%;
   font-size: 0.8125rem; }
@@ -3451,8 +3451,7 @@ footer#footer {
       float: left;
       display: block;
       margin-right: 1.20482%;
-      width: 24.09639%;
-      float: right; }
+      width: 24.09639%; }
       #secondary:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 768px) {
@@ -3484,6 +3483,29 @@ footer#footer {
         text-decoration: none;
         background-color: #475573;
         color: white; }
+  #secondary aside.widget_recently_viewed_products h4 {
+    margin-bottom: 10px; }
+  #secondary aside.widget_recently_viewed_products li {
+    margin-bottom: 0;
+    padding: 7px;
+    border-bottom: 1px dotted #ccc;
+    transition: all 0.2s linear;
+    cursor: pointer; }
+    #secondary aside.widget_recently_viewed_products li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s linear; }
+    #secondary aside.widget_recently_viewed_products li a:hover {
+      background: none; }
+  #secondary aside.widget_recently_viewed_products li:hover {
+    background-color: #e20510;
+    color: #FFF; }
+  #secondary aside.widget_recently_viewed_products li a:hover {
+    background: none; }
+  #secondary aside.widget_recently_viewed_products li:hover a {
+    background: none;
+    color: white; }
   #secondary .widget_recent_entries ul li:before,
   #secondary .widget_pages ul li:before,
   #secondary .widget_categories ul li:before,
@@ -3504,12 +3526,78 @@ footer#footer {
     content: "\f114"; }
   #secondary .search-field {
     padding: 0.625em 0.4375em; }
-  #secondary .search-submit {
+  #secondary .search-submit,
+  #secondary .woocommerce-product-search input[type="submit"] {
     text-transform: none;
-    font-weight: normal; }
+    font-weight: normal;
+    transition: all 0.2s linear; }
   #secondary .widget_recent_comments,
   #secondary .widget_meta {
     display: none; }
+  #secondary #menu-shop-menu,
+  #secondary #menu-shop-menu-1 {
+    margin-bottom: 20px;
+    border-right: 2px solid #e20510;
+    padding-right: 1px; }
+    #secondary #menu-shop-menu li,
+    #secondary #menu-shop-menu-1 li {
+      height: 30px;
+      margin-bottom: 1px;
+      position: relative;
+      background: #475573; }
+    #secondary #menu-shop-menu a,
+    #secondary #menu-shop-menu-1 a {
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 27px;
+      color: #FFF;
+      font-size: 0.75rem;
+      padding-left: 40px;
+      border-right: 5px solid transparent;
+      letter-spacing: 1px;
+      transition: all 0.2s linear; }
+    #secondary #menu-shop-menu .active a,
+    #secondary #menu-shop-menu-1 .active a {
+      color: #B93632;
+      border-left: 5px solid #B93632;
+      background-color: #1B1B1B;
+      outline: 0; }
+    #secondary #menu-shop-menu li:not(.active):hover a,
+    #secondary #menu-shop-menu-1 li:not(.active):hover a {
+      color: #eee;
+      background-color: #e20510; }
+    #secondary #menu-shop-menu span[class^="icon"],
+    #secondary #menu-shop-menu-1 span[class^="icon"] {
+      position: absolute;
+      left: 20px;
+      font-size: 1.5em; }
+    #secondary #menu-shop-menu li:before,
+    #secondary #menu-shop-menu-1 li:before {
+      position: absolute;
+      font-family: "FontAwesome";
+      color: #FFF;
+      line-height: 30px;
+      margin-left: 7px;
+      font-size: 14px;
+      opacity: 1; }
+    #secondary #menu-shop-menu li.menu-item-186:before,
+    #secondary #menu-shop-menu-1 li.menu-item-186:before {
+      font-family: "FontAwesome";
+      content: "\f015"; }
+    #secondary #menu-shop-menu li.menu-item-185:before,
+    #secondary #menu-shop-menu-1 li.menu-item-185:before {
+      font-family: "FontAwesome";
+      content: "\f07a"; }
+    #secondary #menu-shop-menu li.menu-item-184:before,
+    #secondary #menu-shop-menu-1 li.menu-item-184:before {
+      font-family: "FontAwesome";
+      content: "\f09d"; }
+    #secondary #menu-shop-menu li.menu-item-183:before,
+    #secondary #menu-shop-menu-1 li.menu-item-183:before {
+      font-family: "FontAwesome";
+      content: "\f007"; }
 
 .woocommerce .woocommerce-breadcrumb,
 .woocommerce-page .woocommerce-breadcrumb {
@@ -3655,6 +3743,9 @@ footer#footer {
 
 .woocommerce-cart article.intro h1 span {
   width: 55px; }
+
+.woocommerce-page #secondary aside h4 {
+  width: auto; }
 
 .woocommerce ul.products li.product a img {
   width: auto;
@@ -4151,7 +4242,8 @@ input[type="reset"][disabled]:hover,
 input[type="reset"][disabled]:focus,
 input[type="submit"],
 input[type="submit"][disabled]:hover,
-input[type="submit"][disabled]:focus {
+input[type="submit"][disabled]:focus,
+.woocommerce-product-search input[type="submit"] {
   background: #475573;
   border: 0;
   border-radius: 2px;
@@ -4245,12 +4337,15 @@ input[type="search"].search-field {
   position: relative;
   width: auto; }
 
-.search-submit {
+.woocommerce-product-search {
+  position: relative; }
+
+.search-submit,
+.woocommerce-product-search input[type="submit"] {
   min-height: 34px;
   border-radius: 0 2px 2px 0;
   bottom: 0;
   overflow: hidden;
-  padding: 0;
   position: absolute;
   right: 0;
   top: 0;

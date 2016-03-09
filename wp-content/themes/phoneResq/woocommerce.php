@@ -12,17 +12,16 @@
 
 get_header(); ?>
 	<div class="container">
-			
+
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content">
-			
-				<!-- <?php woocommerce_breadcrumb( ); ?>	 -->	
-				<?php woocommerce_content(); ?>
+				<?php woocommerce_breadcrumb( ); ?>
 
+				<?php woocommerce_content(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-	<?php get_sidebar(); ?>
+	<?php include("sidebar-woo.php"); ?>
 	</div>
 <?php get_footer(); ?>
 

@@ -1642,14 +1642,13 @@ footer#footer {
 
 #secondary {
     float: right;
-    margin: 20px auto;
+    margin: 19px auto;
     padding: 0;
     width: 25%;    
     font-size: rem(13);    
     
     @include media($desktop-med) {
         @include span-columns( 3 of 12 );
-        float: right;
     }
 
     @include media($tablet) {
@@ -1685,6 +1684,47 @@ footer#footer {
                     color: white;
                 }
             }
+        } 
+    }
+
+    // Widget recently viewd products
+    aside.widget_recently_viewed_products {
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 0;
+            padding: 7px;
+            border-bottom: 1px dotted #ccc;
+            transition: all 0.2s linear;
+            cursor: pointer;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                transition: all 0.2s linear;
+            }
+
+            a:hover {
+                background: none;
+            }
+        }
+
+        li:hover {
+            background-color: $color-red;
+            color: $color-white;
+        }
+
+        li a:hover {
+            background: none;
+            //color: transparent;
+        }
+
+        li:hover a {
+            background: none;
+            color: white;
         }
     }
     
@@ -1719,16 +1759,96 @@ footer#footer {
         padding: 0.625em 0.4375em;
     }
 
-    .search-submit {
+    .search-submit,
+    .woocommerce-product-search input[type="submit"] {
         text-transform: none;
         font-weight: normal;
+        transition: all 0.2s linear;
     }
-
 
     .widget_recent_comments,
     .widget_meta {
         display: none;
     }
+    
+    // Side vertical nav for shop
+
+    #menu-shop-menu,
+    #menu-shop-menu-1 {
+        margin-bottom: 20px;
+        border-right: 2px solid $color-red;
+        padding-right: 1px;
+        li {
+            height:30px; 
+            margin-bottom: 1px;
+            position:relative;
+            background: $color-grey;
+        }
+
+        a {
+            text-decoration:none;
+            display:block;
+            height:100%;
+            width:100%;
+            line-height:27px;
+            color: $color-white;
+            font-size: rem(12);
+            padding-left:40px;
+            border-right:5px solid transparent;
+            letter-spacing:1px;
+            transition: all 0.2s linear;
+        }
+
+        .active a{
+            color: #B93632;
+            border-left:5px solid #B93632;
+            background-color: #1B1B1B;
+            outline:0;
+        }
+
+        li:not(.active):hover a{
+            color: #eee;
+            background-color: $color-red;
+        }
+
+        span[class ^= "icon"]{
+            position:absolute;
+            left:20px;
+            font-size: 1.5em;
+            //transition: all 0.3s linear;
+        }
+
+        li:before {
+            position: absolute;
+            font-family: "FontAwesome";
+            color: $color-white;
+            line-height: 30px;
+            margin-left: 7px;
+            font-size: 14px;
+            opacity: 1;
+        }
+
+            li.menu-item-186:before {
+                font-family: "FontAwesome";
+                content: "\f015";
+            }
+
+            li.menu-item-185:before {
+                font-family: "FontAwesome";
+                content: "\f07a";
+            }
+
+            li.menu-item-184:before {
+                font-family: "FontAwesome";
+                content: "\f09d";
+            }
+
+            li.menu-item-183:before {
+                font-family: "FontAwesome";
+                content: "\f007";
+            }
+    }
+
 
 }
 
@@ -1904,6 +2024,10 @@ footer#footer {
     }
 }
 
+.woocommerce-page #secondary aside h4 {
+    width: auto;
+}
+
 .woocommerce ul.products li.product a img {
     width: auto;
     height: auto;
@@ -1988,7 +2112,7 @@ footer#footer {
         #secondary {
             width: 100%;
         }
-        
+
         .pp_content #pp_full_res>img {
             margin: 0 auto;
             display: block;
@@ -2018,7 +2142,8 @@ footer#footer {
 
 
 
-// Shop navigation
+// Shop navigation horizontal 
+// * currently not using
 .nav-shop {
     margin-bottom: 20px;
     background-color: $color-grey;
@@ -2186,6 +2311,14 @@ footer#footer {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
 
 
 

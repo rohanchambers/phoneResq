@@ -272,6 +272,16 @@ function some_like_it_neat_widgets_init()
 		'after_title'   => '</h4>',
 		)
 	);
+
+	register_sidebar( array(
+		'name'          => __( 'Sidebar2', 'some-like-it-neat' ),
+		'id'            => 'sidebar-2',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
 }
 add_action( 'widgets_init', 'some_like_it_neat_widgets_init' );
 
@@ -439,3 +449,10 @@ function homehash($section){
 		echo '#' . $section;
 	}
 }
+
+// Custom menu for ecommerce
+function register_my_menu() {
+  register_nav_menu('nav-shop',__( 'Shop nav' ));
+}
+add_action( 'init', 'register_my_menu' );
+

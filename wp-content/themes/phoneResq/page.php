@@ -30,7 +30,14 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
-
-	<?php get_sidebar(); ?>
+		
+		<?php 
+			// If woo pages use sidebar2.php else sidebar.php (blog)
+			if ( is_checkout() || is_cart() || is_account_page()  ) {
+				include("sidebar-woo.php");
+			} else {
+				get_sidebar();
+			}
+		?>
 	</div>
 <?php get_footer(); ?>
