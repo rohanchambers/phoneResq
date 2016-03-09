@@ -15,7 +15,7 @@ get_header(); ?>
 
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content">
-				<?php woocommerce_breadcrumb( ); ?>
+				<!-- <?php woocommerce_breadcrumb( ); ?> -->
 
 				<?php woocommerce_content(); ?>
 			</div><!-- #content -->

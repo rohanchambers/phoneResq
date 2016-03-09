@@ -274,7 +274,7 @@ function some_like_it_neat_widgets_init()
 	);
 
 	register_sidebar( array(
-		'name'          => __( 'Sidebar2', 'some-like-it-neat' ),
+		'name'          => __( 'Sidebar-woo', 'some-like-it-neat' ),
 		'id'            => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
