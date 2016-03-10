@@ -1713,7 +1713,7 @@ footer#footer {
         }
 
         li:hover {
-            background-color: $color-red;
+            background-color: $color-grey;
             color: $color-white;
         }
 
@@ -1861,6 +1861,21 @@ footer#footer {
 .woocommerce, 
 .woocommerce-page {
 
+    // Single product page
+    #content div.product div.summary, 
+    div.product div.summary, 
+    #content div.product div.summary, 
+    div.product div.summary {
+        width: 60%;
+    }
+
+    #content div.product div.images, 
+    div.product div.images, 
+    #content div.product div.images, 
+    div.product div.images {
+        width: 35%;
+    }
+
     .woocommerce-breadcrumb {
         padding: 1em 0;
         border-bottom: 1px solid rgba(0,0,0,.05);
@@ -1892,6 +1907,12 @@ footer#footer {
             color: $color-grey;
             font-size: rem(18);
         }
+
+        .product_title {
+            font-size: rem(28);
+            font-weight: normal;
+            text-transform: none;   
+        }
             
             .woocommerce-checkout {
                 h2::after, 
@@ -1901,14 +1922,19 @@ footer#footer {
                     bottom: -5px;
                     left: 10px;
                     width: 50px;
-                    border-bottom: 2px solid $color-red;        
+                    border-bottom: 2px solid $color-red;
                 }
             }
 
         p, select {
-            font-size: rem(13);
+            font-size: rem(14);
         }
-        
+
+        .woocommerce-ordering select, 
+        .woocommerce-result-count {
+            font-size: rem(13);            
+        }
+
         .title {
             margin-bottom: 15px;
         }
@@ -1933,6 +1959,8 @@ footer#footer {
 
         p.price {
             font-size: rem(16);
+            color: $color-grey;
+            font-weight: 500;
         }
 
         .products {
@@ -1999,24 +2027,47 @@ footer#footer {
             .products li {
                 @include span-columns(12 of 12);
             }
+            
+            // Single product page
+            #content div.product div.summary, 
+            div.product div.summary, 
+            #content div.product div.summary, 
+            div.product div.summary {
+                width: 100%;
+                float: none;
+            }
+
+            #content div.product div.images, 
+            div.product div.images, 
+            #content div.product div.images, 
+            div.product div.images {
+                width: 100%;
+                float: none;
+            }            
         }
     }
 }
 
 // .cart-tab.right {
-//     right: 5em!important;
+//     right: 4px!important;
 // }
 
 // .cart-tab.right:hover {
-//     right: 5em!important
+//     right: 4px!important
 // }
 
 
-// Cart fly out menu overrides
-
+// CART FLY OUT DROPDOWN
 .cart-tab,
 .cart-tab .widget_shopping_cart {
-    top: 7em;
+    display: none;
+}
+
+.woocommerce-page .cart-tab,
+.woocommerce-page .cart-tab .widget_shopping_cart {
+    display: block;
+    width: 20em;
+    top: 7.2em;
     font-family: "Helvetica Neue", verdana, sans-serif;
     
     a.cart-parent {
@@ -2038,15 +2089,19 @@ footer#footer {
     }
 
     a {
-        color: #a46497;
+        color: $color-grey;//#a46497;
         text-decoration: none;
         font-weight: 700;
     }  
     
     .product_list_widget li {
         padding: 1em 1em 1em 2em;
-        line-height: 1.5;
+        line-height: 1.5;        
     }
+
+    // .product_list_widget li:hover {
+    //     background-color: $color-grey;
+    // }
 
     .mini_cart_item {
         border-bottom: 1px dotted #ebe9eb;
@@ -2081,12 +2136,13 @@ footer#footer {
         }
 
         img {
-            width: 40px;
+            width: 50px;
         }
     }
     
     a.button {
         background-color: #a46497;
+        font-weight: normal;
     }
 
     a.button:hover {
@@ -2140,7 +2196,7 @@ footer#footer {
 }
 
 .woocommerce div.product div.images img {
-    width: auto;
+    max-width: 200px;
 }
 
 .woocommerce table.cart td.actions #coupon_code.input-text {
