@@ -69,7 +69,6 @@ $( document ).ready(function() {
 		}
 	});
 
-
 	//Skrollr initialise
 	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 	    skrollr.init({
@@ -84,7 +83,6 @@ $( document ).ready(function() {
 	    }
 	}
     $(window).resize(resize);
-
 
 	// Show hide value of form inputs and textarea
     $('#contact-form input, #contact-form textarea').each(function(){
@@ -158,7 +156,6 @@ $( document ).ready(function() {
 	    }
 	});
 
-
 	// Icon mouse show hide intro text only if it hasn't scrolled down
 	$('.icon-animate').click( function(){
 		if($(document).scrollTop() < 400) {
@@ -176,8 +173,6 @@ $( document ).ready(function() {
 	});
 
 });
-
-
 
 // Document on scroll change nav state
 $(document).on('scroll',function(){
@@ -210,7 +205,6 @@ $(document).on('scroll',function(){
 	}
 
 });
-
 
 // Load Google maps
 function initMap() {

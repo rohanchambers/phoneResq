@@ -320,8 +320,11 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 90%{-webkit-transform:translate(2px,2px) rotate(0)}100%{-webkit-transform:translate(1px,-2px) rotate(-1deg)}
 }.page-home .shake{-webkit-animation-name:shakeit;-webkit-animation-duration:.8s;-webkit-transform-origin:50% 50%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear}
 .section-divider{position:absolute;z-index:100;width:100%;height:25px;background:url(../images/global/sectionDividerFull.png) center top no-repeat}
-#header{z-index:10;padding:10px 0}#header #nav-hamburger{display:none}#header #nav-main{position:relative}
-#header #nav-main li{position:relative;margin:0 0 0 15px}#header #nav-main li ul#subnav{display:none;position:absolute;top:20px;left:-5px;width:220px;padding-top:5px;background-color:#FFF}
+.nav-global{position:relative;float:left;margin-top:15px}.nav-global ul{margin:0;padding:0}
+.nav-global li{float:left;list-style-type:none;padding:0}.nav-global a{font-family:'Open Sans',Arial,sans-serif;font-size:.9375rem;text-decoration:none;color:#FFF;text-transform:uppercase}
+.nav-global a:hover{color:#e20510}#header{z-index:10;padding:10px 0}#header #nav-hamburger{display:none}
+#header #nav-main{position:relative}#header #nav-main li{position:relative;margin:0 0 0 15px}
+#header #nav-main li ul#subnav{display:none;position:absolute;top:20px;left:-5px;width:220px;padding-top:5px;background-color:#FFF}
 #header #nav-main li ul#subnav li{position:relative;display:block;float:none;margin:0}
 #header #nav-main li ul#subnav li a{display:block;width:100%;height:100%;padding:5px 6px;border-bottom:1px solid #404040}
 #header #nav-main li ul#subnav li a::after{content:'';background:0}
@@ -345,20 +348,21 @@ section,header{position:relative}.btn-global,#header #nav-cta .btn-nav,#shop #sh
 #header.nav-min #sub-nav,#header.nav-min #dropdown i,#header.nav-min li#dropdown:hover>#subnav{display:none !important}
 #header.nav-min #logo{max-width:70px;height:63px;background:url(../images/global/phoneResqLogo.png) no-repeat;background-size:100%}
 #header.nav-min #nav-main a::after{position:absolute;bottom:-2px;left:0;content:'';width:0;height:1px;background-color:#404040;transition:all .2s linear}
-#header.nav-min #nav-main a:hover::after{width:100%}.nav-global{position:relative;float:left;margin-top:15px}
-.nav-global ul{margin:0;padding:0}.nav-global li{float:left;list-style-type:none;padding:0}
-.nav-global a{font-family:'Open Sans',Arial,sans-serif;font-size:.9375rem;text-decoration:none;color:#FFF;text-transform:uppercase}
-.nav-global a:hover{color:#e20510}#page #carousel{display:none}.page-home #page #carousel{position:absolute;top:0;left:0;display:block;z-index:0;width:100%;height:530px}
-.page-home #page #carousel .slide{margin:0 auto}.page-home #page #carousel .slide .slide-content{width:960px;margin:0 auto}
-.page-home #page #carousel .slide article{float:right;margin-right:90px;margin-top:140px;width:550px;text-align:right;font-family:'Open Sans',sans-serif}
-.page-home #page #carousel .slide article h1{margin:0;color:#FFF;text-transform:uppercase;font-size:2rem;font-weight:600}
-.page-home #page #carousel .slide article p{margin:10px 0 30px 0;font-size:1.375rem;line-height:1.4;font-weight:300;color:#FFF}
-.page-home #page #carousel .slide article a{padding:8px 25px;font-size:22px;color:#FFF;font-weight:600;text-transform:uppercase;text-decoration:none;border-radius:4px;border:3px solid #FFF}
-.page-home #page #carousel .slide article a:hover{background-color:#e20510;border:3px solid #e20510;border-radius:5px}
-.page-home #page #carousel .section-divider{top:510px}.page-home #page #carousel #carousel-btn{position:absolute;top:200px;width:100%}
-.page-home #page #carousel .btn-slide{position:absolute;width:30px;height:40px;color:#FFF;display:none}
-.page-home #page #carousel .btn-slide:hover{color:#e20510}.page-home #page #carousel #btn-prev{left:30px}
-.page-home #page #carousel #btn-nxt{right:30px}.page-home #page #carousel #slide-1{width:100%;height:530px;background:url(../images/carousel/slide-1.jpg) center center;background-size:cover}
+#header.nav-min #nav-main a:hover::after{width:100%}#header.nav-min #nav-main #social-links a:hover{color:#e20510}
+#header.nav-min #nav-main li ul#subnav{padding-top:0}#header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}
+#main .container.nav-min{margin-top:175px}.page-template-services #main #repair .container.nav-min{margin-top:130px}
+.page-home #main .container.nav-min{margin-top:0}@media screen and (max-width:768px){.page-home #services .container,#repair .container,#main .container #primary{margin-top:60px}
+}#carousel{position:absolute;top:0;left:0;display:block;z-index:0;width:100%;height:530px}
+#carousel .slide{margin:0 auto}#carousel .slide .slide-content{width:960px;margin:0 auto}
+#carousel .slide article{float:right;margin-right:90px;margin-top:140px;width:550px;text-align:right;font-family:'Open Sans',sans-serif}
+#carousel .slide article h1{margin:0;color:#FFF;text-transform:uppercase;font-size:2rem;font-weight:600}
+#carousel .slide article p{margin:10px 0 30px 0;font-size:1.375rem;line-height:1.4;font-weight:300;color:#FFF}
+#carousel .slide article a{padding:8px 25px;font-size:22px;color:#FFF;font-weight:600;text-transform:uppercase;text-decoration:none;border-radius:4px;border:3px solid #FFF}
+#carousel .slide article a:hover{background-color:#e20510;border:3px solid #e20510;border-radius:5px}
+#carousel .section-divider{top:510px}#carousel #carousel-btn{position:absolute;top:200px;width:100%}
+#carousel .btn-slide{position:absolute;width:30px;height:40px;color:#FFF;display:none}
+#carousel .btn-slide:hover{color:#e20510}#carousel #btn-prev{left:30px}#carousel #btn-nxt{right:30px}
+#carousel #slide-1{width:100%;height:530px;background:url(../images/carousel/slide-1.jpg) center center;background-size:cover}
 .container{max-width:1024px;margin-left:auto;margin-right:auto}.container::after{clear:both;content:"";display:table}
 .row{display:block;margin:0}.row::after{clear:both;content:"";display:table}
 .two-col{float:left;display:block;margin-right:1.20482%;width:49.39759%}.two-col:last-child{margin-right:0}
@@ -366,9 +370,9 @@ article.intro{float:left;display:block;margin-right:1.20482%;width:100%;text-ali
 article.intro:last-child{margin-right:0}article.intro h1{position:relative;font-size:2.25rem;color:#e20510;text-transform:uppercase}
 article.intro h1 span{display:block;margin:0 auto;width:130px;height:10px;border-top:2px solid #e20510}
 article.intro p{width:60%;margin:0 auto 10px auto;color:#404040}#services{overflow:hidden;margin:380px 0 0 0;padding:25px 0 50px 0}
-#services::after{clear:both;content:"";display:table}#services .intro h1{color:#e20510}
-#services .intro h1 span{border-top:2px solid #e20510}#services .intro p#show-hide{display:none}
-#services .row.row-products{margin-bottom:50px}#services .section-divider{background:url(../images/global/sectionDividerFullTrans.png) center top no-repeat;bottom:-25px}
+#services .intro h1{color:#e20510}#services .intro h1 span{border-top:2px solid #e20510}
+#services .intro p#show-hide{display:none}#services .row.row-products{margin-bottom:50px}
+#services .section-divider{background:url(../images/global/sectionDividerFullTrans.png) center top no-repeat;bottom:-25px}
 #services.nav-min{margin-top:500px}#mouse-scroll{position:relative;display:block;margin:15px auto 15px auto;width:25px;height:72px;background-image:url(../images/global/iconMouseDown.png);clear:both;cursor:pointer}
 .fa-angle-down{display:none;position:absolute;left:-1px;color:#ddd}.angle-down-1{bottom:-5px}
 .angle-down-2{bottom:-15px}.icon-animate,.icon-animate:before{position:absolute;top:0}
@@ -428,20 +432,15 @@ article.intro p{width:60%;margin:0 auto 10px auto;color:#404040}#services{overfl
 #contact #get-in-touch h1 span{width:190px;margin-left:29px;text-align:center}#contact #get-in-touch p{color:#FFF;margin-left:0}
 #clients{min-height:110px;background-color:#e20510}#clients #client-list{float:left;display:block;margin-right:1.20482%;width:100%;text-align:justify;font-size:.1px;list-style-type:none;margin:0;padding:0;margin-top:33px}
 #clients #client-list:last-child{margin-right:0}#clients #client-list:after{content:'';width:100%;display:inline-block;height:auto}
-#clients .client{display:inline-block;min-height:41px}footer#footer{min-height:330px;background-color:#282727}
-footer#footer p{font-size:.75rem;line-height:1.3;color:#FFF}footer#footer a{color:#FFF}
-footer#footer a:hover{color:#e20510}footer#footer .two-col{height:330px;padding:35px 0}
-footer#footer #company-details a{text-decoration:underline}footer#footer #company-details a:hover{text-decoration:none;color:#e20510}
-footer#footer #company-details #social-links,footer#footer #company-details #footer-social-links{margin:23px 0 0 0}
-footer#footer #company-details #social-links li,footer#footer #company-details #footer-social-links li{margin-right:15px}
-footer#footer #footer-links{text-align:right}footer#footer #footer-links #back-top{display:inline-block;width:62px;height:74px;background:url(../images/footer/backTop.png) 0 0}
-footer#footer #footer-links #back-top:hover{background-position:-62px 0}footer#footer #footer-links #copyright{margin-top:25px;font-size:.6875rem}
-footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowrap}
-#header.nav-min #nav-main #social-links a:hover{color:#e20510}#header.nav-min #nav-main li ul#subnav{padding-top:0}
-#header.nav-min #nav-main li ul#subnav li{border-bottom:1px solid white}#main .container.nav-min{margin-top:175px}
-.page-template-services #main #repair .container.nav-min{margin-top:130px}.page-home #main .container.nav-min{margin-top:0}
-@media screen and (max-width:768px){.page-home #services .container,#repair .container,#main .container #primary{margin-top:60px}
-}#repair article{width:65%}#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
+#clients .client{display:inline-block;min-height:41px}#footer{min-height:330px;background-color:#282727}
+#footer p{font-size:.75rem;line-height:1.3;color:#FFF}#footer a{color:#FFF}#footer a:hover{color:#e20510}
+#footer .two-col{height:330px;padding:35px 0}#footer #company-details a{text-decoration:underline}
+#footer #company-details a:hover{text-decoration:none;color:#e20510}#footer #company-details #social-links,#footer #company-details #footer-social-links{margin:23px 0 0 0}
+#footer #company-details #social-links li,#footer #company-details #footer-social-links li{margin-right:15px}
+#footer #footer-links{text-align:right}#footer #footer-links #back-top{display:inline-block;width:62px;height:74px;background:url(../images/footer/backTop.png) 0 0}
+#footer #footer-links #back-top:hover{background-position:-62px 0}#footer #footer-links #copyright{margin-top:25px;font-size:.6875rem}
+#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowrap}#repair article{width:65%}
+#repair article.intro{margin-bottom:30px}#repair article.intro h1 span{margin:0 0 0 15px}
 #repair h1,#repair p{text-align:left}#repair p{width:100%}#repair a{color:#404040}
 #repair a:hover{background-color:#e20510;color:#FFF;text-decoration:none}#repair .row{overflow:hidden;margin:0 0 50px 0;padding-bottom:5px}
 #repair .row-intro{margin-bottom:0}#repair .container{position:relative}#repair .img-holder{position:relative;min-height:210px;background-color:red img;background-color-max-width:250px;background-color-max-height:300px}
@@ -497,6 +496,7 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 .woocommerce #primary .product_title,.woocommerce-page #primary .product_title{font-size:1.75rem;font-weight:normal;text-transform:none}
 .woocommerce #primary .woocommerce-checkout h2::after,.woocommerce #primary .woocommerce-checkout h3::after,.woocommerce-page #primary .woocommerce-checkout h2::after,.woocommerce-page #primary .woocommerce-checkout h3::after{content:'';position:absolute;bottom:-5px;left:10px;width:50px;border-bottom:2px solid #e20510}
 .woocommerce #primary p,.woocommerce #primary select,.woocommerce-page #primary p,.woocommerce-page #primary select{font-size:.875rem}
+.woocommerce #primary a.remove,.woocommerce-page #primary a.remove{line-height:.9em}
 .woocommerce #primary .woocommerce-ordering select,.woocommerce #primary .woocommerce-result-count,.woocommerce-page #primary .woocommerce-ordering select,.woocommerce-page #primary .woocommerce-result-count{font-size:.8125rem}
 .woocommerce #primary .title,.woocommerce-page #primary .title{margin-bottom:15px}
 .woocommerce #primary .page-title,.woocommerce-page #primary .page-title{position:relative;margin:0 0 20px 0;text-transform:uppercase;font-size:2.25rem;color:#475573}
@@ -519,7 +519,7 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 .woocommerce #primary .products li:last-child,.woocommerce-page #primary .products li:last-child{margin-right:0}
 .woocommerce #primary #content div.product div.summary,.woocommerce #primary div.product div.summary,.woocommerce #primary #content div.product div.summary,.woocommerce #primary div.product div.summary,.woocommerce-page #primary #content div.product div.summary,.woocommerce-page #primary div.product div.summary,.woocommerce-page #primary #content div.product div.summary,.woocommerce-page #primary div.product div.summary{width:100%;float:none}
 .woocommerce #primary #content div.product div.images,.woocommerce #primary div.product div.images,.woocommerce #primary #content div.product div.images,.woocommerce #primary div.product div.images,.woocommerce-page #primary #content div.product div.images,.woocommerce-page #primary div.product div.images,.woocommerce-page #primary #content div.product div.images,.woocommerce-page #primary div.product div.images{width:100%;float:none}
-}.cart-tab,.cart-tab .widget_shopping_cart{display:none}.woocommerce-page .cart-tab,.woocommerce-page .cart-tab .widget_shopping_cart{display:block;width:20em;top:7.2em;font-family:"Helvetica Neue",verdana,sans-serif}
+}.cart-tab,.cart-tab .widget_shopping_cart{display:none}.woocommerce-page .cart-tab,.woocommerce-page .cart-tab .widget_shopping_cart{display:block;width:20em;top:5em;font-family:"Helvetica Neue",verdana,sans-serif}
 .woocommerce-page .cart-tab a.cart-parent,.woocommerce-page .cart-tab .widget_shopping_cart a.cart-parent{padding:.6em}
 .woocommerce-page .cart-tab a.cart-parent span.contents,.woocommerce-page .cart-tab a.cart-parent span.amount,.woocommerce-page .cart-tab .widget_shopping_cart a.cart-parent span.contents,.woocommerce-page .cart-tab .widget_shopping_cart a.cart-parent span.amount{line-height:1.4;padding:5px 0}
 .woocommerce-page .cart-tab a.cart-parent span.contents,.woocommerce-page .cart-tab .widget_shopping_cart a.cart-parent span.contents{font-size:.75rem}
@@ -583,7 +583,7 @@ footer#footer #site-developer{overflow:hidden;text-indent:101%;white-space:nowra
 #header #nav-main li#dropdown a{border-bottom:1px solid #FFF}#header #nav-main li#dropdown>#subnav{display:block}
 #header #nav-main li#dropdown:hover>#subnav{display:block;-webkit-animation:none;animation:none}
 #header #logo{display:none}#header #nav-cta{display:none}#header #social-links{position:fixed;right:80px;display:block;margin-top:15px}
-#header #nav-hamburger{position:absolute;right:-5px;z-index:1000;width:30px;height:45px;margin:15px 20px;-webkit-transform:rotate(0);transform:rotate(0);transition:.5s ease-in-out;cursor:pointer}
+#header #nav-hamburger{position:absolute;right:-5px;z-index:1000;width:30px;height:45px;margin:15px 20px;cursor:pointer;-webkit-transform:rotate(0);transform:rotate(0);transition:.5s ease-in-out}
 #header #nav-hamburger span{display:block;position:absolute;height:4px;width:100%;background:#e20510;border-radius:5px;opacity:1;left:0;-webkit-transform:rotate(0);transform:rotate(0);transition:.25s ease-in-out}
 #header #nav-hamburger span:nth-child(1){top:0}#header #nav-hamburger span:nth-child(2),#header #nav-hamburger span:nth-child(3){top:9px}
 #header #nav-hamburger span:nth-child(4){top:18px}#header #nav-hamburger.open span:nth-child(1){top:18px;width:0;left:50%}

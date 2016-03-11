@@ -57,11 +57,10 @@ header {
     font-size: 11px;
     text-align: center;
     text-decoration: none;
-    color: $color-white;
-    
-        -webkit-box-shadow: 0px 1px 3px 0px rgba(153,153,153,1);
+    color: $color-white;    
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(153,153,153,1);
         -moz-box-shadow: 0px 1px 3px 0px rgba(153,153,153,1);
-        box-shadow: 0px 1px 3px 0px rgba(153,153,153,1);
+            box-shadow: 0px 1px 3px 0px rgba(153,153,153,1);
 } 
 
 .btn-global:hover {
@@ -143,7 +142,7 @@ select {
     transition-property: color, background-color;    
 }
 
-// Hover animate for repair and shop products
+// Hover animate for repair and shop products (shake affect)
 @-webkit-keyframes shakeit {
     0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
     10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
@@ -158,6 +157,7 @@ select {
     100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+// Specificity for shake animation on homepage elements only 
 .page-home .shake {
     -webkit-animation-name: shakeit;
     -webkit-animation-duration: 0.8s;
@@ -175,6 +175,38 @@ select {
 }
 
 // HEADER
+
+// Main Navigation
+.nav-global {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        li {
+            float: left;
+            list-style-type: none;
+            padding: 0;   
+        }
+
+            a {
+                font-family: 'Open Sans', Arial, sans-serif;
+                font-size: rem(15);
+                text-decoration: none;
+                color: $color-white;
+                text-transform: uppercase;
+            }
+
+            a:hover {
+                color: $color-red;
+            }
+}
+
+
 #header {
     z-index: 10;
     padding: 10px 0;
@@ -293,7 +325,7 @@ select {
         a:hover {
             color: $color-red;
         }
-    }  
+    }
 
     #social-links ul#share-me {
         position: absolute;
@@ -344,7 +376,7 @@ select {
 } // End of Header
 
 
-// Homepage nav specific
+// Homepage nav specific as other default pages have black nav links on white BG etc ...
 .page-home {
     #header {
         #nav-main {
@@ -386,6 +418,7 @@ select {
         }
     } // End of Header
 }
+
 
 // Animate nav minified version on scroll 
 #header.nav-min {
@@ -479,49 +512,54 @@ select {
         a:hover::after {
             width: 100%;
         }
-    }       
-}
 
-// Main Navigation
-.nav-global {
-    position: relative;
-    float: left;
-    margin-top: 15px;
-
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-
-        li {
-            float: left;
-            list-style-type: none;
-            padding: 0;   
-        }
-
-            a {
-                font-family: 'Open Sans', Arial, sans-serif;
-                font-size: rem(15);
-                text-decoration: none;
-                color: $color-white;
-                text-transform: uppercase;
-            }
-
+        #social-links {
             a:hover {
                 color: $color-red;
             }
+        }
+
+        li {
+            ul#subnav {
+                padding-top: 0;
+
+                li {
+                    border-bottom: 1px solid white;
+                }        
+            }
+        }        
+    }       
+}
+
+// ** Confusing but needed **
+
+// Add margin when nav become minimised and positioned fixed. 
+#main .container.nav-min {
+    margin-top: 175px;
+}
+
+// Services products pages with parallax
+.page-template-services #main #repair .container.nav-min {
+    margin-top: 130px;
+}
+
+// Home page override
+.page-home #main .container.nav-min {
+    margin-top: 0;
+}
+
+@include media($tablet) {
+    .page-home #services .container,
+    #repair .container,
+    #main .container #primary {
+        margin-top: 60px;
+    }
 }
 
 
 // CAROUSEL
 
-//Remove carousel for all pages except home page
-#page #carousel {
-    display: none;
-}
-
-// Show carousel for home page only
-.page-home #page #carousel {
+#carousel {
     position: absolute;
     top: 0;
     left: 0;
@@ -623,8 +661,6 @@ select {
 
 
 
-
-
 // NEAT LAYOUT
 
 // Grid layout
@@ -674,10 +710,10 @@ article.intro {
 
 // Services
 #services {
-    overflow: hidden;    
+    overflow: hidden;
+    // *Pushed services down as Carousel is absolute.
     margin: 380px 0 0 0;
     padding: 25px 0 50px 0;
-    @include clearfix;
 
     .intro {
         h1 {
@@ -704,7 +740,7 @@ article.intro {
     }          
 }
 
-// Add margin top on homepage only when nav become minimised 
+// Add margin top on homepage only when nav becomes minimised 
 // and positioned fixed. JS adds class nav-min
 #services.nav-min {
     margin-top: 500px;
@@ -845,7 +881,8 @@ article.intro {
     }
 
 
-// About
+// ABOUT
+
 #about {
 
     .section-divider {
@@ -881,9 +918,9 @@ article.intro {
             article.left {
                 float: left;
                 margin-left: 13%;
-            }
-           
+            }          
     }
+
 }
 
 
@@ -946,6 +983,8 @@ article.intro {
     }
 
 
+
+// SELL
 
 #sell {
 
@@ -1031,10 +1070,7 @@ article.intro {
         }        
     }
 
-
     #shop-products {
-        // display: flex;
-        // justify-content: space-between;
         margin: 50px auto;
         width: 100%;
         min-height: 250px;
@@ -1067,6 +1103,7 @@ article.intro {
             }
     }
 }
+
 
 // CONTACT
 
@@ -1201,7 +1238,7 @@ article.intro {
     }
 
 
-    // Get  in touch
+    // GET IN TOUCH SECTION
     .two-col {
         min-height: 365px;
     }
@@ -1301,12 +1338,12 @@ article.intro {
                 display: inline-block;
                 min-height: 41px;
             }
-            
+           
 }
 
 // FOOTER
 
-footer#footer {
+#footer {
     min-height: 330px;
     background-color: #282727;
     
@@ -1376,49 +1413,8 @@ footer#footer {
     }    
 }
 
-#header.nav-min {
-    #nav-main {
-        #social-links {
-            a:hover {
-                color: $color-red;
-            }
-        }
 
-        li {
-            ul#subnav {
-                padding-top: 0;
-
-                li {
-                    border-bottom: 1px solid white;
-                }        
-            }
-        }
-    }
-}
-
-// Add margin when nav become minimised and positioned fixed. 
-#main .container.nav-min {
-    margin-top: 175px;
-}
-
-// Services products pages with parallax
-.page-template-services #main #repair .container.nav-min {
-    margin-top: 130px;
-}
-
-// Home page override
-.page-home #main .container.nav-min {
-    margin-top: 0;
-}
-
-@include media($tablet) {
-    .page-home #services .container,
-    #repair .container,
-    #main .container #primary {
-        margin-top: 60px;
-    }
-}
-
+// REPAIR
 
 #repair {
     article {
@@ -1591,8 +1587,9 @@ footer#footer {
 
 // WORDPRESS BLOG STYLES
 
-// Reset #main div for home and serivces to cater for 
+// Reset #main div for home and services to cater for 
 //blog structure of primary and secondary wrapper by #page
+
 // Wordpress links that go back and forward between posts.
 .nav-links, 
 #primary article .updated {
@@ -1849,8 +1846,7 @@ footer#footer {
             }
     }
 
-
-}
+} // End of #Secondary
 
 
 
@@ -1928,6 +1924,10 @@ footer#footer {
 
         p, select {
             font-size: rem(14);
+        }
+        
+        a.remove {
+            line-height: 0.9em;
         }
 
         .woocommerce-ordering select, 
@@ -2048,6 +2048,7 @@ footer#footer {
     }
 }
 
+
 // .cart-tab.right {
 //     right: 4px!important;
 // }
@@ -2055,7 +2056,6 @@ footer#footer {
 // .cart-tab.right:hover {
 //     right: 4px!important
 // }
-
 
 // CART FLY OUT DROPDOWN
 .cart-tab,
@@ -2067,7 +2067,7 @@ footer#footer {
 .woocommerce-page .cart-tab .widget_shopping_cart {
     display: block;
     width: 20em;
-    top: 7.2em;
+    top: 5em;
     font-family: "Helvetica Neue", verdana, sans-serif;
     
     a.cart-parent {
@@ -2093,12 +2093,12 @@ footer#footer {
         text-decoration: none;
         font-weight: 700;
     }  
-    
+
     .product_list_widget li {
         padding: 1em 1em 1em 2em;
         line-height: 1.5;        
     }
-
+    
     // .product_list_widget li:hover {
     //     background-color: $color-grey;
     // }
@@ -2159,7 +2159,7 @@ footer#footer {
 
 
 
-// Specific overrides
+// WOO COMMERCE - Specific overrides
 .woocommerce-page .woocommerce p {
     margin: 0 0 10px 0;
 }
@@ -2291,16 +2291,6 @@ footer#footer {
         }        
     }
 }
-
-@include media($mobile) {   
-    .woocommerce,
-    .woocommerce-page {
-
-
-    }
-}
-
-
 
 
 // Shop navigation horizontal 
@@ -2479,16 +2469,6 @@ footer#footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
 //**************** RESPONSIVE SITE STYLES ****************//
 
 // Desktop 1200px min.       
@@ -2619,8 +2599,8 @@ footer#footer {
                 a::after {
                     width: 100%;
                     -moz-transition: none;
-                    -webkit-transition: none;
-                    transition: none;                  
+                        -webkit-transition: none;
+                            transition: none;                  
                 }
 
                 a:hover {
@@ -2639,8 +2619,8 @@ footer#footer {
                             span {
                                 display: none;
                                 -moz-transition: none;
-                                -webkit-transition: none;
-                                transition: none;                                
+                                    -webkit-transition: none;
+                                        transition: none;                                
                             }
 
                             a {
@@ -2690,15 +2670,15 @@ footer#footer {
             width: 30px;
             height: 45px;
             margin: 15px 20px;
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-            -webkit-transition: .5s ease-in-out;
-            -moz-transition: .5s ease-in-out;
-            -o-transition: .5s ease-in-out;
-            transition: .5s ease-in-out;
             cursor: pointer;
+            -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                        transform: rotate(0deg);
+            -webkit-transition: .5s ease-in-out;
+                -moz-transition: .5s ease-in-out;
+                    -o-transition: .5s ease-in-out;
+                        transition: .5s ease-in-out;
         }
 
         #nav-hamburger span {
@@ -2711,13 +2691,13 @@ footer#footer {
             opacity: 1;
             left: 0;
             -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                        transform: rotate(0deg);
             -webkit-transition: .25s ease-in-out;
-            -moz-transition: .25s ease-in-out;
-            -o-transition: .25s ease-in-out;
-            transition: .25s ease-in-out;
+                -moz-transition: .25s ease-in-out;
+                    -o-transition: .25s ease-in-out;
+                        transition: .25s ease-in-out;
         }
 
         #nav-hamburger span:nth-child(1) {
@@ -2741,16 +2721,16 @@ footer#footer {
 
         #nav-hamburger.open span:nth-child(2) {
             -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                        transform: rotate(45deg);
         }
 
         #nav-hamburger.open span:nth-child(3) {
             -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
         }
 
         #nav-hamburger.open span:nth-child(4) {
@@ -2758,7 +2738,6 @@ footer#footer {
             width: 0%;
             left: 50%;
         }
-
     }
     
     // Tablet Minified nav.
@@ -2802,8 +2781,6 @@ footer#footer {
     }
 
     #repair {
-        //margin-top: 65px;
-
         #filter-model div {
             margin-bottom: 10px;
         }        
@@ -2910,7 +2887,6 @@ footer#footer {
             margin: 0 auto;
             display: block;
         }
-
     }
 
     // Section Intro text articles
@@ -2956,7 +2932,6 @@ footer#footer {
     hr {
         display: none;
     }
-
 }
 
 

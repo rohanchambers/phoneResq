@@ -2429,6 +2429,26 @@ select {
   height: 25px;
   background: url(../images/global/sectionDividerFull.png) center top no-repeat; }
 
+.nav-global {
+  position: relative;
+  float: left;
+  margin-top: 15px; }
+  .nav-global ul {
+    margin: 0;
+    padding: 0; }
+  .nav-global li {
+    float: left;
+    list-style-type: none;
+    padding: 0; }
+  .nav-global a {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase; }
+  .nav-global a:hover {
+    color: #e20510; }
+
 #header {
   z-index: 10;
   padding: 10px 0; }
@@ -2611,31 +2631,29 @@ select {
     transition: all .2s linear; }
   #header.nav-min #nav-main a:hover::after {
     width: 100%; }
-
-.nav-global {
-  position: relative;
-  float: left;
-  margin-top: 15px; }
-  .nav-global ul {
-    margin: 0;
-    padding: 0; }
-  .nav-global li {
-    float: left;
-    list-style-type: none;
-    padding: 0; }
-  .nav-global a {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 0.9375rem;
-    text-decoration: none;
-    color: #FFF;
-    text-transform: uppercase; }
-  .nav-global a:hover {
+  #header.nav-min #nav-main #social-links a:hover {
     color: #e20510; }
+  #header.nav-min #nav-main li ul#subnav {
+    padding-top: 0; }
+    #header.nav-min #nav-main li ul#subnav li {
+      border-bottom: 1px solid white; }
 
-#page #carousel {
-  display: none; }
+#main .container.nav-min {
+  margin-top: 175px; }
 
-.page-home #page #carousel {
+.page-template-services #main #repair .container.nav-min {
+  margin-top: 130px; }
+
+.page-home #main .container.nav-min {
+  margin-top: 0; }
+
+@media screen and (max-width: 768px) {
+  .page-home #services .container,
+  #repair .container,
+  #main .container #primary {
+    margin-top: 60px; } }
+
+#carousel {
   position: absolute;
   top: 0;
   left: 0;
@@ -2643,31 +2661,31 @@ select {
   z-index: 0;
   width: 100%;
   height: 530px; }
-  .page-home #page #carousel .slide {
+  #carousel .slide {
     margin: 0 auto; }
-    .page-home #page #carousel .slide .slide-content {
+    #carousel .slide .slide-content {
       width: 960px;
       margin: 0 auto; }
-    .page-home #page #carousel .slide article {
+    #carousel .slide article {
       float: right;
       margin-right: 90px;
       margin-top: 140px;
       width: 550px;
       text-align: right;
       font-family: 'Open Sans', sans-serif; }
-      .page-home #page #carousel .slide article h1 {
+      #carousel .slide article h1 {
         margin: 0;
         color: #FFF;
         text-transform: uppercase;
         font-size: 2rem;
         font-weight: 600; }
-      .page-home #page #carousel .slide article p {
+      #carousel .slide article p {
         margin: 10px 0 30px 0;
         font-size: 1.375rem;
         line-height: 1.4;
         font-weight: 300;
         color: #FFF; }
-      .page-home #page #carousel .slide article a {
+      #carousel .slide article a {
         padding: 8px 25px;
         font-size: 22px;
         color: #FFF;
@@ -2676,29 +2694,29 @@ select {
         text-decoration: none;
         border-radius: 4px;
         border: 3px solid #FFF; }
-      .page-home #page #carousel .slide article a:hover {
+      #carousel .slide article a:hover {
         background-color: #e20510;
         border: 3px solid #e20510;
         border-radius: 5px; }
-  .page-home #page #carousel .section-divider {
+  #carousel .section-divider {
     top: 510px; }
-  .page-home #page #carousel #carousel-btn {
+  #carousel #carousel-btn {
     position: absolute;
     top: 200px;
     width: 100%; }
-  .page-home #page #carousel .btn-slide {
+  #carousel .btn-slide {
     position: absolute;
     width: 30px;
     height: 40px;
     color: #FFF;
     display: none; }
-  .page-home #page #carousel .btn-slide:hover {
+  #carousel .btn-slide:hover {
     color: #e20510; }
-  .page-home #page #carousel #btn-prev {
+  #carousel #btn-prev {
     left: 30px; }
-  .page-home #page #carousel #btn-nxt {
+  #carousel #btn-nxt {
     right: 30px; }
-  .page-home #page #carousel #slide-1 {
+  #carousel #slide-1 {
     width: 100%;
     height: 530px;
     background: url(../images/carousel/slide-1.jpg) center center;
@@ -2757,10 +2775,6 @@ article.intro {
   overflow: hidden;
   margin: 380px 0 0 0;
   padding: 25px 0 50px 0; }
-  #services::after {
-    clear: both;
-    content: "";
-    display: table; }
   #services .intro h1 {
     color: #e20510; }
     #services .intro h1 span {
@@ -3197,70 +3211,47 @@ article.intro {
     display: inline-block;
     min-height: 41px; }
 
-footer#footer {
+#footer {
   min-height: 330px;
   background-color: #282727; }
-  footer#footer p {
+  #footer p {
     font-size: 0.75rem;
     line-height: 1.3;
     color: #FFF; }
-  footer#footer a {
+  #footer a {
     color: #FFF; }
-  footer#footer a:hover {
+  #footer a:hover {
     color: #e20510; }
-  footer#footer .two-col {
+  #footer .two-col {
     height: 330px;
     padding: 35px 0; }
-  footer#footer #company-details a {
+  #footer #company-details a {
     text-decoration: underline; }
-  footer#footer #company-details a:hover {
+  #footer #company-details a:hover {
     text-decoration: none;
     color: #e20510; }
-  footer#footer #company-details #social-links,
-  footer#footer #company-details #footer-social-links {
+  #footer #company-details #social-links,
+  #footer #company-details #footer-social-links {
     margin: 23px 0 0 0; }
-    footer#footer #company-details #social-links li,
-    footer#footer #company-details #footer-social-links li {
+    #footer #company-details #social-links li,
+    #footer #company-details #footer-social-links li {
       margin-right: 15px; }
-  footer#footer #footer-links {
+  #footer #footer-links {
     text-align: right; }
-    footer#footer #footer-links #back-top {
+    #footer #footer-links #back-top {
       display: inline-block;
       width: 62px;
       height: 74px;
       background: url(../images/footer/backTop.png) 0 0; }
-    footer#footer #footer-links #back-top:hover {
+    #footer #footer-links #back-top:hover {
       background-position: -62px 0; }
-    footer#footer #footer-links #copyright {
+    #footer #footer-links #copyright {
       margin-top: 25px;
       font-size: 0.6875rem; }
-  footer#footer #site-developer {
+  #footer #site-developer {
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap; }
-
-#header.nav-min #nav-main #social-links a:hover {
-  color: #e20510; }
-
-#header.nav-min #nav-main li ul#subnav {
-  padding-top: 0; }
-  #header.nav-min #nav-main li ul#subnav li {
-    border-bottom: 1px solid white; }
-
-#main .container.nav-min {
-  margin-top: 175px; }
-
-.page-template-services #main #repair .container.nav-min {
-  margin-top: 130px; }
-
-.page-home #main .container.nav-min {
-  margin-top: 0; }
-
-@media screen and (max-width: 768px) {
-  .page-home #services .container,
-  #repair .container,
-  #main .container #primary {
-    margin-top: 60px; } }
 
 #repair article {
   width: 65%; }
@@ -3668,6 +3659,9 @@ footer#footer {
   .woocommerce-page #primary p,
   .woocommerce-page #primary select {
     font-size: 0.875rem; }
+  .woocommerce #primary a.remove,
+  .woocommerce-page #primary a.remove {
+    line-height: 0.9em; }
   .woocommerce #primary .woocommerce-ordering select,
   .woocommerce #primary .woocommerce-result-count,
   .woocommerce-page #primary .woocommerce-ordering select,
@@ -3791,7 +3785,7 @@ footer#footer {
 .woocommerce-page .cart-tab .widget_shopping_cart {
   display: block;
   width: 20em;
-  top: 7.2em;
+  top: 5em;
   font-family: "Helvetica Neue", verdana, sans-serif; }
   .woocommerce-page .cart-tab a.cart-parent,
   .woocommerce-page .cart-tab .widget_shopping_cart a.cart-parent {
@@ -4216,10 +4210,10 @@ footer#footer {
       width: 30px;
       height: 45px;
       margin: 15px 20px;
+      cursor: pointer;
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
-      transition: .5s ease-in-out;
-      cursor: pointer; }
+      transition: .5s ease-in-out; }
     #header #nav-hamburger span {
       display: block;
       position: absolute;
