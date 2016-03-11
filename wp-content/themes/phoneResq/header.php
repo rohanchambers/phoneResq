@@ -97,9 +97,10 @@
                             </ul>
                         </li>
                         <li><a href="<?php homehash('about') ?>">About</a></li>
-                        <li id="nav-sell"><a href="<?php homehash('sell') ?>">Sell your device</a></li>
+                        <li id="nav-sell"><a href="<?php homehash('sell') ?>">Sell</a></li>
                         <li><a href="<?php homehash('contact') ?>">Contact us</a></li>
                         <li><a href="./blog/">Blog</a></li>
+                        <li><a href="./shop/">Shop</a></li>
                     </ul>
                 </nav>
                 <nav id="social-links" class="nav-global">
@@ -133,29 +134,8 @@
             <?php tha_header_bottom(); ?>
         </header><!-- End of Header -->
         <?php tha_header_after(); ?>
-
 		<?php tha_content_before(); ?>
-
-        <!-- CAROUSEL -->
-        <section id="carousel">
-            <div class="slide" id="slide-1">
-                <div class="slide-content">
-                    <article>
-                        <header class="animatedParent animateOnce" data-sequence='500'>
-                            <h1 data-id='1' class="animated fadeInLeft">Welcome to Phone ResQ.</h1>
-                            <p data-id='2' class="animated fadeInLeft">We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online.</p>
-                            <a href="#contact" data-id='3' class="btn-animate animated fadeInLeft">Contact us</a>
-                        </header>
-                    </article>
-                </div>
-            </div><!-- End of Slide -->
-
-            <div id="carousel-btn">
-                <a href="#" id="btn-prev" class="btn-slide btn-animate"><i class="fa fa-chevron-left fa-3x"></i></a>
-                <a href="#" id="btn-nxt" class="btn-slide btn-animate"><i class="fa fa-chevron-right fa-3x"></i></a>
-            </div>
-            <div class="section-divider"></div>
-        </section><!-- End of Carousel section-->
 
 		<main id="main" class="site-main wrap" role="main">
 			<?php tha_content_top(); ?>
+            

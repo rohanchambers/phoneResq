@@ -9,6 +9,26 @@
  */
 
 get_header(); ?>
+<!-- CAROUSEL -->
+<section id="carousel">
+    <div class="slide" id="slide-1">
+        <div class="slide-content">
+            <article>
+                <header class="animatedParent animateOnce" data-sequence='500'>
+                    <h1 data-id='1' class="animated fadeInLeft">Welcome to Phone ResQ.</h1>
+                    <p data-id='2' class="animated fadeInLeft">We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online.</p>
+                    <a href="#contact" data-id='3' class="btn-animate animated fadeInLeft">Contact us</a>
+                </header>
+            </article>
+        </div>
+    </div><!-- End of Slide -->
+
+    <div id="carousel-btn">
+        <a href="#" id="btn-prev" class="btn-slide btn-animate"><i class="fa fa-chevron-left fa-3x"></i></a>
+        <a href="#" id="btn-nxt" class="btn-slide btn-animate"><i class="fa fa-chevron-right fa-3x"></i></a>
+    </div>
+    <div class="section-divider"></div>
+</section><!-- End of Carousel section-->
 
 <section id="services">
     <div class="container">
