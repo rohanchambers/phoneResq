@@ -377,7 +377,8 @@ select {
 
 
 // Homepage nav specific as other default pages have black nav links on white BG etc ...
-.page-home {
+.page-home, 
+.woocommerce-page {
     #header {
         #nav-main {
             li {                    
@@ -538,12 +539,16 @@ select {
     margin-top: 175px;
 }
 
-// Services products pages with parallax
+// Services products | shop override pages with parallax
 .page-template-services #main #repair .container.nav-min {
     margin-top: 130px;
 }
 
-// Home page override
+.woocommerce-page #main .container {
+    margin-top: 120px;
+}
+
+// Home page and 
 .page-home #main .container.nav-min {
     margin-top: 0;
 }
@@ -553,6 +558,10 @@ select {
     #repair .container,
     #main .container #primary {
         margin-top: 60px;
+    }
+
+    .woocommerce-page #main .container {
+        margin-top: 0;
     }
 }
 
@@ -1641,7 +1650,7 @@ article.intro {
     float: right;
     margin: 19px auto;
     padding: 0;
-    width: 25%;    
+    width: 27%;    
     font-size: rem(13);    
     
     @include media($desktop-med) {
@@ -1775,6 +1784,7 @@ article.intro {
         margin-bottom: 20px;
         border-right: 2px solid $color-red;
         padding-right: 1px;
+
         li {
             height:30px; 
             margin-bottom: 1px;
@@ -1825,6 +1835,27 @@ article.intro {
             opacity: 1;
         }
 
+            li.menu-item-195:before {
+                font-family: "FontAwesome";
+                content: "\f015";
+            }
+
+            li.menu-item-194:before {
+                font-family: "FontAwesome";
+                content: "\f07a";
+            }
+
+            li.menu-item-193:before {
+                font-family: "FontAwesome";
+                content: "\f09d";
+            }
+
+            li.menu-item-192:before {
+                font-family: "FontAwesome";
+                content: "\f007";
+            }
+
+            // Local icons
             li.menu-item-186:before {
                 font-family: "FontAwesome";
                 content: "\f015";
@@ -1843,7 +1874,7 @@ article.intro {
             li.menu-item-183:before {
                 font-family: "FontAwesome";
                 content: "\f007";
-            }
+            }            
     }
 
 } // End of #Secondary
@@ -1852,10 +1883,63 @@ article.intro {
 
 
 
+
+
+
+
+
+
+
+
+
+
 // WOOCOMMERCER OVERRIDE STYLES
+
+// Layout BG styles
+.woocommerce-page #main {
+    background-color: #f6f6f6;
+    border-top: 1px solid rgba(0, 0, 0, 0.05)
+}
+
+@include media($tablet) {
+    .woocommerce-page #header { 
+        min-height: 60px;
+    }
+}
+.woocommerce-page #primary .products {
+    background-color: #efefef;
+    border-radius: 5px;
+}
+
+.woocommerce-page #secondary {
+    background-color: $color-panel;
+    padding: 0 12px;
+    float: right;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -moz-border-radius-topleft: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+}
+
+.woocommerce-page #carousel {
+    height: 250px;
+}
+
+.woocommerce-page #carousel #slide-1 {
+    height: 250px;
+    background: url(../images/carousel/slide-1.jpg) center center;
+    background-size: cover;
+    border-bottom: 2px solid $color-red;
+}
 
 .woocommerce, 
 .woocommerce-page {
+    
+    #footer {
+        display: none;
+    }
 
     // Single product page
     #content div.product div.summary, 
@@ -1873,8 +1957,17 @@ article.intro {
     }
 
     .woocommerce-breadcrumb {
+        margin: 0 0 1em;
         padding: 1em 0;
+        font-size: 0.92em;
         border-bottom: 1px solid rgba(0,0,0,.05);
+        //background-color: $color-panel;
+        -webkit-border-top-right-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+            -moz-border-radius-topright: 5px;
+            -moz-border-radius-topleft: 5px;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
     }
 
     #primary {
@@ -1890,7 +1983,7 @@ article.intro {
 
                 span {
                     margin:0 0 0 15px;
-                    border-color: $color-grey;
+                    //border-color: $color-grey;
                 }
             }
         }
@@ -1954,7 +2047,7 @@ article.intro {
                 left: 15px;
                 width: 55px;
                 background-color: red;
-                border-bottom: 2px solid $color-grey;
+                border-bottom: 2px solid $color-red;
             }
 
         p.price {
@@ -1966,10 +2059,18 @@ article.intro {
         .products {
             float: left;
             margin-top: 20px;
+            padding: 10px;
             
             li {
                 @include span-columns(4 of 12);
                 text-align: center;
+                background-color: $color-white;
+                padding: 10px 0;
+                margin-bottom: 10px;
+                -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                        border-radius: 5px;
+                transition: all 0.2s linear;
 
                 h3, span {
                     text-align: center;
@@ -2004,13 +2105,30 @@ article.intro {
                     border-radius: 3px;
                     background-color: #a46497;
                 }
-
+    
                 .added_to_cart:hover {
                     background-color: #935386;
+                }
+                
+                .add_to_cart_button {
+                    border: 1px solid $color-grey;
                 }
 
                 .star-rating {
                     margin: 0 auto;
+                }
+            }
+            
+            li:hover {
+                background-color: $color-grey;
+                color: $color-white;
+
+                h3, span.amount {
+                    color: $color-white;
+                }
+
+                .add_to_cart_button {
+                    border: 1px solid $color-white;
                 }
             }
 
@@ -2049,6 +2167,10 @@ article.intro {
 }
 
 
+
+
+
+
 // .cart-tab.right {
 //     right: 4px!important;
 // }
@@ -2067,17 +2189,32 @@ article.intro {
 .woocommerce-page .cart-tab .widget_shopping_cart {
     display: block;
     width: 20em;
-    top: 5em;
+    top: 180px;
     font-family: "Helvetica Neue", verdana, sans-serif;
     
     a.cart-parent {
-        padding: .6em;
+        padding: 5px 20px 2px 20px;
+    }
+    
+    a.cart-parent:hover {
+        color: $color-red;
+        transition: all 0.2s linear;
+    }
+
+    a.cart-parent:before {
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: "FontAwesome";
+        content: "\f07a";
+        font-size: 30px;
     }
 
     a.cart-parent span.contents,
     a.cart-parent span.amount {
+        display: block;
         line-height: 1.4;
         padding: 5px 0;
+        //display: none;
     }
     
     a.cart-parent span.contents {
@@ -2086,6 +2223,7 @@ article.intro {
     
     a.cart-parent span.amount {
         font-size: rem(15);
+        display: none;
     }
 
     a {
@@ -2093,15 +2231,11 @@ article.intro {
         text-decoration: none;
         font-weight: 700;
     }  
-
+    
     .product_list_widget li {
         padding: 1em 1em 1em 2em;
         line-height: 1.5;        
     }
-    
-    // .product_list_widget li:hover {
-    //     background-color: $color-grey;
-    // }
 
     .mini_cart_item {
         border-bottom: 1px dotted #ebe9eb;
@@ -2191,7 +2325,7 @@ article.intro {
 .woocommerce ul.products li.product a img {
     width: auto;
     height: auto;
-    max-height: 300px;
+    max-height: 250px;
     margin: 0 auto;
 }
 
@@ -2209,7 +2343,7 @@ article.intro {
 }
 
 .woocommerce .woocommerce-info {
-    border-top: 2px solid $color-red;
+    border-top: 2px dotted #ccc;
 }
 
 .woocommerce .woocommerce-info:before {
@@ -2248,7 +2382,7 @@ article.intro {
         font-family: "Helvetica Neue", verdana, sans-serif;
         text-transform: none!important;
         padding: 0.74em 1em;
-        transition: all 0.2s linear
+        transition: all 0.2s linear;
     }
     
     #respond input#submit:hover, 
@@ -2268,7 +2402,7 @@ article.intro {
 @include media($tablet) {   
     .woocommerce,
     .woocommerce-page {
-
+        
         #primary,
         #secondary {
             width: 100%;
@@ -2288,7 +2422,17 @@ article.intro {
         #primary .product_title, 
         .price {
             text-align: center;
-        }        
+        }
+
+        #carousel,
+        .cart-tab {
+            display: none;
+        }
+
+        #primary .products, 
+        #primary .products {
+            float: none;
+        }
     }
 }
 

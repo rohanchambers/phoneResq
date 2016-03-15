@@ -11,11 +11,16 @@
  */
 
 get_header(); ?>
+	<!-- CAROUSEL -->
+	<section id="carousel">
+	    <div class="slide" id="slide-1">
+	    </div><!-- End of Slide -->
+	</section>
 	<div class="container">
 
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content">
-				<!-- <?php woocommerce_breadcrumb( ); ?> -->
+				<?php woocommerce_breadcrumb( ); ?>
 
 				<?php woocommerce_content(); ?>
 			</div><!-- #content -->

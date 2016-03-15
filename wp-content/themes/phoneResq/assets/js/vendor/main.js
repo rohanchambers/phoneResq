@@ -22,6 +22,8 @@ if( getWidth() < 769 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Oper
 // Document ready
 $( document ).ready(function() {
 
+
+
 	// Trigger modal for shop products
 	$('#shop-products article a').click( function(e){
 		e.preventDefault();
@@ -174,6 +176,8 @@ $( document ).ready(function() {
 
 });
 
+
+
 // Document on scroll change nav state
 $(document).on('scroll',function(){
 
@@ -181,6 +185,7 @@ $(document).on('scroll',function(){
 		// On srcoll of 100px activate minified nav
 	    if($(document).scrollTop() > 100) {
 	        $('#header').addClass('nav-min');
+	        $('.woocommerce-page #header').removeClass('nav-min');
 	        $('#services').addClass('nav-min');
 	        $('#repair').addClass('nav-min');
 	        $('.error-404').addClass('nav-min');
@@ -190,6 +195,7 @@ $(document).on('scroll',function(){
 	        $('#share-me').addClass('goAway');
 	    } else {
 	        $('#header').removeClass('nav-min');
+	        $('.woocommerce-page #header').removeClass('nav-min');
 	        $('#services').removeClass('nav-min');
 	        $('#repair').removeClass('nav-min');
 	        $('.error-404').removeClass('nav-min');
@@ -203,7 +209,6 @@ $(document).on('scroll',function(){
 	    	$('#show-hide').slideUp(500);
 	    }    
 	}
-
 });
 
 // Load Google maps

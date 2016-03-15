@@ -97,10 +97,10 @@
                             </ul>
                         </li>
                         <li><a href="<?php homehash('about') ?>">About</a></li>
-                        <li id="nav-sell"><a href="<?php homehash('sell') ?>">Sell</a></li>
+                        <li id="nav-sell"><a href="<?php homehash('sell') ?>">Sell your device</a></li>
                         <li><a href="<?php homehash('contact') ?>">Contact us</a></li>
                         <li><a href="./blog/">Blog</a></li>
-                        <li><a href="./shop/">Shop</a></li>
+                        <!-- <li><a href="./shop/">Shop</a></li> -->
                     </ul>
                 </nav>
                 <nav id="social-links" class="nav-global">
