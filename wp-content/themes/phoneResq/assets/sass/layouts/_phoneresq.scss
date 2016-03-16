@@ -720,7 +720,7 @@ article.intro {
 // Services
 #services {
     overflow: hidden;
-    // *Pushed services down as Carousel is absolute.
+    // * Pushed services down as Carousel is absolute.
     margin: 380px 0 0 0;
     padding: 25px 0 50px 0;
 
@@ -1813,7 +1813,7 @@ article.intro {
             outline:0;
         }
 
-        li:not(.active):hover a{
+        li:not(.active):hover a {
             color: #eee;
             background-color: $color-red;
         }
@@ -1822,7 +1822,6 @@ article.intro {
             position:absolute;
             left:20px;
             font-size: 1.5em;
-            //transition: all 0.3s linear;
         }
 
         li:before {
@@ -1934,14 +1933,18 @@ article.intro {
     border-bottom: 2px solid $color-red;
 }
 
+.woocommerce-page #carousel .slide article {
+    margin-top: 80px;
+    p {
+        float: right;
+        width: 450px;
+    }
+}
+
 .woocommerce, 
 .woocommerce-page {
     
-    #footer {
-        display: none;
-    }
-
-    // Single product page
+    // Single product page left and right columns
     #content div.product div.summary, 
     div.product div.summary, 
     #content div.product div.summary, 
@@ -1955,7 +1958,47 @@ article.intro {
     div.product div.images {
         width: 35%;
     }
+    
+    // Related products
+    #primary {
+        .related.products {
+            width: 100%;
+            margin-bottom: 15px;
 
+            h2 {
+                margin: 0;
+            } 
+
+            ul {
+                width: 100%;
+            }
+            
+            li {
+                @include span-columns(3 of 12);           
+            }
+
+            li:nth-child(3n+3) {  
+                margin-right: 1.20482%;
+            }              
+            
+            li:nth-child(4n+4) {  
+                margin-right: 0;
+            }  
+
+            li.product a img {
+                max-height: 200px;
+            }
+        }
+
+        @include media($tablet) { 
+            .related.products {
+                display: none;
+            }
+        }
+    }
+
+    .woocommerce #primary .products, 
+    .woocommerce-page #primary .products,
     .woocommerce-breadcrumb {
         margin: 0 0 1em;
         padding: 1em 0;

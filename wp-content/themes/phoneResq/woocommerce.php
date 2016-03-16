@@ -14,8 +14,17 @@ get_header(); ?>
 	<!-- CAROUSEL -->
 	<section id="carousel">
 	    <div class="slide" id="slide-1">
+	        <div class="slide-content">
+	            <article>
+	                <header class="animatedParent animateOnce" data-sequence='500'>
+				        <h1 data-id='1' class="animated fadeInLeft">Welcome to our online store</h1>
+				        <p data-id='2' class="animated fadeInLeft">No matter what the condition of your device is. We will buy it on the spot for cash.</p>	  
+	                </header>
+	            </article>
+	        </div>
 	    </div><!-- End of Slide -->
 	</section>
+
 	<div class="container">
 
 		<div id="primary" class="content-area">
@@ -26,7 +35,7 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-	<?php include("sidebar-woo.php"); ?>
+		<?php include("sidebar-woo.php"); ?>
 	</div>
 <?php get_footer(); ?>
 
