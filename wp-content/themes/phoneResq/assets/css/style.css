@@ -3537,19 +3537,36 @@ article.intro {
   #secondary .widget_recent_comments,
   #secondary .widget_meta {
     display: none; }
-  #secondary #menu-shop-menu,
-  #secondary #menu-shop-menu-1 {
+  #secondary aside#loginLogout li.welcome {
+    line-height: 30px;
+    color: #FFF;
+    padding-left: 35px; }
+  #secondary aside#loginLogout li:before {
+    position: absolute;
+    left: 0;
+    font-family: "FontAwesome";
+    color: #FFF;
+    line-height: 30px;
+    margin-left: 7px;
+    font-size: 14px;
+    opacity: 1; }
+  #secondary aside#loginLogout li.login:before {
+    content: "\f090"; }
+  #secondary aside#loginLogout li.welcome:before {
+    content: "\f007"; }
+  #secondary #menu-shop-nav,
+  #secondary #menu-shop-nav-1 {
     margin-bottom: 20px;
     border-right: 2px solid #e20510;
     padding-right: 1px; }
-    #secondary #menu-shop-menu li,
-    #secondary #menu-shop-menu-1 li {
+    #secondary #menu-shop-nav li,
+    #secondary #menu-shop-nav-1 li {
       height: 30px;
       margin-bottom: 1px;
       position: relative;
       background: #475573; }
-    #secondary #menu-shop-menu a,
-    #secondary #menu-shop-menu-1 a {
+    #secondary #menu-shop-nav a,
+    #secondary #menu-shop-nav-1 a {
       text-decoration: none;
       display: block;
       height: 100%;
@@ -3561,23 +3578,23 @@ article.intro {
       border-right: 5px solid transparent;
       letter-spacing: 1px;
       transition: all 0.2s linear; }
-    #secondary #menu-shop-menu .active a,
-    #secondary #menu-shop-menu-1 .active a {
+    #secondary #menu-shop-nav .active a,
+    #secondary #menu-shop-nav-1 .active a {
       color: #B93632;
       border-left: 5px solid #B93632;
       background-color: #1B1B1B;
       outline: 0; }
-    #secondary #menu-shop-menu li:not(.active):hover a,
-    #secondary #menu-shop-menu-1 li:not(.active):hover a {
+    #secondary #menu-shop-nav li:not(.active):hover a,
+    #secondary #menu-shop-nav-1 li:not(.active):hover a {
       color: #eee;
       background-color: #e20510; }
-    #secondary #menu-shop-menu span[class^="icon"],
-    #secondary #menu-shop-menu-1 span[class^="icon"] {
+    #secondary #menu-shop-nav span[class^="icon"],
+    #secondary #menu-shop-nav-1 span[class^="icon"] {
       position: absolute;
       left: 20px;
       font-size: 1.5em; }
-    #secondary #menu-shop-menu li:before,
-    #secondary #menu-shop-menu-1 li:before {
+    #secondary #menu-shop-nav li:before,
+    #secondary #menu-shop-nav-1 li:before {
       position: absolute;
       font-family: "FontAwesome";
       color: #FFF;
@@ -3585,36 +3602,36 @@ article.intro {
       margin-left: 7px;
       font-size: 14px;
       opacity: 1; }
-    #secondary #menu-shop-menu li.menu-item-195:before,
-    #secondary #menu-shop-menu-1 li.menu-item-195:before {
+    #secondary #menu-shop-nav li.menu-item-195:before,
+    #secondary #menu-shop-nav-1 li.menu-item-195:before {
       font-family: "FontAwesome";
       content: "\f015"; }
-    #secondary #menu-shop-menu li.menu-item-194:before,
-    #secondary #menu-shop-menu-1 li.menu-item-194:before {
+    #secondary #menu-shop-nav li.menu-item-194:before,
+    #secondary #menu-shop-nav-1 li.menu-item-194:before {
       font-family: "FontAwesome";
       content: "\f07a"; }
-    #secondary #menu-shop-menu li.menu-item-193:before,
-    #secondary #menu-shop-menu-1 li.menu-item-193:before {
+    #secondary #menu-shop-nav li.menu-item-193:before,
+    #secondary #menu-shop-nav-1 li.menu-item-193:before {
       font-family: "FontAwesome";
       content: "\f09d"; }
-    #secondary #menu-shop-menu li.menu-item-192:before,
-    #secondary #menu-shop-menu-1 li.menu-item-192:before {
+    #secondary #menu-shop-nav li.menu-item-192:before,
+    #secondary #menu-shop-nav-1 li.menu-item-192:before {
       font-family: "FontAwesome";
       content: "\f007"; }
-    #secondary #menu-shop-menu li.menu-item-186:before,
-    #secondary #menu-shop-menu-1 li.menu-item-186:before {
+    #secondary #menu-shop-nav li.menu-item-186:before,
+    #secondary #menu-shop-nav-1 li.menu-item-186:before {
       font-family: "FontAwesome";
       content: "\f015"; }
-    #secondary #menu-shop-menu li.menu-item-185:before,
-    #secondary #menu-shop-menu-1 li.menu-item-185:before {
+    #secondary #menu-shop-nav li.menu-item-185:before,
+    #secondary #menu-shop-nav-1 li.menu-item-185:before {
       font-family: "FontAwesome";
       content: "\f07a"; }
-    #secondary #menu-shop-menu li.menu-item-184:before,
-    #secondary #menu-shop-menu-1 li.menu-item-184:before {
+    #secondary #menu-shop-nav li.menu-item-184:before,
+    #secondary #menu-shop-nav-1 li.menu-item-184:before {
       font-family: "FontAwesome";
       content: "\f09d"; }
-    #secondary #menu-shop-menu li.menu-item-183:before,
-    #secondary #menu-shop-menu-1 li.menu-item-183:before {
+    #secondary #menu-shop-nav li.menu-item-183:before,
+    #secondary #menu-shop-nav-1 li.menu-item-183:before {
       font-family: "FontAwesome";
       content: "\f007"; }
 
@@ -3638,6 +3655,8 @@ article.intro {
   width: 70%;
   margin-top: 20px;
   font-family: "Helvetica Neue", verdana, sans-serif; }
+  .woocommerce-page #primary article {
+    margin-bottom: 0; }
   .woocommerce-page #primary article.intro {
     text-align: left; }
     .woocommerce-page #primary article.intro h1 {
@@ -3983,30 +4002,20 @@ article.intro {
 .woocommerce-page .woocommerce-info:before {
   color: #475573; }
 
-.woocommerce-page .woocommerce-error {
+.woocommerce-page #primary .woocommerce-error {
   border-top: 2px solid #e20510; }
-  .woocommerce-page .woocommerce-error li {
+  .woocommerce-page #primary .woocommerce-error li {
     margin-bottom: 3px;
     padding: 5px !important;
     background-color: #e20510;
+    color: #FFF; }
+  .woocommerce-page #primary .woocommerce-error a {
     color: #FFF; }
 
 .woocommerce-cart article.intro h1 span {
   width: 55px; }
 
 @media screen and (max-width: 768px) {
-  #content div.product div.summary,
-  div.product div.summary,
-  #content div.product div.summary,
-  div.product div.summary {
-    width: 100%;
-    float: none; }
-  #content div.product div.images,
-  div.product div.images,
-  #content div.product div.images,
-  div.product div.images {
-    width: 100%;
-    float: none; }
   .woocommerce #primary,
   .woocommerce #secondary,
   .woocommerce-page #primary,
@@ -4034,17 +4043,42 @@ article.intro {
   .woocommerce-page #primary .products,
   .woocommerce-page #primary .products {
     float: none; }
-  .related.products,
-  #carousel,
-  .cart-tab {
-    display: none; }
-  .products li {
+  .woocommerce #primary .products li,
+  .woocommerce-page #primary .products li {
     float: left;
     display: block;
     margin-right: 1.20482%;
     width: 100%; }
-    .products li:last-child {
-      margin-right: 0; } }
+    .woocommerce #primary .products li:last-child,
+    .woocommerce-page #primary .products li:last-child {
+      margin-right: 0; }
+  .woocommerce #primary #content div.product div.summary,
+  .woocommerce #primary div.product div.summary,
+  .woocommerce #primary #content div.product div.summary,
+  .woocommerce #primary div.product div.summary,
+  .woocommerce-page #primary #content div.product div.summary,
+  .woocommerce-page #primary div.product div.summary,
+  .woocommerce-page #primary #content div.product div.summary,
+  .woocommerce-page #primary div.product div.summary {
+    width: 100%;
+    float: none; }
+  .woocommerce #primary #content div.product div.images,
+  .woocommerce #primary div.product div.images,
+  .woocommerce #primary #content div.product div.images,
+  .woocommerce #primary div.product div.images,
+  .woocommerce-page #primary #content div.product div.images,
+  .woocommerce-page #primary div.product div.images,
+  .woocommerce-page #primary #content div.product div.images,
+  .woocommerce-page #primary div.product div.images {
+    width: 100%;
+    float: none; }
+  .woocommerce .related.products,
+  .woocommerce #carousel,
+  .woocommerce .cart-tab,
+  .woocommerce-page .related.products,
+  .woocommerce-page #carousel,
+  .woocommerce-page .cart-tab {
+    display: none; } }
 
 @media screen and (min-width: 1200px) {
   #sell .sell-row-img {

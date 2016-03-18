@@ -9,6 +9,22 @@
 
 	<div id="secondary" class="widget-area" role="complementary">
 
+		<?php if ( is_user_logged_in() ) { ?>
+			<aside id="loginLogout">
+				<ul id="menu-shop-nav" class="nav">
+					<li class="welcome">Welcome: <span>Guest</span></li>
+				</ul>
+			</aside>
+				<?php } 
+				else { ?>
+			<aside id="loginLogout">
+				<ul id="menu-shop-nav">
+					<li class="login">
+						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a> </li>
+					</ul>
+			</aside>
+		<?php } ?>
+
 		<?php tha_sidebar_top(); ?>
 
 		<?php do_action( 'before_sidebar' ); ?>

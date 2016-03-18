@@ -29,7 +29,7 @@ get_header(); ?>
 
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content">
-		
+
 				<?php 
 					// Add breadcrumbs on all pages
 					if ( is_checkout() || is_cart() || is_account_page()  ) {

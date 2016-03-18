@@ -23,6 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! empty( $breadcrumb ) ) {
 
     // add shop home url to breadcrumbs
+    // https://github.com/woothemes/woocommerce/issues/1993
     if( is_product_category() || is_product_tag() || is_product() || is_checkout() || is_cart() || is_account_page() ) {
         $shop_page_id = wc_get_page_id( 'shop' );
         $shop_home_arr = array( get_the_title($shop_page_id), get_permalink($shop_page_id));

@@ -1779,8 +1779,37 @@ article.intro {
     
     // Side vertical nav for shop
 
-    #menu-shop-menu,
-    #menu-shop-menu-1 {
+    aside#loginLogout {
+
+        li.welcome {
+            line-height: 30px;
+            color: $color-white;
+            padding-left: 35px;            
+        }
+
+        li:before {
+            position: absolute;
+            left: 0;
+            font-family: "FontAwesome";
+            color: $color-white;
+            line-height: 30px;
+            margin-left: 7px;
+            font-size: 14px;
+            opacity: 1;
+        }
+
+        li.login:before {
+            content: "\f090";  
+        }
+
+        li.welcome:before {            
+            content: "\f007";
+        }
+
+    }
+
+    #menu-shop-nav,
+    #menu-shop-nav-1 {
         margin-bottom: 20px;
         border-right: 2px solid $color-red;
         padding-right: 1px;
@@ -1921,6 +1950,10 @@ article.intro {
         width: 70%;;        
         margin-top: 20px;
         font-family: "Helvetica Neue", verdana, sans-serif;
+        
+        article {
+            margin-bottom: 0;
+        }
 
         article.intro {
             text-align: left;
@@ -2117,8 +2150,8 @@ article.intro {
                     max-height: 200px;
                 }                
             }
-        }
 
+        }
 
     }// End of Primary
 
@@ -2158,7 +2191,7 @@ article.intro {
             }
 
     }
-    
+
     #carousel {
         height: 200px;
         
@@ -2404,16 +2437,24 @@ article.intro {
         color: $color-grey;
     }
 
-    .woocommerce-error {
-        border-top: 2px solid $color-red;
+    #primary {
 
-        li {
-            margin-bottom: 3px;
-            padding: 5px!important;
-            background-color: $color-red;
-            color: $color-white;
+        .woocommerce-error {
+            border-top: 2px solid $color-red;    
+
+            li {
+                margin-bottom: 3px;
+                padding: 5px!important;
+                background-color: $color-red;
+                color: $color-white;
+            }
+
+            a {
+                color: $color-white;
+            }            
         }
     }
+
 
 } // End of .Woocommerce-page
 
@@ -2425,23 +2466,6 @@ article.intro {
 }
 
 @include media($tablet) {
-
-    // Single product page
-    #content div.product div.summary, 
-    div.product div.summary, 
-    #content div.product div.summary, 
-    div.product div.summary {
-        width: 100%;
-        float: none;
-    }
-
-    #content div.product div.images, 
-    div.product div.images, 
-    #content div.product div.images, 
-    div.product div.images {
-        width: 100%;
-        float: none;
-    }
 
     .woocommerce,
     .woocommerce-page {
@@ -2475,18 +2499,36 @@ article.intro {
         #primary .products {
             float: none;
         }
+
+        #primary {
+            .products li {
+                @include span-columns(12 of 12);
+            }        
+            // Single product page
+            #content div.product div.summary, 
+            div.product div.summary, 
+            #content div.product div.summary, 
+            div.product div.summary {
+                width: 100%;
+                float: none;
+            }
+
+            #content div.product div.images, 
+            div.product div.images, 
+            #content div.product div.images, 
+            div.product div.images {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        .related.products,
+        #carousel,
+        .cart-tab {
+            display: none;
+        }
     }
 
-    .related.products,
-    #carousel,
-    .cart-tab {
-        display: none;
-    }
-
-    .products li {
-        @include span-columns(12 of 12);
-    }
-            
 }
 
 
