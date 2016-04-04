@@ -477,10 +477,12 @@ article.intro p{width:60%;margin:0 auto 10px auto;color:#404040}#services{overfl
 #secondary .widget_archive ul li::before{content:"\f115"}#secondary .widget_recent_entries ul li:before,#secondary .widget_pages ul li:before{content:"\f0f6"}
 #secondary .widget_categories ul li:before{content:"\f114"}#secondary .search-field{padding:.625em .4375em}
 #secondary .search-submit,#secondary .woocommerce-product-search input[type="submit"]{text-transform:none;font-weight:normal;transition:all .2s linear}
-#secondary .widget_recent_comments,#secondary .widget_meta{display:none}#secondary aside#loginLogout li.welcome{line-height:30px;color:#FFF;padding-left:35px}
+#secondary .widget_recent_comments,#secondary .widget_meta{display:none}#secondary #welcome{margin:8px 0}
+#secondary #welcome span{font-weight:bold}#secondary aside#loginLogout ul{margin:0}
+#secondary aside#loginLogout li.welcome,#secondary aside#loginLogout li.login{line-height:30px;color:#FFF}
 #secondary aside#loginLogout li:before{position:absolute;left:0;font-family:"FontAwesome";color:#FFF;line-height:30px;margin-left:7px;font-size:14px;opacity:1}
-#secondary aside#loginLogout li.login:before{content:"\f090"}#secondary aside#loginLogout li.welcome:before{content:"\f007"}
-#secondary #menu-shop-nav,#secondary #menu-shop-nav-1{margin-bottom:20px;border-right:2px solid #e20510;padding-right:1px}
+#secondary aside#loginLogout li.login:before{content:"\f090"}#secondary aside#loginLogout li.welcome:before{content:"\f08b"}
+#secondary #menu-shop-nav,#secondary #menu-shop-nav-1{margin:0 0 20px;border-right:2px solid #e20510;padding-right:1px}
 #secondary #menu-shop-nav li,#secondary #menu-shop-nav-1 li{height:30px;margin-bottom:1px;position:relative;background:#475573}
 #secondary #menu-shop-nav a,#secondary #menu-shop-nav-1 a{text-decoration:none;display:block;height:100%;width:100%;line-height:22px;color:#FFF;font-size:.75rem;padding-left:35px;border-right:5px solid transparent;letter-spacing:1px;transition:all .2s linear}
 #secondary #menu-shop-nav .active a,#secondary #menu-shop-nav-1 .active a{color:#b93632;border-left:5px solid #b93632;background-color:#1b1b1b;outline:0}
@@ -532,7 +534,6 @@ article.intro p{width:60%;margin:0 auto 10px auto;color:#404040}#services{overfl
 .woocommerce-page #carousel{height:200px}.woocommerce-page #carousel #slide-1{height:200px;border-bottom:2px solid #e20510}
 .woocommerce-page #carousel .slide article{margin-top:75px}.woocommerce-page #carousel .slide article h1{font-size:1.5rem}
 .woocommerce-page #carousel .slide article p{float:right;margin:0;width:450px}.woocommerce-page .woocommerce-page #primary .products,.woocommerce-page .woocommerce-breadcrumb{margin:0 0 1em;padding:1em 0;font-size:.92em;border-bottom:1px solid rgba(0,0,0,0.05);-webkit-border-top-right-radius:5px;-webkit-border-top-left-radius:5px;-moz-border-radius-topright:5px;-moz-border-radius-topleft:5px;border-top-right-radius:5px;border-top-left-radius:5px}
-.woocommerce-page .cart-tab,.woocommerce-page .cart-tab .widget_shopping_cart{display:none}
 .woocommerce-page .cart-tab,.woocommerce-page .cart-tab .widget_shopping_cart{display:block;width:20em;top:131px;font-family:"Helvetica Neue",verdana,sans-serif}
 .woocommerce-page .cart-tab a.cart-parent,.woocommerce-page .cart-tab .widget_shopping_cart a.cart-parent{padding:5px 20px 2px 20px}
 .woocommerce-page .cart-tab a.cart-parent:hover,.woocommerce-page .cart-tab .widget_shopping_cart a.cart-parent:hover{color:#e20510;transition:all .2s linear}
@@ -562,8 +563,8 @@ article.intro p{width:60%;margin:0 auto 10px auto;color:#404040}#services{overfl
 .woocommerce-page .woocommerce p.form-row-wide,.woocommerce-page .woocommerce p.notes{width:100%}
 .woocommerce-page .woocommerce-info{border-top:2px dotted #ccc}.woocommerce-page .woocommerce-info:before{color:#475573}
 .woocommerce-page #primary .woocommerce-error{border-top:2px solid #e20510}.woocommerce-page #primary .woocommerce-error li{margin-bottom:3px;padding:5px !important;background-color:#e20510;color:#FFF}
-.woocommerce-page #primary .woocommerce-error a{color:#FFF}.woocommerce-cart article.intro h1 span{width:55px}
-@media screen and (max-width:768px){.woocommerce #primary,.woocommerce #secondary,.woocommerce-page #primary,.woocommerce-page #secondary{width:100%}
+.woocommerce-page #primary .woocommerce-error a{color:#FFF}.cart-tab,.cart-tab .widget_shopping_cart{display:none}
+.woocommerce-cart article.intro h1 span{width:55px}@media screen and (max-width:768px){.woocommerce #primary,.woocommerce #secondary,.woocommerce-page #primary,.woocommerce-page #secondary{width:100%}
 .woocommerce #header,.woocommerce-page #header{min-height:60px}.woocommerce .pp_content #pp_full_res>img,.woocommerce-page .pp_content #pp_full_res>img{margin:0 auto;display:block;width:auto !important}
 .woocommerce div.product div.images img,.woocommerce-page div.product div.images img{margin:0 auto;width:auto !important}
 .woocommerce #primary .product_title,.woocommerce .price,.woocommerce-page #primary .product_title,.woocommerce-page .price{text-align:center}
@@ -574,7 +575,7 @@ article.intro p{width:60%;margin:0 auto 10px auto;color:#404040}#services{overfl
 .woocommerce #primary #content div.product div.images,.woocommerce #primary div.product div.images,.woocommerce #primary #content div.product div.images,.woocommerce #primary div.product div.images,.woocommerce-page #primary #content div.product div.images,.woocommerce-page #primary div.product div.images,.woocommerce-page #primary #content div.product div.images,.woocommerce-page #primary div.product div.images{width:100%;float:none}
 .woocommerce .related.products,.woocommerce #carousel,.woocommerce .cart-tab,.woocommerce-page .related.products,.woocommerce-page #carousel,.woocommerce-page .cart-tab{display:none}
 }@media screen and (min-width:1200px){#sell .sell-row-img{background-position:center bottom}
-}@media screen and (max-width:1030px){.container{margin:0 4%}.page-home #page #carousel .slide .slide-content{width:100%}
+}@media screen and (max-width:1030px){.container{margin:0 4%}.page-home #page #carousel .slide .slide-content,.woocommerce-page #page #carousel .slide .slide-content{width:100%}
 #nav-cta{display:none}#social-links{float:right;margin-left:0}#header #social-links ul#share-me{right:-12px}
 }@media(max-width:873px){#nav-cta{display:none}}@media(max-width:805px){#social-links{display:none}
 }@media screen and (max-width:867px){.about-row-img,.sell-row-img{width:50%;min-height:652px;position:absolute;right:0}

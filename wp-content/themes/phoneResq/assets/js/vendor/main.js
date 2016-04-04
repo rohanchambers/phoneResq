@@ -22,8 +22,6 @@ if( getWidth() < 769 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Oper
 // Document ready
 $( document ).ready(function() {
 
-
-
 	// Trigger modal for shop products
 	$('#shop-products article a').click( function(e){
 		e.preventDefault();
@@ -152,7 +150,7 @@ $( document ).ready(function() {
 
 	    	$('html, body').animate({
 	   
-	        	scrollTop: $(target).offset().top - 45
+	        	scrollTop: $(target).offset().top - 70
 	   
 	    	}, speed);
 	    }
@@ -220,7 +218,7 @@ function initMap() {
 		center: phoneResq
 	});
 
-	var image = 'http://phoneresq.com/wp-content/themes/phoneResq/assets/images/global/mapPin.png';
+	var image = 'https://phoneresq.com/wp-content/themes/phoneResq/assets/images/global/mapPin.png';
 	var phoneResqMarker = new google.maps.Marker({
 		position: phoneResq,
 		map: map,

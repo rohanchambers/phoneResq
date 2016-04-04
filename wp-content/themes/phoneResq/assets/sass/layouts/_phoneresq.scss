@@ -1779,12 +1779,21 @@ article.intro {
     
     // Side vertical nav for shop
 
-    aside#loginLogout {
+    #welcome {
+        margin: 8px 0;
+        span {
+            font-weight: bold;
+        }
+    }
 
-        li.welcome {
+    aside#loginLogout {
+        ul {
+            margin: 0;
+        }    
+        li.welcome,
+        li.login {
             line-height: 30px;
-            color: $color-white;
-            padding-left: 35px;            
+            color: $color-white;        
         }
 
         li:before {
@@ -1803,14 +1812,14 @@ article.intro {
         }
 
         li.welcome:before {            
-            content: "\f007";
+            content: "\f08b";
         }
 
     }
 
     #menu-shop-nav,
     #menu-shop-nav-1 {
-        margin-bottom: 20px;
+        margin: 0 0 20px;
         border-right: 2px solid $color-red;
         padding-right: 1px;
 
@@ -2212,7 +2221,7 @@ article.intro {
                 margin: 0;
                 width: 450px;
             }
-        }        
+        }
     }
 
     // Panel styles on shop
@@ -2242,10 +2251,6 @@ article.intro {
     // }
 
     // CART FLY OUT DROPDOWN
-    .cart-tab,
-    .cart-tab .widget_shopping_cart {
-        display: none;
-    }
 
     .cart-tab,
     .cart-tab .widget_shopping_cart {
@@ -2459,6 +2464,11 @@ article.intro {
 } // End of .Woocommerce-page
 
 // Cart page
+.cart-tab,
+.cart-tab .widget_shopping_cart {
+    display: none;
+}
+
 .woocommerce-cart {
     article.intro h1 span { 
         width: 55px;
@@ -2549,7 +2559,8 @@ article.intro {
         margin: 0 4%;
     }
 
-    .page-home #page #carousel .slide .slide-content {
+    .page-home #page #carousel .slide .slide-content,
+    .woocommerce-page #page #carousel .slide .slide-content{
         width: 100%;
     }
 

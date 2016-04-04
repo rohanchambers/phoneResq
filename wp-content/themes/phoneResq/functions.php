@@ -185,8 +185,8 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 			wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 
-			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.6', true );
-			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.6', true );
+			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.8', true );
+			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.8', true );
 
 
 			// Concatonated Scripts
@@ -212,8 +212,8 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 			wp_register_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 			wp_enqueue_script( 'skrollr-js', get_template_directory_uri() . '/assets/js/vendor/skrollr.min.js', array( 'jquery' ), '0.6.30', true );
 
-			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.6', true );
-			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.6', true );
+			wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.8', true );
+			wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/vendor/main.js', array( 'jquery' ), '1.1.8', true );
 
 
 			// Concatonated Scripts
@@ -241,14 +241,14 @@ if ( ! function_exists( 'some_like_it_neat_styles' ) ) :
 		if ( SCRIPT_DEBUG || WP_DEBUG ) :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style.css', '', '4.7', 'screen'
+				get_template_directory_uri() . '/assets/css/style.css', '', '5.1', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 
 			else :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style-min.css', '', '4.7', 'screen'
+				get_template_directory_uri() . '/assets/css/style-min.css', '', '5.1', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 		endif;
@@ -390,6 +390,12 @@ function on_wp_footer_action() {
 }
 add_action( 'wp_footer', 'on_wp_footer_action', 9 );
 
+// Hide the woocommerce no support message in CMS when orginal theme is supported
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
 // Get images from get_the_content edited
 // http://bavotasan.com/2009/retrieve-the-first-image-from-a-wordpress-post/ 
 function getImage($num, $left = true) {
@@ -455,35 +461,3 @@ function register_my_menu() {
   register_nav_menu('shop-nav',__( 'Shop nav' ));
 }
 add_action( 'init', 'register_my_menu' );
-
-// Login / Logout
-add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
-
-function add_loginout_link( $items, $args ) {
-
-  if (is_user_logged_in() && $args->theme_location == 'Shop nav') {
-
-   $items .= '<li><a href="'. wp_logout_url( get_permalink( woocommerce_get_page_id( 'myaccount' ) ) ) .'">Log Out</a></li>';
-
-  }
-
-  elseif (!is_user_logged_in() && $args->theme_location == 'Shop nav') {
-
-   $items .= '<li><a href="' . get_permalink( woocommerce_get_page_id( 'myaccount' ) ) . '">Log In</a></li>';
-
-  }
-
-  return $items;
-
-}
-
-
-add_action('avia_meta_header', 'ava_get_user');
-function ava_get_user() {
-	if ( is_user_logged_in()) {
-		$user = wp_get_current_user();
-		echo "<div id='header-welcome'>Welcome ". $user->display_name ."</div>";
-	}
-}
-
-

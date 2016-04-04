@@ -16,8 +16,9 @@
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="author" content="Welcome to Phone ResQ">
+    
+    <meta name="title" content="Mobile Phone Repair | Cell Phone Repair | Fernandina Beach, FL | Phone ResQ">
+    <meta name="author" content="Phone ResQ">
     <meta name="description" content="We repair and improve all of your handheld devices and home computers. Our hassle-free customer service is centered around your interests and the intention of getting you back online." />
     <meta name="keywords" content="Cell Phone Repair, Cell Phone Repair Fernandina, Cell Phone Repair Yulee, iPhone Screen Repair, iPad screen Repair, iPod Screen Repair, Samsung Screen Repair, mobile phone repair, Tablet Repair, Cell phone unlock, iPhone for sale, Samsung For Sale" />    
 
@@ -86,7 +87,7 @@
                 <div id="logo"><a href="<?php homehash('header') ?>">Phone Resq</a></div>
                 <nav id="nav-main" class="nav-global">
                     <ul>
-                        <li id="dropdown"><a href="#services">Services<i class="fa fa-caret-down fa-lg"></i></a>
+                        <li id="dropdown"><a href="<?php homehash('services') ?>">Services<i class="fa fa-caret-down fa-lg"></i></a>
                             <ul id="subnav">
                                 <li><a href="/iphone-repair">iPhone repair</a><span></span></li>
                                 <li><a href="/ipad-repair">iPad repair</a><span></span></li>
@@ -97,10 +98,10 @@
                             </ul>
                         </li>
                         <li><a href="<?php homehash('about') ?>">About</a></li>
-                        <li id="nav-sell"><a href="<?php homehash('sell') ?>">Sell your device</a></li>
+                        <li id="nav-sell"><a href="<?php homehash('sell') ?>">Sell</a></li>
                         <li><a href="<?php homehash('contact') ?>">Contact us</a></li>
                         <li><a href="./blog/">Blog</a></li>
-                        <!-- <li><a href="./shop/">Shop</a></li> -->
+                        <li><a href="./shop/">Shop</a></li>
                     </ul>
                 </nav>
                 <nav id="social-links" class="nav-global">

@@ -3537,10 +3537,16 @@ article.intro {
   #secondary .widget_recent_comments,
   #secondary .widget_meta {
     display: none; }
-  #secondary aside#loginLogout li.welcome {
+  #secondary #welcome {
+    margin: 8px 0; }
+    #secondary #welcome span {
+      font-weight: bold; }
+  #secondary aside#loginLogout ul {
+    margin: 0; }
+  #secondary aside#loginLogout li.welcome,
+  #secondary aside#loginLogout li.login {
     line-height: 30px;
-    color: #FFF;
-    padding-left: 35px; }
+    color: #FFF; }
   #secondary aside#loginLogout li:before {
     position: absolute;
     left: 0;
@@ -3553,10 +3559,10 @@ article.intro {
   #secondary aside#loginLogout li.login:before {
     content: "\f090"; }
   #secondary aside#loginLogout li.welcome:before {
-    content: "\f007"; }
+    content: "\f08b"; }
   #secondary #menu-shop-nav,
   #secondary #menu-shop-nav-1 {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     border-right: 2px solid #e20510;
     padding-right: 1px; }
     #secondary #menu-shop-nav li,
@@ -3843,10 +3849,6 @@ article.intro {
 
 .woocommerce-page .cart-tab,
 .woocommerce-page .cart-tab .widget_shopping_cart {
-  display: none; }
-
-.woocommerce-page .cart-tab,
-.woocommerce-page .cart-tab .widget_shopping_cart {
   display: block;
   width: 20em;
   top: 131px;
@@ -4012,6 +4014,10 @@ article.intro {
   .woocommerce-page #primary .woocommerce-error a {
     color: #FFF; }
 
+.cart-tab,
+.cart-tab .widget_shopping_cart {
+  display: none; }
+
 .woocommerce-cart article.intro h1 span {
   width: 55px; }
 
@@ -4087,7 +4093,8 @@ article.intro {
 @media screen and (max-width: 1030px) {
   .container {
     margin: 0 4%; }
-  .page-home #page #carousel .slide .slide-content {
+  .page-home #page #carousel .slide .slide-content,
+  .woocommerce-page #page #carousel .slide .slide-content {
     width: 100%; }
   #nav-cta {
     display: none; }

@@ -35,7 +35,7 @@ get_header(); ?>
 					if ( is_checkout() || is_cart() || is_account_page()  ) {
 						woocommerce_breadcrumb();
 					}
-				?>	
+				?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

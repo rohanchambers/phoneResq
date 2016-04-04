@@ -9,19 +9,33 @@
 
 	<div id="secondary" class="widget-area" role="complementary">
 
+		<!-- Login log out logic -->
 		<?php if ( is_user_logged_in() ) { ?>
+			
+			<div id="welcome">Welcome: <span><?php echo esc_html($current_user->display_name); ?></span></div>
+			
+			<!-- Logout -->
 			<aside id="loginLogout">
 				<ul id="menu-shop-nav" class="nav">
-					<li class="welcome">Welcome: <span>Guest</span></li>
+					<li class="welcome">
+						<a href="<?php echo wp_logout_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" title="<?php _e('Logout','woothemes'); ?>"><?php _e('Logout','woothemes'); ?></a>
+					</li>
 				</ul>
 			</aside>
-				<?php } 
-				else { ?>
+
+			<?php } 
+			else { ?>
+
+			
+			<div id="welcome">Welcome: Guest</div>
+			
+			<!-- Login -->
 			<aside id="loginLogout">
 				<ul id="menu-shop-nav">
 					<li class="login">
-						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a> </li>
-					</ul>
+						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a>
+					</li>
+				</ul>
 			</aside>
 		<?php } ?>
 
