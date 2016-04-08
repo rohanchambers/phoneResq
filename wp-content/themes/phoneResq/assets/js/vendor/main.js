@@ -21,28 +21,6 @@ if( getWidth() < 769 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Oper
 
 // Document ready
 $( document ).ready(function() {
-
-	// Trigger modal for shop products
-	$('#shop-products article a').click( function(e){
-		e.preventDefault();
-		$('#modal-1').trigger('click');
-	});
-
-	$("#modal-1").on("change", function() {	
-		if ($(this).is(":checked")) {
-		  $("body").addClass("modal-open");
-		} else {
-		  $("body").removeClass("modal-open");
-		}
-	});
-		$(".modal-fade-screen, .modal-close").on("click", function() {
-		$(".modal-state:checked").prop("checked", false).change();
-	});
-
-	$(".modal-inner").on("click", function(e) {
-		e.stopPropagation();
-	});
-
 	
 	// Filter devices from dropdown
 	$('.filter-model').on('change', function(){

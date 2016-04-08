@@ -189,50 +189,33 @@ get_header(); ?>
             <div id="shop-products" class="animatedParent" data-sequence="100">
                 <article id="iPhone" class="product animated fadeInUp" data-id='1'>
                     <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/iphone.png" alt="iPhone repair" />
-                    <a href="#" class="btn-global btn-animate modal-trigger">Find out more</a>
+                    <a href="/shop" class="btn-global btn-animate">Find out more</a>
                 </article>
 
                 <article id="samsung" class="product animated fadeInUp" data-id='2'>
                     <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/android.png" alt="iPad repair" />
-                    <a href="#" class="btn-global btn-animate modal-trigger">Find out more</a>
+                    <a href="/shop" class="btn-global btn-animate">Find out more</a>
                 </article>
 
                 <article id="iPad" class="product animated fadeInUp" data-id='3'>
                     <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/ipad.png" alt="iPod repair" />
-                    <a href="#" class="btn-global btn-animate modal-trigger">Find out more</a>
+                    <a href="/shop" class="btn-global btn-animate">Find out more</a>
                 </article>      
 
                 <article id="samsung-galaxy" class="product animated fadeInUp" data-id='4'>
                     <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungtablet.png" alt="Samsung Galaxy repair" />
-                    <a href="#" class="btn-global btn-animate modal-trigger">Find out more</a>
+                    <a href="/shop" class="btn-global btn-animate">Find out more</a>
                 </article>
 
                 <article id="accessories" class="product animated fadeInUp" data-id='5'>
                     <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/accessories.png" alt="Accessories" />
-                    <a href="#" class="btn-global btn-animate modal-trigger">Find out more</a>
+                    <a href="/shop" class="btn-global btn-animate">Find out more</a>
                 </article>
             </div>            
         </div><!-- End of row -->
     </div><!-- End of Container -->
 
 </section><!-- End of Shop -->
-
-<!-- Shop Modal coming soon -->
-<div class="modal">
-    <label for="modal-1">
-            </label>
-            <input class="modal-state" id="modal-1" type="checkbox" />
-            <div class="modal-fade-screen">
-            <div class="modal-inner">
-            <div class="modal-close" for="modal-1"></div>
-            <h1>Shop coming soon!</h1>
-            <p class="modal-intro">Please come back soon to find some products that are for sale or refurbished.</p>
-            <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/iphone.png" alt="iPhone repair" />        
-            <img style="margin: 0 10px;" src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/android.png" alt="iPad repair" />
-            <img src="<?php bloginfo('template_directory'); ?>/assets/images/shop/products/samsungtablet.png" alt="Samsung Galaxy repair" />         
-        </div>
-    </div>
-</div>
 
 <section id="contact">
     <div class="container">
