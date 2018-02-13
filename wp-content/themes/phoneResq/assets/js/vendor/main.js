@@ -80,7 +80,7 @@ $( document ).ready(function() {
     });
 
 	// Validate form
-	$("#contact-form").validate();
+	//$("#contact-form").validate();
 
 	$('#btn-submit').click( function(){
 		$('#contact-form').submit();

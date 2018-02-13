@@ -42,7 +42,8 @@
 		                <p><a href="/ipad-repair">iPad Repair</a></p>
 		                <p><a href="/android-repair">Android Repair</a></p>
 		                <p id="site-developer">Site developed by <a href="http://rohanchambers.net/" title="Rohan Chambers">Rohan Chambers</a></p>
-		                <p id="copyright">&copy;<?php echo date("Y") ?> Phone Resq. All Rights Reserved.</p>
+		                <p id="copyright">&copy;<?php echo date("Y") ?> Phone Resq. All Rights Reserved.<br>
+		                	Site by: <a href="http://www.slamdunkdigital.com" target="_blank">Slam DunK Digital</a></p>
 		            </div>
 		        </div>
 		    </div>
